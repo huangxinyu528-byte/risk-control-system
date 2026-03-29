@@ -1,0 +1,6297 @@
+{
+  "generatedAt": "2026-03-27T12:29:24.968Z",
+  "comparableProjects": 214,
+  "mismatchedProjects": 196,
+  "duplicateProfileProjects": 10,
+  "sample": {
+    "customerName": "成都永安建设集团有限公司",
+    "customerId": "IMP-98320814F770",
+    "projectName": "云龙小学",
+    "websiteOld": {
+      "receivableAmount": 1235056.61,
+      "contractReceivable": 1235056.61,
+      "receivedAmount": 799377.04,
+      "unpaidAmount": 435679.57
+    },
+    "excelSheet": {
+      "receivableAmount": 399688.52,
+      "contractReceivable": 399688.52,
+      "receivedAmount": 399688.52,
+      "unpaidAmount": 0
+    },
+    "diff": {
+      "receivableAmount": -835368.09,
+      "contractReceivable": -835368.09,
+      "receivedAmount": -399688.52,
+      "unpaidAmount": -435679.57
+    },
+    "sheetNames": [
+      "124"
+    ],
+    "ledgerProfiles": [
+      {
+        "sheetName": "124",
+        "receivableAmount": 399688.52,
+        "contractReceivable": 399688.52,
+        "receivedAmount": 399688.52,
+        "unpaidAmount": 0,
+        "hasFinancialSignal": true,
+        "summaryIndex": 5
+      }
+    ],
+    "rawProfileCount": 2
+  },
+  "mismatches": [
+    {
+      "customerName": "江西建工第三建筑有限责任公司",
+      "customerId": "IMP-6D234F735633",
+      "projectName": "环天．青水澜湾项目37、38#",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 456007362.9,
+        "contractReceivable": 463902520.11,
+        "receivedAmount": 336726911.15,
+        "unpaidAmount": 42195389.9
+      },
+      "diff": {
+        "receivableAmount": 456007362.9,
+        "contractReceivable": 463902520.11,
+        "receivedAmount": 336726911.15,
+        "unpaidAmount": 42195389.9
+      },
+      "sheetNames": [
+        "31",
+        "青水澜湾汇总"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 2,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司",
+      "customerId": "IMP-6D234F735633",
+      "projectName": "环天．青水澜湾",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 315511973,
+        "contractReceivable": 323407130.21000004,
+        "receivedAmount": 238426911.14999998,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 315511973,
+        "contractReceivable": 323407130.21,
+        "receivedAmount": 238426911.15,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "31-merged-cmn7dv"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "重庆建工第二建设有限公司",
+      "customerId": "IMP-8B9637AFC6BA",
+      "projectName": "环天青林上城项目设计、采购、施工（EPC)32",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 210773067.34,
+        "contractReceivable": 140090467.04,
+        "receivedAmount": 128981914.18,
+        "unpaidAmount": 1539237.99
+      },
+      "diff": {
+        "receivableAmount": 210773067.34,
+        "contractReceivable": 140090467.04,
+        "receivedAmount": 128981914.18,
+        "unpaidAmount": 1539237.99
+      },
+      "sheetNames": [
+        "46"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "广西建工集团第二建筑工程有限责任公司",
+      "customerId": "IMP-5C420B55A0D9",
+      "projectName": "九天一城一期",
+      "websiteOld": {
+        "receivableAmount": 91029760.12,
+        "contractReceivable": 91029760.12,
+        "receivedAmount": 94488175.48,
+        "unpaidAmount": -3458415.36
+      },
+      "excelSheet": {
+        "receivableAmount": 298117217.10999995,
+        "contractReceivable": 301186797.25999993,
+        "receivedAmount": 328231775.47999996,
+        "unpaidAmount": -3458415.36
+      },
+      "diff": {
+        "receivableAmount": 207087456.99,
+        "contractReceivable": 210157037.14,
+        "receivedAmount": 233743600,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "3",
+        "广西二建"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 2,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "重庆建工第二建设有限公司",
+      "customerId": "IMP-8B9637AFC6BA",
+      "projectName": "环天青林上城（36#地块）",
+      "websiteOld": {
+        "receivableAmount": 5133854.04,
+        "contractReceivable": 3802911.95,
+        "receivedAmount": 0,
+        "unpaidAmount": 3802911.95
+      },
+      "excelSheet": {
+        "receivableAmount": 207327113.68,
+        "contractReceivable": 145826680.17000002,
+        "receivedAmount": 0,
+        "unpaidAmount": 1555075.77
+      },
+      "diff": {
+        "receivableAmount": 202193259.64,
+        "contractReceivable": 142023768.22,
+        "receivedAmount": 0,
+        "unpaidAmount": -2247836.18
+      },
+      "sheetNames": [
+        "46-2"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "重庆建工第二建设有限公司",
+      "customerId": "IMP-8B9637AFC6BA",
+      "projectName": "环天青林上城项目设计、采购、施工（EPC)35#地块",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 134265515.57,
+        "contractReceivable": 93985860.89999999,
+        "receivedAmount": 92760000,
+        "unpaidAmount": 24890921.11
+      },
+      "diff": {
+        "receivableAmount": 134265515.57,
+        "contractReceivable": 93985860.9,
+        "receivedAmount": 92760000,
+        "unpaidAmount": 24890921.11
+      },
+      "sheetNames": [
+        "32混凝土",
+        "35、36混凝土",
+        "46-1",
+        "砂浆"
+      ],
+      "ledgerProfileCount": 4,
+      "distinctSheetCount": 4,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国水利水电第十工程局有限公司",
+      "customerId": "IMP-11CB10CCAE52",
+      "projectName": "市域（郊）铁路成都至眉山线",
+      "websiteOld": {
+        "receivableAmount": 152441185.55,
+        "contractReceivable": 138982609.04,
+        "receivedAmount": 120020396.5,
+        "unpaidAmount": 18962212.54
+      },
+      "excelSheet": {
+        "receivableAmount": 8239197.960000001,
+        "contractReceivable": 7992022.02,
+        "receivedAmount": 7540396.5,
+        "unpaidAmount": 8988107.12
+      },
+      "diff": {
+        "receivableAmount": -144201987.59,
+        "contractReceivable": -130990587.02,
+        "receivedAmount": -112480000,
+        "unpaidAmount": -9974105.42
+      },
+      "sheetNames": [
+        "99",
+        "S5线汇总"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 2,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "成都永安建设集团有限公司",
+      "customerId": "IMP-98320814F770",
+      "projectName": "四川天府新区盛世华庭住宅建设项目",
+      "websiteOld": {
+        "receivableAmount": 84920972.7,
+        "contractReceivable": 84920972.7,
+        "receivedAmount": 84748679.09,
+        "unpaidAmount": 218695.86
+      },
+      "excelSheet": {
+        "receivableAmount": 173274378.73000002,
+        "contractReceivable": 91154031.40000002,
+        "receivedAmount": 82792590.03000002,
+        "unpaidAmount": 62945.68
+      },
+      "diff": {
+        "receivableAmount": 88353406.03,
+        "contractReceivable": 6233058.7,
+        "receivedAmount": -1956089.06,
+        "unpaidAmount": -155750.18
+      },
+      "sheetNames": [
+        "52"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "重庆建工第二建设有限公司",
+      "customerId": "IMP-8B9637AFC6BA",
+      "projectName": "环天青林上城汇总",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 63577791.379999965,
+        "contractReceivable": 44156643.14999999,
+        "receivedAmount": 15270000,
+        "unpaidAmount": 4731533.46
+      },
+      "diff": {
+        "receivableAmount": 63577791.38,
+        "contractReceivable": 44156643.15,
+        "receivedAmount": 15270000,
+        "unpaidAmount": 4731533.46
+      },
+      "sheetNames": [
+        "青林汇总"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川煌峰建筑工程有限公司",
+      "customerId": "IMP-92A59B812C4A",
+      "projectName": "天府新区环天青水澜湾桩基工程项目",
+      "websiteOld": {
+        "receivableAmount": 52697049,
+        "contractReceivable": 52697049,
+        "receivedAmount": 35131366,
+        "unpaidAmount": 17565683
+      },
+      "excelSheet": {
+        "receivableAmount": 17565683,
+        "contractReceivable": 17565683,
+        "receivedAmount": 17565683,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -35131366,
+        "contractReceivable": -35131366,
+        "receivedAmount": -17565683,
+        "unpaidAmount": -17565683
+      },
+      "sheetNames": [
+        "45"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司",
+      "customerId": "IMP-6D234F735633",
+      "projectName": "环天．时代中心2019（TR)-63号地块项目",
+      "websiteOld": {
+        "receivableAmount": 66620896.85,
+        "contractReceivable": 51075622.66,
+        "receivedAmount": 24187948,
+        "unpaidAmount": 26887674.66
+      },
+      "excelSheet": {
+        "receivableAmount": 31584104.64,
+        "contractReceivable": 23811467.55,
+        "receivedAmount": 12533033.46,
+        "unpaidAmount": 11278434.09
+      },
+      "diff": {
+        "receivableAmount": -35036792.21,
+        "contractReceivable": -27264155.11,
+        "receivedAmount": -11654914.54,
+        "unpaidAmount": -15609240.57
+      },
+      "sheetNames": [
+        "108",
+        "32-1"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 2,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "理想城一期",
+      "websiteOld": {
+        "receivableAmount": 86691737.8,
+        "contractReceivable": 86691737.8,
+        "receivedAmount": 75379960.44,
+        "unpaidAmount": 11311777.36
+      },
+      "excelSheet": {
+        "receivableAmount": 126921851.22999997,
+        "contractReceivable": 85323692.51,
+        "receivedAmount": 73379960.44,
+        "unpaidAmount": 5655888.68
+      },
+      "diff": {
+        "receivableAmount": 40230113.43,
+        "contractReceivable": -1368045.29,
+        "receivedAmount": -2000000,
+        "unpaidAmount": -5655888.68
+      },
+      "sheetNames": [
+        "12"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川冶创建筑工程集团有限公司",
+      "customerId": "IMP-520F39AA77A5",
+      "projectName": "仁寿翡翠城一期项目",
+      "websiteOld": {
+        "receivableAmount": 90402906.64,
+        "contractReceivable": 90402906.65,
+        "receivedAmount": 90402906.64,
+        "unpaidAmount": 0.01
+      },
+      "excelSheet": {
+        "receivableAmount": 135570659.96,
+        "contractReceivable": 135580769.98999998,
+        "receivedAmount": 135588924.96,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 45167753.32,
+        "contractReceivable": 45177863.34,
+        "receivedAmount": 45186018.32,
+        "unpaidAmount": -0.01
+      },
+      "sheetNames": [
+        "23"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "仁寿中心城一期二批次",
+      "websiteOld": {
+        "receivableAmount": 86981080,
+        "contractReceivable": 86981080,
+        "receivedAmount": 86981080,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 43490540,
+        "contractReceivable": 43490540,
+        "receivedAmount": 43490540,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -43490540,
+        "contractReceivable": -43490540,
+        "receivedAmount": -43490540,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "18"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司",
+      "customerId": "IMP-6D234F735633",
+      "projectName": "环天．时代中心2019（TR)-64号地块项目",
+      "websiteOld": {
+        "receivableAmount": 63465896.42,
+        "contractReceivable": 63465896.42,
+        "receivedAmount": 40600000,
+        "unpaidAmount": 22865896.42
+      },
+      "excelSheet": {
+        "receivableAmount": 31722943.16,
+        "contractReceivable": 31722943.16,
+        "receivedAmount": 20300000,
+        "unpaidAmount": 11422943.16
+      },
+      "diff": {
+        "receivableAmount": -31742953.26,
+        "contractReceivable": -31742953.26,
+        "receivedAmount": -20300000,
+        "unpaidAmount": -11442953.26
+      },
+      "sheetNames": [
+        "32"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司",
+      "customerId": "IMP-EEEA0EFAB6C0",
+      "projectName": "视高天府翡翠城一期一批次",
+      "websiteOld": {
+        "receivableAmount": 56953738.9,
+        "contractReceivable": 55528948.29,
+        "receivedAmount": 46068229.78,
+        "unpaidAmount": 9460718.51
+      },
+      "excelSheet": {
+        "receivableAmount": 23746510.2,
+        "contractReceivable": 23034114.89,
+        "receivedAmount": 23034114.89,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -33207228.7,
+        "contractReceivable": -32494833.4,
+        "receivedAmount": -23034114.89,
+        "unpaidAmount": -9460718.51
+      },
+      "sheetNames": [
+        "110"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "存在merged档案副本，已按原始sheet去重",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川立君建筑工程有限公司",
+      "customerId": "IMP-AF245853C59E",
+      "projectName": "天府中心城一期",
+      "websiteOld": {
+        "receivableAmount": 84743410.8,
+        "contractReceivable": 84743410.8,
+        "receivedAmount": 84743410.8,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 42371705.4,
+        "contractReceivable": 42371705.4,
+        "receivedAmount": 42371705.4,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -42371705.4,
+        "contractReceivable": -42371705.4,
+        "receivedAmount": -42371705.4,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "33"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "仁寿中心城一期一批次",
+      "websiteOld": {
+        "receivableAmount": 81300410.5,
+        "contractReceivable": 81300410.5,
+        "receivedAmount": 81300410.5,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 121935266.92,
+        "contractReceivable": 121939492.79,
+        "receivedAmount": 119947640,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 40634856.42,
+        "contractReceivable": 40639082.29,
+        "receivedAmount": 38647229.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "17"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "天府.未来城二期",
+      "websiteOld": {
+        "receivableAmount": 80442470.9,
+        "contractReceivable": 80442470.9,
+        "receivedAmount": 80442470.9,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 40221235.45,
+        "contractReceivable": 40221235.45,
+        "receivedAmount": 40221235.45,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -40221235.45,
+        "contractReceivable": -40221235.45,
+        "receivedAmount": -40221235.45,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "11"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司",
+      "customerId": "IMP-EEEA0EFAB6C0",
+      "projectName": "视高天府翡翠城",
+      "websiteOld": {
+        "receivableAmount": 14007414.25,
+        "contractReceivable": 14007414.25,
+        "receivedAmount": 14007414.25,
+        "unpaidAmount": 14007414.25
+      },
+      "excelSheet": {
+        "receivableAmount": 38352909.2,
+        "contractReceivable": 26847036.44,
+        "receivedAmount": 25396491.67,
+        "unpaidAmount": -1633586.09
+      },
+      "diff": {
+        "receivableAmount": 24345494.95,
+        "contractReceivable": 12839622.19,
+        "receivedAmount": 11389077.42,
+        "unpaidAmount": -15641000.34
+      },
+      "sheetNames": [
+        "超前盈欣汇总"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川南峰建筑工程有限公司",
+      "customerId": "IMP-B69C2B81292E",
+      "projectName": "德信麓湖云庄",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 39729826.3,
+        "contractReceivable": 39729826.3,
+        "receivedAmount": 39729826.3,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 39729826.3,
+        "contractReceivable": 39729826.3,
+        "receivedAmount": 39729826.3,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "天府.未来城一期",
+      "websiteOld": {
+        "receivableAmount": 78303514.1,
+        "contractReceivable": 78303514.1,
+        "receivedAmount": 78303514.1,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 39151757.05,
+        "contractReceivable": 39151757.05,
+        "receivedAmount": 39151757.05,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -39151757.05,
+        "contractReceivable": -39151757.05,
+        "receivedAmount": -39151757.05,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "10"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司",
+      "customerId": "IMP-6D234F735633",
+      "projectName": "环天．青水澜湾41#地块",
+      "websiteOld": {
+        "receivableAmount": 39474769,
+        "contractReceivable": 39474769,
+        "receivedAmount": 32976125.5,
+        "unpaidAmount": 6498643.5
+      },
+      "excelSheet": {
+        "receivableAmount": 6873845.5,
+        "contractReceivable": 6873845.5,
+        "receivedAmount": 16488062.75,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -32600923.5,
+        "contractReceivable": -32600923.5,
+        "receivedAmount": -16488062.75,
+        "unpaidAmount": -6498643.5
+      },
+      "sheetNames": [
+        "31-2"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "仁寿中心城二期二批次",
+      "websiteOld": {
+        "receivableAmount": 63101542.2,
+        "contractReceivable": 63101542.2,
+        "receivedAmount": 50583424.82,
+        "unpaidAmount": 12518117.38
+      },
+      "excelSheet": {
+        "receivableAmount": 31308913.6,
+        "contractReceivable": 31308913.6,
+        "receivedAmount": 25096891.53,
+        "unpaidAmount": 6259058.69
+      },
+      "diff": {
+        "receivableAmount": -31792628.6,
+        "contractReceivable": -31792628.6,
+        "receivedAmount": -25486533.29,
+        "unpaidAmount": -6259058.69
+      },
+      "sheetNames": [
+        "20"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "浙江恒宸建设集团有限公司",
+      "customerId": "IMP-9AA1CBBC8407",
+      "projectName": "锦绣天成二标段项目",
+      "websiteOld": {
+        "receivableAmount": 74243490.62,
+        "contractReceivable": 74243490.62,
+        "receivedAmount": 75902850.96,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 37121745.31,
+        "contractReceivable": 37121745.31,
+        "receivedAmount": 37951425.48,
+        "unpaidAmount": -829680.17
+      },
+      "diff": {
+        "receivableAmount": -37121745.31,
+        "contractReceivable": -37121745.31,
+        "receivedAmount": -37951425.48,
+        "unpaidAmount": -829680.17
+      },
+      "sheetNames": [
+        "38"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司",
+      "customerId": "IMP-6D234F735633",
+      "projectName": "环天．青水澜湾40#地块",
+      "websiteOld": {
+        "receivableAmount": 40459233.8,
+        "contractReceivable": 39005803.4,
+        "receivedAmount": 31262917.8,
+        "unpaidAmount": 7742885.6
+      },
+      "excelSheet": {
+        "receivableAmount": 11251290.5,
+        "contractReceivable": 11251290.5,
+        "receivedAmount": 15631458.9,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -29207943.3,
+        "contractReceivable": -27754512.9,
+        "receivedAmount": -15631458.9,
+        "unpaidAmount": -7742885.6
+      },
+      "sheetNames": [
+        "31-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "广西建工集团第二建筑工程有限责任公司",
+      "customerId": "IMP-5C420B55A0D9",
+      "projectName": "九天一城三期",
+      "websiteOld": {
+        "receivableAmount": 69583766.2,
+        "contractReceivable": 69583766.2,
+        "receivedAmount": 69583766.2,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 34791883.1,
+        "contractReceivable": 34791883.1,
+        "receivedAmount": 34791883.1,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -34791883.1,
+        "contractReceivable": -34791883.1,
+        "receivedAmount": -34791883.1,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "5"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "广西建工集团第二建筑工程有限责任公司",
+      "customerId": "IMP-5C420B55A0D9",
+      "projectName": "九天一城二期",
+      "websiteOld": {
+        "receivableAmount": 64317445.76,
+        "contractReceivable": 64317445.76,
+        "receivedAmount": 68163675.84,
+        "unpaidAmount": -3846230.08
+      },
+      "excelSheet": {
+        "receivableAmount": 32158722.88,
+        "contractReceivable": 32158722.88,
+        "receivedAmount": 34081837.92,
+        "unpaidAmount": -1923115.04
+      },
+      "diff": {
+        "receivableAmount": -32158722.88,
+        "contractReceivable": -32158722.88,
+        "receivedAmount": -34081837.92,
+        "unpaidAmount": 1923115.04
+      },
+      "sheetNames": [
+        "4"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省通力建设工程有限公司",
+      "customerId": "IMP-42C2034F8F35",
+      "projectName": "通威长湾一期",
+      "websiteOld": {
+        "receivableAmount": 219101288.24,
+        "contractReceivable": 219101288.24,
+        "receivedAmount": 208399639.88,
+        "unpaidAmount": 10701648.36
+      },
+      "excelSheet": {
+        "receivableAmount": 247112364.22000006,
+        "contractReceivable": 264260118.74999997,
+        "receivedAmount": 217037221.56,
+        "unpaidAmount": 5070262.93
+      },
+      "diff": {
+        "receivableAmount": 28011075.98,
+        "contractReceivable": 45158830.51,
+        "receivedAmount": 8637581.68,
+        "unpaidAmount": -5631385.43
+      },
+      "sheetNames": [
+        "43"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "仁寿中心城二期一批次",
+      "websiteOld": {
+        "receivableAmount": 64369382.8,
+        "contractReceivable": 64369382.8,
+        "receivedAmount": 64369382.8,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 31260522.4,
+        "contractReceivable": 31260522.4,
+        "receivedAmount": 31260522.4,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -33108860.4,
+        "contractReceivable": -33108860.4,
+        "receivedAmount": -33108860.4,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "19"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司",
+      "customerId": "IMP-6D234F735633",
+      "projectName": "环天时代中心二标段",
+      "websiteOld": {
+        "receivableAmount": 51399344.96,
+        "contractReceivable": 51399344.96,
+        "receivedAmount": 37525923.84,
+        "unpaidAmount": 13873421.12
+      },
+      "excelSheet": {
+        "receivableAmount": 25699672.48,
+        "contractReceivable": 25699672.48,
+        "receivedAmount": 18762961.92,
+        "unpaidAmount": 6936710.56
+      },
+      "diff": {
+        "receivableAmount": -25699672.48,
+        "contractReceivable": -25699672.48,
+        "receivedAmount": -18762961.92,
+        "unpaidAmount": -6936710.56
+      },
+      "sheetNames": [
+        "30"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "川港合作示范园先行启动区一期项目96#地块",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 23639207.74,
+        "contractReceivable": 23639207.74,
+        "receivedAmount": 14720000,
+        "unpaidAmount": 8919207.74
+      },
+      "diff": {
+        "receivableAmount": 23639207.74,
+        "contractReceivable": 23639207.74,
+        "receivedAmount": 14720000,
+        "unpaidAmount": 8919207.74
+      },
+      "sheetNames": [
+        "22"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司",
+      "customerId": "IMP-EEEA0EFAB6C0",
+      "projectName": "视高天府翡翠城2#地块二批次",
+      "websiteOld": {
+        "receivableAmount": 50859019.75,
+        "contractReceivable": 36965322.55,
+        "receivedAmount": 32111022.32,
+        "unpaidAmount": 4854300.23
+      },
+      "excelSheet": {
+        "receivableAmount": 23156162,
+        "contractReceivable": 16209313.4,
+        "receivedAmount": 16055511.16,
+        "unpaidAmount": 153802.24
+      },
+      "diff": {
+        "receivableAmount": -27702857.75,
+        "contractReceivable": -20756009.15,
+        "receivedAmount": -16055511.16,
+        "unpaidAmount": -4700497.99
+      },
+      "sheetNames": [
+        "110-1"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "存在merged档案副本，已按原始sheet去重",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "眉山嘉祥学校二标段",
+      "websiteOld": {
+        "receivableAmount": 50656481.04,
+        "contractReceivable": 50656481.04,
+        "receivedAmount": 40616203.76,
+        "unpaidAmount": 10040277.28
+      },
+      "excelSheet": {
+        "receivableAmount": 25328240.52,
+        "contractReceivable": 25328240.52,
+        "receivedAmount": 20308101.88,
+        "unpaidAmount": 5020138.64
+      },
+      "diff": {
+        "receivableAmount": -25328240.52,
+        "contractReceivable": -25328240.52,
+        "receivedAmount": -20308101.88,
+        "unpaidAmount": -5020138.64
+      },
+      "sheetNames": [
+        "14"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川合立智慧城市建设发展有限公司",
+      "customerId": "IMP-4814F1B90C83",
+      "projectName": "眉山联想叠云创新科技园四期(3、4、5、12-16号楼及地下车库）",
+      "websiteOld": {
+        "receivableAmount": 56067333.6,
+        "contractReceivable": 45710727.28,
+        "receivedAmount": 39078403.64,
+        "unpaidAmount": 7710674.64
+      },
+      "excelSheet": {
+        "receivableAmount": 79692616.39999999,
+        "contractReceivable": 64392373.12,
+        "receivedAmount": 56000078.96,
+        "unpaidAmount": 2776986.32
+      },
+      "diff": {
+        "receivableAmount": 23625282.8,
+        "contractReceivable": 18681645.84,
+        "receivedAmount": 16921675.32,
+        "unpaidAmount": -4933688.32
+      },
+      "sheetNames": [
+        "101"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "川港合作示范园66#地块",
+      "websiteOld": {
+        "receivableAmount": 52453010.33,
+        "contractReceivable": 52453010.33,
+        "receivedAmount": 49049924.44,
+        "unpaidAmount": 3403085.89
+      },
+      "excelSheet": {
+        "receivableAmount": 26226505.16,
+        "contractReceivable": 26226505.16,
+        "receivedAmount": 24524962.22,
+        "unpaidAmount": 1701542.94
+      },
+      "diff": {
+        "receivableAmount": -26226505.17,
+        "contractReceivable": -26226505.17,
+        "receivedAmount": -24524962.22,
+        "unpaidAmount": -1701542.95
+      },
+      "sheetNames": [
+        "21"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "眉山嘉祥学校一标段",
+      "websiteOld": {
+        "receivableAmount": 49957807.54,
+        "contractReceivable": 49957807.54,
+        "receivedAmount": 49957807.54,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 24978903.77,
+        "contractReceivable": 24978903.77,
+        "receivedAmount": 24978903.77,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -24978903.77,
+        "contractReceivable": -24978903.77,
+        "receivedAmount": -24978903.77,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "13"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "天府中心城一期二标段",
+      "websiteOld": {
+        "receivableAmount": 46500556,
+        "contractReceivable": 46500556,
+        "receivedAmount": 46500556,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 67231385.42,
+        "contractReceivable": 46354357.78999999,
+        "receivedAmount": 43500556,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 20730829.42,
+        "contractReceivable": -146198.21,
+        "receivedAmount": -3000000,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "15"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中建鸿腾建设集团有限公司",
+      "customerId": "IMP-E1B5971A05D5",
+      "projectName": "OLED新材料建设项目",
+      "websiteOld": {
+        "receivableAmount": 37160000,
+        "contractReceivable": 37160000,
+        "receivedAmount": 37160000,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 18580000,
+        "contractReceivable": 18580000,
+        "receivedAmount": 18580000,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -18580000,
+        "contractReceivable": -18580000,
+        "receivedAmount": -18580000,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "8"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川合立智慧城市建设发展有限公司",
+      "customerId": "IMP-4814F1B90C83",
+      "projectName": "悦府·天府云城",
+      "websiteOld": {
+        "receivableAmount": 25628232.9,
+        "contractReceivable": 23729522.97,
+        "receivedAmount": 18780000,
+        "unpaidAmount": 4949522.97
+      },
+      "excelSheet": {
+        "receivableAmount": 12394208.95,
+        "contractReceivable": 11444853.99,
+        "receivedAmount": 9390000,
+        "unpaidAmount": 2054853.99
+      },
+      "diff": {
+        "receivableAmount": -13234023.95,
+        "contractReceivable": -12284668.98,
+        "receivedAmount": -9390000,
+        "unpaidAmount": -2894668.98
+      },
+      "sheetNames": [
+        "120"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "存在merged档案副本，已按原始sheet去重",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省祥福建设工程有限公司",
+      "customerId": "IMP-7A144D04F055",
+      "projectName": "天府中心城三四期（图结）",
+      "websiteOld": {
+        "receivableAmount": 25769155.22,
+        "contractReceivable": 25769155.22,
+        "receivedAmount": 22426920.86,
+        "unpaidAmount": 3342234.36
+      },
+      "excelSheet": {
+        "receivableAmount": 37906955.66,
+        "contractReceivable": 50470406.46,
+        "receivedAmount": 33726061.129999995,
+        "unpaidAmount": 1671117.18
+      },
+      "diff": {
+        "receivableAmount": 12137800.44,
+        "contractReceivable": 24701251.24,
+        "receivedAmount": 11299140.27,
+        "unpaidAmount": -1671117.18
+      },
+      "sheetNames": [
+        "34"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中交二航局成都城市建设工程有限公司",
+      "customerId": "IMP-7ED416D5C2E1",
+      "projectName": "中交二航局益州大道南延线工程EPC总承包项目经营部",
+      "websiteOld": {
+        "receivableAmount": 102671088.42,
+        "contractReceivable": 97652702.04,
+        "receivedAmount": 90847499.22,
+        "unpaidAmount": 6805202.82
+      },
+      "excelSheet": {
+        "receivableAmount": 111936759.37999998,
+        "contractReceivable": 106147381.12000002,
+        "receivedAmount": 160398288.96,
+        "unpaidAmount": 3317166.41
+      },
+      "diff": {
+        "receivableAmount": 9265670.96,
+        "contractReceivable": 8494679.08,
+        "receivedAmount": 69550789.74,
+        "unpaidAmount": -3488036.41
+      },
+      "sheetNames": [
+        "41"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司",
+      "customerId": "IMP-EEEA0EFAB6C0",
+      "projectName": "视高天府翡翠城一期二批次",
+      "websiteOld": {
+        "receivableAmount": 19851301,
+        "contractReceivable": 16146470.2,
+        "receivedAmount": 11495960.06,
+        "unpaidAmount": 4650510.14
+      },
+      "excelSheet": {
+        "receivableAmount": 9925650.5,
+        "contractReceivable": 8073235.1,
+        "receivedAmount": 5747980.03,
+        "unpaidAmount": 2325255.07
+      },
+      "diff": {
+        "receivableAmount": -9925650.5,
+        "contractReceivable": -8073235.1,
+        "receivedAmount": -5747980.03,
+        "unpaidAmount": -2325255.07
+      },
+      "sheetNames": [
+        "110-2"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "存在merged档案副本，已按原始sheet去重",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "浙江恒宸建设集团有限公司",
+      "customerId": "IMP-9AA1CBBC8407",
+      "projectName": "锦绣天成一标段项目",
+      "websiteOld": {
+        "receivableAmount": 75056632.74,
+        "contractReceivable": 75056632.74,
+        "receivedAmount": 63856000,
+        "unpaidAmount": 9541272.4
+      },
+      "excelSheet": {
+        "receivableAmount": 67636803.53999999,
+        "contractReceivable": 145672670.51,
+        "receivedAmount": 62902083,
+        "unpaidAmount": 5600316.37
+      },
+      "diff": {
+        "receivableAmount": -7419829.2,
+        "contractReceivable": 70616037.77,
+        "receivedAmount": -953917,
+        "unpaidAmount": -3940956.03
+      },
+      "sheetNames": [
+        "37"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川正矿建设有限公司",
+      "customerId": "IMP-4713300420E5",
+      "projectName": "通威77号地块",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 10185494.65,
+        "contractReceivable": 10185494.65,
+        "receivedAmount": 10185494.65,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 10185494.65,
+        "contractReceivable": 10185494.65,
+        "receivedAmount": 10185494.65,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "104"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "存在merged档案副本，已按原始sheet去重",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "核工业西南勘察设计研究院有限公司",
+      "customerId": "IMP-879335AC2DDD",
+      "projectName": "康和悦街项目",
+      "websiteOld": {
+        "receivableAmount": 17076769.22,
+        "contractReceivable": 13661415.38,
+        "receivedAmount": 11232112.22,
+        "unpaidAmount": 2429303.16
+      },
+      "excelSheet": {
+        "receivableAmount": 8538384.61,
+        "contractReceivable": 6830707.69,
+        "receivedAmount": 5616056.11,
+        "unpaidAmount": 1214651.58
+      },
+      "diff": {
+        "receivableAmount": -8538384.61,
+        "contractReceivable": -6830707.69,
+        "receivedAmount": -5616056.11,
+        "unpaidAmount": -1214651.58
+      },
+      "sheetNames": [
+        "134"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "西南总部基地天府创新中心",
+      "websiteOld": {
+        "receivableAmount": 19467958.64,
+        "contractReceivable": 19467958.64,
+        "receivedAmount": 19467958.64,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 9733979.32,
+        "contractReceivable": 9733979.32,
+        "receivedAmount": 9733979.32,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -9733979.32,
+        "contractReceivable": -9733979.32,
+        "receivedAmount": -9733979.32,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "16"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川安尔福建筑有限公司",
+      "customerId": "IMP-8D953AB12BB5",
+      "projectName": "天府新区信息职业学院第三期建设工程",
+      "websiteOld": {
+        "receivableAmount": 13700597.4,
+        "contractReceivable": 13700597.4,
+        "receivedAmount": 12900211.4,
+        "unpaidAmount": 1600772
+      },
+      "excelSheet": {
+        "receivableAmount": 6049912.7,
+        "contractReceivable": 6049912.7,
+        "receivedAmount": 6049912.7,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -7650684.7,
+        "contractReceivable": -7650684.7,
+        "receivedAmount": -6850298.7,
+        "unpaidAmount": -1600772
+      },
+      "sheetNames": [
+        "112"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "京东亚洲一号成都天府二期物流园",
+      "websiteOld": {
+        "receivableAmount": 18001770,
+        "contractReceivable": 18001770,
+        "receivedAmount": 18001770,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 9000885,
+        "contractReceivable": 9000885,
+        "receivedAmount": 9000885,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -9000885,
+        "contractReceivable": -9000885,
+        "receivedAmount": -9000885,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "60"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川志德岩土工程有限责任公司",
+      "customerId": "IMP-D210A7B582D9",
+      "projectName": "天府国际金融中心",
+      "websiteOld": {
+        "receivableAmount": 17798619,
+        "contractReceivable": 17798619,
+        "receivedAmount": 17798636.26,
+        "unpaidAmount": -17.26
+      },
+      "excelSheet": {
+        "receivableAmount": 8899309.5,
+        "contractReceivable": 8899309.5,
+        "receivedAmount": 8899318.13,
+        "unpaidAmount": -8.63
+      },
+      "diff": {
+        "receivableAmount": -8899309.5,
+        "contractReceivable": -8899309.5,
+        "receivedAmount": -8899318.13,
+        "unpaidAmount": 8.63
+      },
+      "sheetNames": [
+        "76"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川衡信建设工程有限公司",
+      "customerId": "IMP-51A4BE2F8949",
+      "projectName": "眉山天府新区油坊沟重点山洪沟防洪治理工程",
+      "websiteOld": {
+        "receivableAmount": 11977590,
+        "contractReceivable": 11977590,
+        "receivedAmount": 6424828,
+        "unpaidAmount": 5552762
+      },
+      "excelSheet": {
+        "receivableAmount": 5988795,
+        "contractReceivable": 5988795,
+        "receivedAmount": 3212414,
+        "unpaidAmount": 2776381
+      },
+      "diff": {
+        "receivableAmount": -5988795,
+        "contractReceivable": -5988795,
+        "receivedAmount": -3212414,
+        "unpaidAmount": -2776381
+      },
+      "sheetNames": [
+        "128"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "环球融创未来城一乐源77亩建筑",
+      "websiteOld": {
+        "receivableAmount": 16335800,
+        "contractReceivable": 16335800,
+        "receivedAmount": 16335760,
+        "unpaidAmount": 40
+      },
+      "excelSheet": {
+        "receivableAmount": 8167900,
+        "contractReceivable": 8167900,
+        "receivedAmount": 8167880,
+        "unpaidAmount": 20
+      },
+      "diff": {
+        "receivableAmount": -8167900,
+        "contractReceivable": -8167900,
+        "receivedAmount": -8167880,
+        "unpaidAmount": -20
+      },
+      "sheetNames": [
+        "58"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省蜀通岩土工程公司",
+      "customerId": "IMP-F0A983B38D1B",
+      "projectName": "黑龙滩长岛国际旅游度假区",
+      "websiteOld": {
+        "receivableAmount": 16270340,
+        "contractReceivable": 16270340,
+        "receivedAmount": 16270339.98,
+        "unpaidAmount": 0.02
+      },
+      "excelSheet": {
+        "receivableAmount": 8135170,
+        "contractReceivable": 8135170,
+        "receivedAmount": 8135169.99,
+        "unpaidAmount": 0.01
+      },
+      "diff": {
+        "receivableAmount": -8135170,
+        "contractReceivable": -8135170,
+        "receivedAmount": -8135169.99,
+        "unpaidAmount": -0.01
+      },
+      "sheetNames": [
+        "71"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司",
+      "customerId": "IMP-6D234F735633",
+      "projectName": "环天．时代中心2019（TR)-63号地块项目 砂浆",
+      "websiteOld": {
+        "receivableAmount": 9169025.5,
+        "contractReceivable": 6931521.85,
+        "receivedAmount": 800000,
+        "unpaidAmount": 6131521.85
+      },
+      "excelSheet": {
+        "receivableAmount": 4528384.8,
+        "contractReceivable": 3409632.98,
+        "receivedAmount": 400000,
+        "unpaidAmount": 3009632.98
+      },
+      "diff": {
+        "receivableAmount": -4640640.7,
+        "contractReceivable": -3521888.87,
+        "receivedAmount": -400000,
+        "unpaidAmount": -3121888.87
+      },
+      "sheetNames": [
+        "32-2"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "重庆兆旋建设有限公司",
+      "customerId": "IMP-09791F0AEC0C",
+      "projectName": "环天．青林上城35号地块桩基工程项目",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 7023134.9,
+        "contractReceivable": 7023134.9,
+        "receivedAmount": 6700000,
+        "unpaidAmount": 323134.9
+      },
+      "diff": {
+        "receivableAmount": 7023134.9,
+        "contractReceivable": 7023134.9,
+        "receivedAmount": 6700000,
+        "unpaidAmount": 323134.9
+      },
+      "sheetNames": [
+        "105"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "眉山特驱双林教育咨询有限公司",
+      "customerId": "IMP-8F2BCAB47746",
+      "projectName": "兰大伯克利中外合作办学眉山项目2021（TR）-1号地块19号楼",
+      "websiteOld": {
+        "receivableAmount": 14133479.6,
+        "contractReceivable": 14133479.6,
+        "receivedAmount": 14133479.6,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 7066739.8,
+        "contractReceivable": 7066739.8,
+        "receivedAmount": 7066739.8,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -7066739.8,
+        "contractReceivable": -7066739.8,
+        "receivedAmount": -7066739.8,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "24"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司",
+      "customerId": "IMP-EEEA0EFAB6C0",
+      "projectName": "视高天府翡翠城2#地块一批次",
+      "websiteOld": {
+        "receivableAmount": 11405530,
+        "contractReceivable": 8585780,
+        "receivedAmount": 6206956,
+        "unpaidAmount": 2378824
+      },
+      "excelSheet": {
+        "receivableAmount": 5702765,
+        "contractReceivable": 4292890,
+        "receivedAmount": 3103478,
+        "unpaidAmount": 1189412
+      },
+      "diff": {
+        "receivableAmount": -5702765,
+        "contractReceivable": -4292890,
+        "receivedAmount": -3103478,
+        "unpaidAmount": -1189412
+      },
+      "sheetNames": [
+        "110-3"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "存在merged档案副本，已按原始sheet去重",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "广西建工集团基础建设有限公司",
+      "customerId": "IMP-588142B0CC12",
+      "projectName": "融创九天一城项目二期",
+      "websiteOld": {
+        "receivableAmount": 12527357.4,
+        "contractReceivable": 12527357.4,
+        "receivedAmount": 12527357.4,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 6263678.7,
+        "contractReceivable": 6263678.7,
+        "receivedAmount": 6263678.7,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -6263678.7,
+        "contractReceivable": -6263678.7,
+        "receivedAmount": -6263678.7,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "7"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "眉山市志同道合建筑工程有限公司",
+      "customerId": "IMP-125D74A7CC27",
+      "projectName": "悦府·天府云城",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 3999375.5199999996,
+        "contractReceivable": 4214706.57,
+        "receivedAmount": 0,
+        "unpaidAmount": 2107353.29
+      },
+      "diff": {
+        "receivableAmount": 3999375.52,
+        "contractReceivable": 4214706.57,
+        "receivedAmount": 0,
+        "unpaidAmount": 2107353.29
+      },
+      "sheetNames": [
+        "120-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川冶创建筑工程集团有限公司",
+      "customerId": "IMP-520F39AA77A5",
+      "projectName": "彭山德康谢家镇悦园村喻沟5000头规模化种场项目",
+      "websiteOld": {
+        "receivableAmount": 11070910,
+        "contractReceivable": 11070910,
+        "receivedAmount": 11070910,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 5535455,
+        "contractReceivable": 5535455,
+        "receivedAmount": 5535455,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -5535455,
+        "contractReceivable": -5535455,
+        "receivedAmount": -5535455,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "25"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川志德岩土工程有限责任公司",
+      "customerId": "IMP-D210A7B582D9",
+      "projectName": "中海秦皇寺项目7#9#地块",
+      "websiteOld": {
+        "receivableAmount": 10548818,
+        "contractReceivable": 10548818,
+        "receivedAmount": 10548818,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 5274409,
+        "contractReceivable": 5274409,
+        "receivedAmount": 5274409,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -5274409,
+        "contractReceivable": -5274409,
+        "receivedAmount": -5274409,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "75"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中铁五局集团建筑工程有限责任公司",
+      "customerId": "IMP-4412058481D3",
+      "projectName": "中铁双龙艺术小镇（二期）项目",
+      "websiteOld": {
+        "receivableAmount": 8144133.9,
+        "contractReceivable": 8144133.9,
+        "receivedAmount": 6600000,
+        "unpaidAmount": 1544133.9
+      },
+      "excelSheet": {
+        "receivableAmount": 4072066.95,
+        "contractReceivable": 4072066.95,
+        "receivedAmount": 3300000,
+        "unpaidAmount": 772066.95
+      },
+      "diff": {
+        "receivableAmount": -4072066.95,
+        "contractReceivable": -4072066.95,
+        "receivedAmount": -3300000,
+        "unpaidAmount": -772066.95
+      },
+      "sheetNames": [
+        "90"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "中海秦皇寺项目7#9#地块",
+      "websiteOld": {
+        "receivableAmount": 8298256,
+        "contractReceivable": 8298256,
+        "receivedAmount": 8298256,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 4149128,
+        "contractReceivable": 4149128,
+        "receivedAmount": 4149128,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -4149128,
+        "contractReceivable": -4149128,
+        "receivedAmount": -4149128,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "64"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国电建市政建设集团",
+      "customerId": "IMP-441E341B550A",
+      "projectName": "中国电建市政建设集团市域（郊）铁路成眉线工程眉山段轨道工区",
+      "websiteOld": {
+        "receivableAmount": 7746053.3,
+        "contractReceivable": 6971447.97,
+        "receivedAmount": 6971447.98,
+        "unpaidAmount": -0.01
+      },
+      "excelSheet": {
+        "receivableAmount": 3873026.65,
+        "contractReceivable": 3485723.99,
+        "receivedAmount": 3485723.99,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -3873026.65,
+        "contractReceivable": -3485723.98,
+        "receivedAmount": -3485723.99,
+        "unpaidAmount": 0.01
+      },
+      "sheetNames": [
+        "180"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "重庆黄金建设（集团）有限公司",
+      "customerId": "IMP-5C60C86CBC9D",
+      "projectName": "眉山商务会展中心",
+      "websiteOld": {
+        "receivableAmount": 7630037.36,
+        "contractReceivable": 7630037.36,
+        "receivedAmount": 7630037.36,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 3815018.68,
+        "contractReceivable": 3815018.68,
+        "receivedAmount": 3815018.68,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -3815018.68,
+        "contractReceivable": -3815018.68,
+        "receivedAmount": -3815018.68,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "69"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "重庆黄金建设(集团)有限公司",
+      "customerId": "IMP-B83639DABE8D",
+      "projectName": "眉山商务会展中心",
+      "websiteOld": {
+        "receivableAmount": 7630037.36,
+        "contractReceivable": 7630037.36,
+        "receivedAmount": 7630037.36,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 3815018.68,
+        "contractReceivable": 3815018.68,
+        "receivedAmount": 3815018.68,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -3815018.68,
+        "contractReceivable": -3815018.68,
+        "receivedAmount": -3815018.68,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "69"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "水郡未来城二期项目D区降水、护壁、抗浮锚杆、桩基和地基处理工程",
+      "websiteOld": {
+        "receivableAmount": 7333188,
+        "contractReceivable": 7333188,
+        "receivedAmount": 7333188,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 3666594,
+        "contractReceivable": 3666594,
+        "receivedAmount": 3666594,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -3666594,
+        "contractReceivable": -3666594,
+        "receivedAmount": -3666594,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "57"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国水利水电第十四工程局有限公司",
+      "customerId": "IMP-595EB5DAC164",
+      "projectName": "土建1/2标",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 2627190.26,
+        "contractReceivable": 2548374.55,
+        "receivedAmount": 3000000,
+        "unpaidAmount": 740093.63
+      },
+      "diff": {
+        "receivableAmount": 2627190.26,
+        "contractReceivable": 2548374.55,
+        "receivedAmount": 3000000,
+        "unpaidAmount": 740093.63
+      },
+      "sheetNames": [
+        "99-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "成都永安建设集团有限公司",
+      "customerId": "IMP-98320814F770",
+      "projectName": "四川天府新区盛世锦都住宅建设项目",
+      "websiteOld": {
+        "receivableAmount": 5538345.49,
+        "contractReceivable": 5538345.49,
+        "receivedAmount": 4409919.94,
+        "unpaidAmount": 1128425.55
+      },
+      "excelSheet": {
+        "receivableAmount": 2756199.97,
+        "contractReceivable": 2756199.97,
+        "receivedAmount": 2204959.97,
+        "unpaidAmount": 551240
+      },
+      "diff": {
+        "receivableAmount": -2782145.52,
+        "contractReceivable": -2782145.52,
+        "receivedAmount": -2204959.97,
+        "unpaidAmount": -577185.55
+      },
+      "sheetNames": [
+        "52-1"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "存在merged档案副本，已按原始sheet去重",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "川港合作示范园先行启动区一期96#地块",
+      "websiteOld": {
+        "receivableAmount": 4982019.74,
+        "contractReceivable": 4982019.74,
+        "receivedAmount": 3247754.92,
+        "unpaidAmount": 1734264.82
+      },
+      "excelSheet": {
+        "receivableAmount": 2491009.87,
+        "contractReceivable": 2491009.87,
+        "receivedAmount": 1623877.46,
+        "unpaidAmount": 867132.41
+      },
+      "diff": {
+        "receivableAmount": -2491009.87,
+        "contractReceivable": -2491009.87,
+        "receivedAmount": -1623877.46,
+        "unpaidAmount": -867132.41
+      },
+      "sheetNames": [
+        "106-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川恒远安建筑工程有限公司",
+      "customerId": "IMP-2C24E6FEAB57",
+      "projectName": "10万吨/盐品自动化包装项目",
+      "websiteOld": {
+        "receivableAmount": 6682429.6,
+        "contractReceivable": 6682429.6,
+        "receivedAmount": 6682429.6,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 3341214.8,
+        "contractReceivable": 3341214.8,
+        "receivedAmount": 3341214.8,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -3341214.8,
+        "contractReceivable": -3341214.8,
+        "receivedAmount": -3341214.8,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "70"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川鼎立鸿大建筑工程有限公司",
+      "customerId": "IMP-62D3FE4DED58",
+      "projectName": "長湾2023（TR）-1号地块一期二标段（混凝土）",
+      "websiteOld": {
+        "receivableAmount": 6102585.98,
+        "contractReceivable": 6948516.98,
+        "receivedAmount": 7502585.98,
+        "unpaidAmount": -554069
+      },
+      "excelSheet": {
+        "receivableAmount": 3051292.99,
+        "contractReceivable": 3474258.49,
+        "receivedAmount": 3751292.99,
+        "unpaidAmount": -277034.5
+      },
+      "diff": {
+        "receivableAmount": -3051292.99,
+        "contractReceivable": -3474258.49,
+        "receivedAmount": -3751292.99,
+        "unpaidAmount": 277034.5
+      },
+      "sheetNames": [
+        "169"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川塔牌电缆绕组线有限责任公司/四川沁森建筑工程有限公司",
+      "customerId": "IMP-94D3FDFA8CDB",
+      "projectName": "塔牌特种电缆技改项目/四川塔牌电缆绕组线有限公司特种电缆技改项目",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 3275630.1,
+        "contractReceivable": 3275630.1,
+        "receivedAmount": 3275630.1,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 3275630.1,
+        "contractReceivable": 3275630.1,
+        "receivedAmount": 3275630.1,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "67"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司",
+      "customerId": "IMP-6D234F735633",
+      "projectName": "环天时代中心一标段",
+      "websiteOld": {
+        "receivableAmount": 81273234,
+        "contractReceivable": 81273234,
+        "receivedAmount": 80251734,
+        "unpaidAmount": 1021500
+      },
+      "excelSheet": {
+        "receivableAmount": 78609837.47999999,
+        "contractReceivable": 79280319.44,
+        "receivedAmount": 78251734,
+        "unpaidAmount": 510750
+      },
+      "diff": {
+        "receivableAmount": -2663396.52,
+        "contractReceivable": -1992914.56,
+        "receivedAmount": -2000000,
+        "unpaidAmount": -510750
+      },
+      "sheetNames": [
+        "29"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川昌奕建设工程集团有限公司",
+      "customerId": "IMP-5A3568C64C3F",
+      "projectName": "眉山天府新区电子信息东西部产业转移基地建设项目及成眉高新技术产业园区基础设施项目",
+      "websiteOld": {
+        "receivableAmount": 5114270,
+        "contractReceivable": 3628191,
+        "receivedAmount": 2580000,
+        "unpaidAmount": 1048191
+      },
+      "excelSheet": {
+        "receivableAmount": 2557135,
+        "contractReceivable": 1814095.5,
+        "receivedAmount": 1290000,
+        "unpaidAmount": 524095.5
+      },
+      "diff": {
+        "receivableAmount": -2557135,
+        "contractReceivable": -1814095.5,
+        "receivedAmount": -1290000,
+        "unpaidAmount": -524095.5
+      },
+      "sheetNames": [
+        "157"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川良盟建筑工程有限公司",
+      "customerId": "IMP-05AD7160ADF7",
+      "projectName": "滨江郦城二期B2（二批次）",
+      "websiteOld": {
+        "receivableAmount": 4206855.1,
+        "contractReceivable": 3776686.61,
+        "receivedAmount": 1832967.06,
+        "unpaidAmount": 1943719.55
+      },
+      "excelSheet": {
+        "receivableAmount": 2103427.55,
+        "contractReceivable": 1888343.3,
+        "receivedAmount": 916483.53,
+        "unpaidAmount": 971859.77
+      },
+      "diff": {
+        "receivableAmount": -2103427.55,
+        "contractReceivable": -1888343.31,
+        "receivedAmount": -916483.53,
+        "unpaidAmount": -971859.78
+      },
+      "sheetNames": [
+        "172-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "碧桂园海昌天澜",
+      "websiteOld": {
+        "receivableAmount": 5787644,
+        "contractReceivable": 5787644,
+        "receivedAmount": 5787644,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 2893822,
+        "contractReceivable": 2893822,
+        "receivedAmount": 2893822,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -2893822,
+        "contractReceivable": -2893822,
+        "receivedAmount": -2893822,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "65"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省贝瑞达建筑工程有限公司",
+      "customerId": "IMP-9D4E0064DEAD",
+      "projectName": "眉山加州智慧城",
+      "websiteOld": {
+        "receivableAmount": 5550704,
+        "contractReceivable": 5550704,
+        "receivedAmount": 5550704,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 2775352,
+        "contractReceivable": 2775352,
+        "receivedAmount": 2775352,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -2775352,
+        "contractReceivable": -2775352,
+        "receivedAmount": -2775352,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "77"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省恒新建筑有限公司",
+      "customerId": "IMP-1F337CC08947",
+      "projectName": "眉山印象中铁黑龙滩项目售楼部工程",
+      "websiteOld": {
+        "receivableAmount": 5459178,
+        "contractReceivable": 5459178,
+        "receivedAmount": 5459178,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 2729589,
+        "contractReceivable": 2729589,
+        "receivedAmount": 2729589,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -2729589,
+        "contractReceivable": -2729589,
+        "receivedAmount": -2729589,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "42"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川昌奕建设工程集团有限公司",
+      "customerId": "IMP-5A3568C64C3F",
+      "projectName": "清水云庭",
+      "websiteOld": {
+        "receivableAmount": 3572400,
+        "contractReceivable": 3596950,
+        "receivedAmount": 2400000,
+        "unpaidAmount": 1196950
+      },
+      "excelSheet": {
+        "receivableAmount": 1786200,
+        "contractReceivable": 1798475,
+        "receivedAmount": 1200000,
+        "unpaidAmount": 598475
+      },
+      "diff": {
+        "receivableAmount": -1786200,
+        "contractReceivable": -1798475,
+        "receivedAmount": -1200000,
+        "unpaidAmount": -598475
+      },
+      "sheetNames": [
+        "157-1"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "存在merged档案副本，已按原始sheet去重",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川华地建设工程有限责任公司",
+      "customerId": "IMP-EF4224067EE3",
+      "projectName": "地灾项目",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 2345848,
+        "contractReceivable": 2345848,
+        "receivedAmount": 2345848,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 2345848,
+        "contractReceivable": 2345848,
+        "receivedAmount": 2345848,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "140"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "广西建工集团基础建设有限公司",
+      "customerId": "IMP-588142B0CC12",
+      "projectName": "融创九天一城项目一期",
+      "websiteOld": {
+        "receivableAmount": 4637795.5,
+        "contractReceivable": 4637795.5,
+        "receivedAmount": 4637795.5,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 2318897.75,
+        "contractReceivable": 2318897.75,
+        "receivedAmount": 2318897.75,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -2318897.75,
+        "contractReceivable": -2318897.75,
+        "receivedAmount": -2318897.75,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "6"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川冶创建筑工程集团有限公司",
+      "customerId": "IMP-520F39AA77A5",
+      "projectName": "大学城6号地块一标段",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 2273280.37,
+        "contractReceivable": 2273280.37,
+        "receivedAmount": 2273280.37,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 2273280.37,
+        "contractReceivable": 2273280.37,
+        "receivedAmount": 2273280.37,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "27-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "新疆苏中建设工程有限公司",
+      "customerId": "IMP-E7B4D841C7D1",
+      "projectName": "中澳国际听力中心",
+      "websiteOld": {
+        "receivableAmount": 33168060,
+        "contractReceivable": 33168060,
+        "receivedAmount": 33168060,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 30957704,
+        "contractReceivable": 30957704,
+        "receivedAmount": 31668060,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -2210356,
+        "contractReceivable": -2210356,
+        "receivedAmount": -1500000,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "36"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川路航建设工程有限责任公司",
+      "customerId": "IMP-DE435633E0D7",
+      "projectName": "眉山市交通基础建设PPP项目天府眉山大道眉山段",
+      "websiteOld": {
+        "receivableAmount": 4394110,
+        "contractReceivable": 4394110,
+        "receivedAmount": 4394110,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 2197055,
+        "contractReceivable": 2197055,
+        "receivedAmount": 2197055,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -2197055,
+        "contractReceivable": -2197055,
+        "receivedAmount": -2197055,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "96"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川泰鸿裕建设工程有限公司",
+      "customerId": "IMP-C4F829DEF201",
+      "projectName": "秦皇帝锦四期（13号地块）",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 2115465.5,
+        "contractReceivable": 2115465.5,
+        "receivedAmount": 2115465.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 2115465.5,
+        "contractReceivable": 2115465.5,
+        "receivedAmount": 2115465.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "66"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川冶创建筑工程集团有限公司",
+      "customerId": "IMP-520F39AA77A5",
+      "projectName": "环天·时代中心 2019(TR)-61、62 号地块景观专业分包工程",
+      "websiteOld": {
+        "receivableAmount": 4112183.4,
+        "contractReceivable": 4112183.4,
+        "receivedAmount": 4112183.4,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 2056091.7,
+        "contractReceivable": 2056091.7,
+        "receivedAmount": 2056091.7,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -2056091.7,
+        "contractReceivable": -2056091.7,
+        "receivedAmount": -2056091.7,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "27"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "中海秦皇寺项目3#4#地块",
+      "websiteOld": {
+        "receivableAmount": 4040999,
+        "contractReceivable": 4040999,
+        "receivedAmount": 4040999.28,
+        "unpaidAmount": -0.28
+      },
+      "excelSheet": {
+        "receivableAmount": 2020499.5,
+        "contractReceivable": 2020499.5,
+        "receivedAmount": 2020499.64,
+        "unpaidAmount": -0.14
+      },
+      "diff": {
+        "receivableAmount": -2020499.5,
+        "contractReceivable": -2020499.5,
+        "receivedAmount": -2020499.64,
+        "unpaidAmount": 0.14
+      },
+      "sheetNames": [
+        "63"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "眉山维港置业有限公司",
+      "customerId": "IMP-2A7E15C3407B",
+      "projectName": "川港95.96地块园林总坪",
+      "websiteOld": {
+        "receivableAmount": 2811205.4,
+        "contractReceivable": 2811205.4,
+        "receivedAmount": 1653441.72,
+        "unpaidAmount": 1157763.68
+      },
+      "excelSheet": {
+        "receivableAmount": 1405602.7,
+        "contractReceivable": 1405602.7,
+        "receivedAmount": 826720.86,
+        "unpaidAmount": 578881.84
+      },
+      "diff": {
+        "receivableAmount": -1405602.7,
+        "contractReceivable": -1405602.7,
+        "receivedAmount": -826720.86,
+        "unpaidAmount": -578881.84
+      },
+      "sheetNames": [
+        "111"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川合富建筑工程有限公司",
+      "customerId": "IMP-F41ED76BB612",
+      "projectName": "中核新能源科技研发中心A区（2-1#）",
+      "websiteOld": {
+        "receivableAmount": 2436863.52,
+        "contractReceivable": 2298447.05,
+        "receivedAmount": 951832.78,
+        "unpaidAmount": 1346614.27
+      },
+      "excelSheet": {
+        "receivableAmount": 1218431.76,
+        "contractReceivable": 1149223.52,
+        "receivedAmount": 475916.39,
+        "unpaidAmount": 673307.13
+      },
+      "diff": {
+        "receivableAmount": -1218431.76,
+        "contractReceivable": -1149223.53,
+        "receivedAmount": -475916.39,
+        "unpaidAmount": -673307.14
+      },
+      "sheetNames": [
+        "177"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "成都轨道新山实业有限公司",
+      "customerId": "IMP-C9544FA6CF93",
+      "projectName": "成眉地铁S5成都段土建1工区",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1814333.6,
+        "contractReceivable": 1814333.6,
+        "receivedAmount": 1814333.6,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 1814333.6,
+        "contractReceivable": 1814333.6,
+        "receivedAmount": 1814333.6,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "100"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川志德岩土工程有限责任公司",
+      "customerId": "IMP-D210A7B582D9",
+      "projectName": "奥园万安111亩基坑支护及桩基施工项目",
+      "websiteOld": {
+        "receivableAmount": 3585345,
+        "contractReceivable": 3585345,
+        "receivedAmount": 3585345,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1792672.5,
+        "contractReceivable": 1792672.5,
+        "receivedAmount": 1792672.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1792672.5,
+        "contractReceivable": -1792672.5,
+        "receivedAmount": -1792672.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "73"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "环球融创未来城项目住宅二期89亩桩基础及护壁项目",
+      "websiteOld": {
+        "receivableAmount": 3438828,
+        "contractReceivable": 3438828,
+        "receivedAmount": 3438828,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1719414,
+        "contractReceivable": 1719414,
+        "receivedAmount": 1719414,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1719414,
+        "contractReceivable": -1719414,
+        "receivedAmount": -1719414,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "55"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省启明电力工程有限公司",
+      "customerId": "IMP-C650A3D875F1",
+      "projectName": "视高段外电通道",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1577777.5,
+        "contractReceivable": 1619924.5,
+        "receivedAmount": 1480000,
+        "unpaidAmount": 139924.5
+      },
+      "diff": {
+        "receivableAmount": 1577777.5,
+        "contractReceivable": 1619924.5,
+        "receivedAmount": 1480000,
+        "unpaidAmount": 139924.5
+      },
+      "sheetNames": [
+        "153"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "重庆吉盛园林景观有限公司",
+      "customerId": "IMP-1E19167CE60E",
+      "projectName": "万科眉山花海/天府国际会议中心项目一期景观一标段",
+      "websiteOld": {
+        "receivableAmount": 3424094,
+        "contractReceivable": 3424094,
+        "receivedAmount": 3424094,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1712047,
+        "contractReceivable": 1712047,
+        "receivedAmount": 1712047,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1712047,
+        "contractReceivable": -1712047,
+        "receivedAmount": -1712047,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "94"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "成都建工第四建筑工程有限公司",
+      "customerId": "IMP-AB162306F1CC",
+      "projectName": "圆中大溪地项目",
+      "websiteOld": {
+        "receivableAmount": 48725559.38,
+        "contractReceivable": 48725559.38,
+        "receivedAmount": 48637374.84,
+        "unpaidAmount": 88184.54
+      },
+      "excelSheet": {
+        "receivableAmount": 47058087.57,
+        "contractReceivable": 47391122.25,
+        "receivedAmount": 47274121.5,
+        "unpaidAmount": 44092.27
+      },
+      "diff": {
+        "receivableAmount": -1667471.81,
+        "contractReceivable": -1334437.13,
+        "receivedAmount": -1363253.34,
+        "unpaidAmount": -44092.27
+      },
+      "sheetNames": [
+        "2"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川仓宇建设工程有限公司",
+      "customerId": "IMP-ED84DB11ACA2",
+      "projectName": "双创中心建设工程项目",
+      "websiteOld": {
+        "receivableAmount": 3406300,
+        "contractReceivable": 3406300,
+        "receivedAmount": 3406300,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1703150,
+        "contractReceivable": 1703150,
+        "receivedAmount": 1703150,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1703150,
+        "contractReceivable": -1703150,
+        "receivedAmount": -1703150,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "138"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川中地恒高景观工程有限公司",
+      "customerId": "IMP-3EC939FFA62E",
+      "projectName": "通威·長湾一期（2020（TR)-75#地块）及样板房、配套幼儿园、消防公园景观工程",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1702774,
+        "contractReceivable": 1702774,
+        "receivedAmount": 1702774,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 1702774,
+        "contractReceivable": 1702774,
+        "receivedAmount": 1702774,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "116"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川正矿建设有限公司",
+      "customerId": "IMP-4713300420E5",
+      "projectName": "商铺",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1701832.3,
+        "contractReceivable": 1701832.3,
+        "receivedAmount": 1701832.3,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 1701832.3,
+        "contractReceivable": 1701832.3,
+        "receivedAmount": 1701832.3,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "89-1-merged-cmn7dv"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川正矿建设有限公司",
+      "customerId": "IMP-4713300420E5",
+      "projectName": "通威·長湾一期（2020（TR）-75#地块商铺）",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1701832.3,
+        "contractReceivable": 1701832.3,
+        "receivedAmount": 1701832.3,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 1701832.3,
+        "contractReceivable": 1701832.3,
+        "receivedAmount": 1701832.3,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "89-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "龙湖新川之心",
+      "websiteOld": {
+        "receivableAmount": 3264440,
+        "contractReceivable": 3264440,
+        "receivedAmount": 3264440,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1632220,
+        "contractReceivable": 1632220,
+        "receivedAmount": 1632220,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1632220,
+        "contractReceivable": -1632220,
+        "receivedAmount": -1632220,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "54"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "重庆建工第二建设有限公司",
+      "customerId": "IMP-8B9637AFC6BA",
+      "projectName": "环天青林上城项目设计、采购、施工（EPC)-砂浆",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 950734,
+        "contractReceivable": 665513.8,
+        "receivedAmount": 0,
+        "unpaidAmount": 665513.8
+      },
+      "diff": {
+        "receivableAmount": 950734,
+        "contractReceivable": 665513.8,
+        "receivedAmount": 0,
+        "unpaidAmount": 665513.8
+      },
+      "sheetNames": [
+        "46-4"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川圣双园林工程有限公司",
+      "customerId": "IMP-D4E52EA670BB",
+      "projectName": "视高中心城一期景观工程项目",
+      "websiteOld": {
+        "receivableAmount": 3225232,
+        "contractReceivable": 3225232,
+        "receivedAmount": 3225232,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1612616,
+        "contractReceivable": 1612616,
+        "receivedAmount": 1612616,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1612616,
+        "contractReceivable": -1612616,
+        "receivedAmount": -1612616,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "47"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川正矿建设有限公司",
+      "customerId": "IMP-4713300420E5",
+      "projectName": "通威·長湾一期（2020（TR）-75#、76#地块）配套幼儿园",
+      "websiteOld": {
+        "receivableAmount": 3111697.1,
+        "contractReceivable": 3111697.1,
+        "receivedAmount": 3111697.1,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1555848.55,
+        "contractReceivable": 1555848.55,
+        "receivedAmount": 1555848.55,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1555848.55,
+        "contractReceivable": -1555848.55,
+        "receivedAmount": -1555848.55,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "89"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川俱能达建设工程有限公司",
+      "customerId": "IMP-64020D0C70FB",
+      "projectName": "仁寿翡翠城二期",
+      "websiteOld": {
+        "receivableAmount": 2986326,
+        "contractReceivable": 2986326,
+        "receivedAmount": 2986326,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1493163,
+        "contractReceivable": 1493163,
+        "receivedAmount": 1493163,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1493163,
+        "contractReceivable": -1493163,
+        "receivedAmount": -1493163,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "110-4"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中建鸿腾建设集团有限公司",
+      "customerId": "IMP-E1B5971A05D5",
+      "projectName": "成都紫光芯城项目",
+      "websiteOld": {
+        "receivableAmount": 2900000.8,
+        "contractReceivable": 2900000.8,
+        "receivedAmount": 2900000.8,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1450000.4,
+        "contractReceivable": 1450000.4,
+        "receivedAmount": 1450000.4,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1450000.4,
+        "contractReceivable": -1450000.4,
+        "receivedAmount": -1450000.4,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "9"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川讯隆建设工程有限公司",
+      "customerId": "IMP-D4A362937FC6",
+      "projectName": "悦府天府云城桩基项工程",
+      "websiteOld": {
+        "receivableAmount": 2869275,
+        "contractReceivable": 2869275,
+        "receivedAmount": 2869275,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1434637.5,
+        "contractReceivable": 1434637.5,
+        "receivedAmount": 1434637.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1434637.5,
+        "contractReceivable": -1434637.5,
+        "receivedAmount": -1434637.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "155"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川志德岩土工程有限责任公司",
+      "customerId": "IMP-D210A7B582D9",
+      "projectName": "奥园园中大溪地11号地块一标段、13#地块地基处理工程",
+      "websiteOld": {
+        "receivableAmount": 2858092.2,
+        "contractReceivable": 2858092.2,
+        "receivedAmount": 2858092.2,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1429046.1,
+        "contractReceivable": 1429046.1,
+        "receivedAmount": 1429046.1,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1429046.1,
+        "contractReceivable": -1429046.1,
+        "receivedAmount": -1429046.1,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "74"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川大鑫供应链管理有限公司",
+      "customerId": "IMP-41AFE8614963",
+      "projectName": "四川眉山环球融创未来城—乐湑89亩项目",
+      "websiteOld": {
+        "receivableAmount": 2565656.5,
+        "contractReceivable": 2565656.5,
+        "receivedAmount": 2280000,
+        "unpaidAmount": 285656.5
+      },
+      "excelSheet": {
+        "receivableAmount": 1282828.25,
+        "contractReceivable": 1282828.25,
+        "receivedAmount": 1140000,
+        "unpaidAmount": 142828.25
+      },
+      "diff": {
+        "receivableAmount": -1282828.25,
+        "contractReceivable": -1282828.25,
+        "receivedAmount": -1140000,
+        "unpaidAmount": -142828.25
+      },
+      "sheetNames": [
+        "166"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川嵩嘉建筑工程有限公司",
+      "customerId": "IMP-DDB338CDD7E8",
+      "projectName": "益州大道南延线路沿石及人行道铺装工程",
+      "websiteOld": {
+        "receivableAmount": 2844130,
+        "contractReceivable": 2844130,
+        "receivedAmount": 2844130,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1422065,
+        "contractReceivable": 1422065,
+        "receivedAmount": 1422065,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1422065,
+        "contractReceivable": -1422065,
+        "receivedAmount": -1422065,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "150"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川蜀巴电力建设工程有限公司",
+      "customerId": "IMP-747F59852111",
+      "projectName": "罗家店——尖山改接大林220KV线路工程",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1381155.5,
+        "contractReceivable": 1381155.5,
+        "receivedAmount": 1381155.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 1381155.5,
+        "contractReceivable": 1381155.5,
+        "receivedAmount": 1381155.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "148"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "成都天府新区鑫磊隆贸易有限公司",
+      "customerId": "IMP-F5330A24B071",
+      "projectName": "籍田柑橘公园路道路建设工程",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1358445,
+        "contractReceivable": 1380145,
+        "receivedAmount": 1393540,
+        "unpaidAmount": -13395
+      },
+      "diff": {
+        "receivableAmount": 1358445,
+        "contractReceivable": 1380145,
+        "receivedAmount": 1393540,
+        "unpaidAmount": -13395
+      },
+      "sheetNames": [
+        "143"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "成都永安建设集团有限公司",
+      "customerId": "IMP-98320814F770",
+      "projectName": "云龙小学",
+      "websiteOld": {
+        "receivableAmount": 1235056.61,
+        "contractReceivable": 1235056.61,
+        "receivedAmount": 799377.04,
+        "unpaidAmount": 435679.57
+      },
+      "excelSheet": {
+        "receivableAmount": 399688.52,
+        "contractReceivable": 399688.52,
+        "receivedAmount": 399688.52,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -835368.09,
+        "contractReceivable": -835368.09,
+        "receivedAmount": -399688.52,
+        "unpaidAmount": -435679.57
+      },
+      "sheetNames": [
+        "124"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "存在merged档案副本，已按原始sheet去重",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川圣双园林工程有限公司",
+      "customerId": "IMP-D4E52EA670BB",
+      "projectName": "天府未来城二期景观工程项目",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1255235,
+        "contractReceivable": 1255235,
+        "receivedAmount": 1255235,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 1255235,
+        "contractReceivable": 1255235,
+        "receivedAmount": 1255235,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "49"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "成都横竖景观设计工程有限公司",
+      "customerId": "IMP-A896ECE5C5DC",
+      "projectName": "万景九洲天府景观项目",
+      "websiteOld": {
+        "receivableAmount": 2367382,
+        "contractReceivable": 2367382,
+        "receivedAmount": 2367382,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1183691,
+        "contractReceivable": 1183691,
+        "receivedAmount": 1183691,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1183691,
+        "contractReceivable": -1183691,
+        "receivedAmount": -1183691,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "95"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川圣双园林工程有限公司",
+      "customerId": "IMP-D4E52EA670BB",
+      "projectName": "天府未来城一期景观工程项目",
+      "websiteOld": {
+        "receivableAmount": 2163838,
+        "contractReceivable": 2163838,
+        "receivedAmount": 2163838,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1081919,
+        "contractReceivable": 1081919,
+        "receivedAmount": 1081919,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -1081919,
+        "contractReceivable": -1081919,
+        "receivedAmount": -1081919,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "48"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川正矿建设有限公司",
+      "customerId": "IMP-4713300420E5",
+      "projectName": "長湾2023（TR）-1号地块一期一标段（砂浆）",
+      "websiteOld": {
+        "receivableAmount": 1602146.1,
+        "contractReceivable": 1619576.1,
+        "receivedAmount": 1110726.1,
+        "unpaidAmount": 508850
+      },
+      "excelSheet": {
+        "receivableAmount": 801073.05,
+        "contractReceivable": 809788.05,
+        "receivedAmount": 555363.05,
+        "unpaidAmount": 254425
+      },
+      "diff": {
+        "receivableAmount": -801073.05,
+        "contractReceivable": -809788.05,
+        "receivedAmount": -555363.05,
+        "unpaidAmount": -254425
+      },
+      "sheetNames": [
+        "173"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "成都鸿盛行贸易有限公司",
+      "customerId": "IMP-BC76567735F9",
+      "projectName": "砂石厂工程",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 1048288,
+        "contractReceivable": 1048288,
+        "receivedAmount": 1048288,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 1048288,
+        "contractReceivable": 1048288,
+        "receivedAmount": 1048288,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "98"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川广安江泓输变电有限公司",
+      "customerId": "IMP-E2820CF516A9",
+      "projectName": "尖山～彭祖双回开断环入山彭串抗站500千伏线路工程",
+      "websiteOld": {
+        "receivableAmount": 1635430,
+        "contractReceivable": 1235585,
+        "receivedAmount": 1640000,
+        "unpaidAmount": -404415
+      },
+      "excelSheet": {
+        "receivableAmount": 817715,
+        "contractReceivable": 617792.5,
+        "receivedAmount": 820000,
+        "unpaidAmount": -202207.5
+      },
+      "diff": {
+        "receivableAmount": -817715,
+        "contractReceivable": -617792.5,
+        "receivedAmount": -820000,
+        "unpaidAmount": 202207.5
+      },
+      "sheetNames": [
+        "91"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "projectName": "川港合作示范园先行启动区二期95#地块",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 576895.78,
+        "contractReceivable": 576895.78,
+        "receivedAmount": 134599.18,
+        "unpaidAmount": 442296.6
+      },
+      "diff": {
+        "receivableAmount": 576895.78,
+        "contractReceivable": 576895.78,
+        "receivedAmount": 134599.18,
+        "unpaidAmount": 442296.6
+      },
+      "sheetNames": [
+        "106"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川陆通建设有限公司",
+      "customerId": "IMP-D8EFE15E68AD",
+      "projectName": "环天卫星星座建设项目（地面站建设）",
+      "websiteOld": {
+        "receivableAmount": 1373757,
+        "contractReceivable": 1373757,
+        "receivedAmount": 752172,
+        "unpaidAmount": 621585
+      },
+      "excelSheet": {
+        "receivableAmount": 686878.5,
+        "contractReceivable": 686878.5,
+        "receivedAmount": 376086,
+        "unpaidAmount": 310792.5
+      },
+      "diff": {
+        "receivableAmount": -686878.5,
+        "contractReceivable": -686878.5,
+        "receivedAmount": -376086,
+        "unpaidAmount": -310792.5
+      },
+      "sheetNames": [
+        "167"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川蓉筑建设工程有限公司",
+      "customerId": "IMP-C55FC57B4E94",
+      "projectName": "天府云城137桩基",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 982043.5,
+        "contractReceivable": 982043.5,
+        "receivedAmount": 982043.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 982043.5,
+        "contractReceivable": 982043.5,
+        "receivedAmount": 982043.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "117"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "乐山市瑞景园林工程有限公司",
+      "customerId": "IMP-A80B230240E5",
+      "projectName": "通威集团全球创新基地-通威長湾一期2020（TR）-76#地块景观工程",
+      "websiteOld": {
+        "receivableAmount": 1838246,
+        "contractReceivable": 1838246,
+        "receivedAmount": 1838246,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 919123,
+        "contractReceivable": 919123,
+        "receivedAmount": 919123,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -919123,
+        "contractReceivable": -919123,
+        "receivedAmount": -919123,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "103"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川兴南建设有限公司",
+      "customerId": "IMP-394496D225DA",
+      "projectName": "兴盛幼儿园",
+      "websiteOld": {
+        "receivableAmount": 1296522,
+        "contractReceivable": 1296522,
+        "receivedAmount": 783446,
+        "unpaidAmount": 513076
+      },
+      "excelSheet": {
+        "receivableAmount": 648261,
+        "contractReceivable": 648261,
+        "receivedAmount": 391723,
+        "unpaidAmount": 256538
+      },
+      "diff": {
+        "receivableAmount": -648261,
+        "contractReceivable": -648261,
+        "receivedAmount": -391723,
+        "unpaidAmount": -256538
+      },
+      "sheetNames": [
+        "79"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川鼎宸固基建设有限公司",
+      "customerId": "IMP-76E766EA3319",
+      "projectName": "环天．青林上城",
+      "websiteOld": {
+        "receivableAmount": 1788471,
+        "contractReceivable": 1788471,
+        "receivedAmount": 1788411,
+        "unpaidAmount": 60
+      },
+      "excelSheet": {
+        "receivableAmount": 894235.5,
+        "contractReceivable": 894235.5,
+        "receivedAmount": 894205.5,
+        "unpaidAmount": 30
+      },
+      "diff": {
+        "receivableAmount": -894235.5,
+        "contractReceivable": -894235.5,
+        "receivedAmount": -894205.5,
+        "unpaidAmount": -30
+      },
+      "sheetNames": [
+        "46-3"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省祥福建设工程有限公司",
+      "customerId": "IMP-7A144D04F055",
+      "projectName": "天府中心城三四期（票结）",
+      "websiteOld": {
+        "receivableAmount": 1492777,
+        "contractReceivable": 1492777,
+        "receivedAmount": 1200000,
+        "unpaidAmount": 292777
+      },
+      "excelSheet": {
+        "receivableAmount": 746388.5,
+        "contractReceivable": 746388.5,
+        "receivedAmount": 600000,
+        "unpaidAmount": 146388.5
+      },
+      "diff": {
+        "receivableAmount": -746388.5,
+        "contractReceivable": -746388.5,
+        "receivedAmount": -600000,
+        "unpaidAmount": -146388.5
+      },
+      "sheetNames": [
+        "35"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川中铭建设有限公司",
+      "customerId": "IMP-B89EBA862C85",
+      "projectName": "眉山天府新区数字市政建设项目（视高大道西延线新建工程）",
+      "websiteOld": {
+        "receivableAmount": 1200524,
+        "contractReceivable": 1200524,
+        "receivedAmount": 1200524,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 403164.5,
+        "contractReceivable": 403164.5,
+        "receivedAmount": 403164.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -797359.5,
+        "contractReceivable": -797359.5,
+        "receivedAmount": -797359.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "154"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省欧荣岩土工程有限公司",
+      "customerId": "IMP-AC76A200DE95",
+      "projectName": "青林上城桩基",
+      "websiteOld": {
+        "receivableAmount": 1160645,
+        "contractReceivable": 1160645,
+        "receivedAmount": 800000,
+        "unpaidAmount": 360645
+      },
+      "excelSheet": {
+        "receivableAmount": 580322.5,
+        "contractReceivable": 580322.5,
+        "receivedAmount": 400000,
+        "unpaidAmount": 180322.5
+      },
+      "diff": {
+        "receivableAmount": -580322.5,
+        "contractReceivable": -580322.5,
+        "receivedAmount": -400000,
+        "unpaidAmount": -180322.5
+      },
+      "sheetNames": [
+        "151"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川中培博天建筑工程有限公司",
+      "customerId": "IMP-CC8703D2F90B",
+      "projectName": "仁寿翡翠城八期售楼部项目",
+      "websiteOld": {
+        "receivableAmount": 1510720,
+        "contractReceivable": 1510720,
+        "receivedAmount": 1510720,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 755360,
+        "contractReceivable": 755360,
+        "receivedAmount": 755360,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -755360,
+        "contractReceivable": -755360,
+        "receivedAmount": -755360,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "28"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川卓昕置业有限公司",
+      "customerId": "IMP-DFD0713C9FC6",
+      "projectName": "其亚国际中心项目总承包建安工程",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 1402221,
+        "receivedAmount": 0,
+        "unpaidAmount": 1402221
+      },
+      "excelSheet": {
+        "receivableAmount": 0,
+        "contractReceivable": 1402221,
+        "receivedAmount": 0,
+        "unpaidAmount": 701110.5
+      },
+      "diff": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": -701110.5
+      },
+      "sheetNames": [
+        "163"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "峨眉山产投供应链管理集团有限公司",
+      "customerId": "IMP-971DFFE8BB7A",
+      "projectName": "四川省乐山市沙湾区全域森林提质改造项目一期林业生产服务配套公路（沙湾区X025峨沙路峨眉山地界至三峨山村段美丽乡村路）项目",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 679422.11,
+        "contractReceivable": 543537.69,
+        "receivedAmount": 543537.69,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 679422.11,
+        "contractReceivable": 543537.69,
+        "receivedAmount": 543537.69,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "176"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川庚泽建筑工程有限公司",
+      "customerId": "IMP-8515BA4C85A3",
+      "projectName": "通威·長湾销售中心",
+      "websiteOld": {
+        "receivableAmount": 1310655,
+        "contractReceivable": 1310655,
+        "receivedAmount": 1310655,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 655327.5,
+        "contractReceivable": 655327.5,
+        "receivedAmount": 655327.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -655327.5,
+        "contractReceivable": -655327.5,
+        "receivedAmount": -655327.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "44"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省慧博智城建设工程有限公司",
+      "customerId": "IMP-8AF57151D041",
+      "projectName": "四川省科技职业学院整体迁建项目西区（体育馆项目）",
+      "websiteOld": {
+        "receivableAmount": 1271520,
+        "contractReceivable": 1273800,
+        "receivedAmount": 1270000,
+        "unpaidAmount": 3800
+      },
+      "excelSheet": {
+        "receivableAmount": 635760,
+        "contractReceivable": 636900,
+        "receivedAmount": 635000,
+        "unpaidAmount": 1900
+      },
+      "diff": {
+        "receivableAmount": -635760,
+        "contractReceivable": -636900,
+        "receivedAmount": -635000,
+        "unpaidAmount": -1900
+      },
+      "sheetNames": [
+        "158"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川天府蓉创文化旅游有限责任公司",
+      "customerId": "IMP-AFB632C7C79E",
+      "projectName": "大林镇探索王国项目",
+      "websiteOld": {
+        "receivableAmount": 1239320,
+        "contractReceivable": 1239320,
+        "receivedAmount": 1239320,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 619660,
+        "contractReceivable": 619660,
+        "receivedAmount": 619660,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -619660,
+        "contractReceivable": -619660,
+        "receivedAmount": -619660,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "93"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中桓建工集团有限公司",
+      "customerId": "IMP-11F4B83ADFF7",
+      "projectName": "环天山屿城102项目",
+      "websiteOld": {
+        "receivableAmount": 1223505,
+        "contractReceivable": 1223505,
+        "receivedAmount": 1223505,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 611752.5,
+        "contractReceivable": 611752.5,
+        "receivedAmount": 611752.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -611752.5,
+        "contractReceivable": -611752.5,
+        "receivedAmount": -611752.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "102"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省欧荣岩土工程有限公司",
+      "customerId": "IMP-AC76A200DE95",
+      "projectName": "天府.白鹭湾",
+      "websiteOld": {
+        "receivableAmount": 1201069,
+        "contractReceivable": 1201069,
+        "receivedAmount": 1201069,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 600534.5,
+        "contractReceivable": 600534.5,
+        "receivedAmount": 600534.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -600534.5,
+        "contractReceivable": -600534.5,
+        "receivedAmount": -600534.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "80"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川煌峰建筑工程有限公司",
+      "customerId": "IMP-92A59B812C4A",
+      "projectName": "国产类脑智能",
+      "websiteOld": {
+        "receivableAmount": 1179170,
+        "contractReceivable": 1179170,
+        "receivedAmount": 1179170,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 589585,
+        "contractReceivable": 589585,
+        "receivedAmount": 589585,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -589585,
+        "contractReceivable": -589585,
+        "receivedAmount": -589585,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "171-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川犍新宇建筑劳务有限公司",
+      "customerId": "IMP-82E0A49136AF",
+      "projectName": "麓府、合能铂悦华庭、苜开云著、麓湖生态城组团、 川发天府上城、蓝润 MIC、 保利天府时区、 龙光天瀛项目",
+      "websiteOld": {
+        "receivableAmount": 1142758.2,
+        "contractReceivable": 1142758.2,
+        "receivedAmount": 1142758.2,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 571379.1,
+        "contractReceivable": 571379.1,
+        "receivedAmount": 571379.1,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -571379.1,
+        "contractReceivable": -571379.1,
+        "receivedAmount": -571379.1,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "82"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "成都恒秀宏远景观工程有限公司/四川天益建筑工程有限公司",
+      "customerId": "IMP-D44BA5FCF129",
+      "projectName": "天府新区眉山片区视高项目景观工程/四川铂智荟创新引擎国际社区项目一期工程",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 554953,
+        "contractReceivable": 554953,
+        "receivedAmount": 554953,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 554953,
+        "contractReceivable": 554953,
+        "receivedAmount": 554953,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "68"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中铁北京工程局集团有限公司",
+      "customerId": "IMP-E8E66B9B5F60",
+      "projectName": "航空学院项目",
+      "websiteOld": {
+        "receivableAmount": 1098890,
+        "contractReceivable": 1098890,
+        "receivedAmount": 1098890,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 549445,
+        "contractReceivable": 549445,
+        "receivedAmount": 549445,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -549445,
+        "contractReceivable": -549445,
+        "receivedAmount": -549445,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "78"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川中恩岩土工程有限公司",
+      "customerId": "IMP-6A125BC2B532",
+      "projectName": "天府中心城",
+      "websiteOld": {
+        "receivableAmount": 1096666,
+        "contractReceivable": 1096666,
+        "receivedAmount": 1096666,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 548333,
+        "contractReceivable": 548333,
+        "receivedAmount": 548333,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -548333,
+        "contractReceivable": -548333,
+        "receivedAmount": -548333,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "92"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中烨国际建工有限公司",
+      "customerId": "IMP-092104235009",
+      "projectName": "天府中心城三四期",
+      "websiteOld": {
+        "receivableAmount": 6377460,
+        "contractReceivable": 6377460,
+        "receivedAmount": 6377460,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 5850507.5,
+        "contractReceivable": 5955898,
+        "receivedAmount": 5826065,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -526952.5,
+        "contractReceivable": -421562,
+        "receivedAmount": -551395,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "53"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川煌峰建筑工程有限公司",
+      "customerId": "IMP-92A59B812C4A",
+      "projectName": "四川通安天府航空实业智能交通系统生产线新建项目（二期）",
+      "websiteOld": {
+        "receivableAmount": 755175,
+        "contractReceivable": 915029,
+        "receivedAmount": 1200000,
+        "unpaidAmount": -284971
+      },
+      "excelSheet": {
+        "receivableAmount": 377587.5,
+        "contractReceivable": 457514.5,
+        "receivedAmount": 600000,
+        "unpaidAmount": -142485.5
+      },
+      "diff": {
+        "receivableAmount": -377587.5,
+        "contractReceivable": -457514.5,
+        "receivedAmount": -600000,
+        "unpaidAmount": 142485.5
+      },
+      "sheetNames": [
+        "171"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "重庆利融建设有限公司",
+      "customerId": "IMP-8C6E9669BAA2",
+      "projectName": "环球融创未来城-乐湑62、89亩高层户内保温地坪施工工程",
+      "websiteOld": {
+        "receivableAmount": 861020,
+        "contractReceivable": 939900,
+        "receivedAmount": 800000,
+        "unpaidAmount": 139900
+      },
+      "excelSheet": {
+        "receivableAmount": 430510,
+        "contractReceivable": 469950,
+        "receivedAmount": 400000,
+        "unpaidAmount": 69950
+      },
+      "diff": {
+        "receivableAmount": -430510,
+        "contractReceivable": -469950,
+        "receivedAmount": -400000,
+        "unpaidAmount": -69950
+      },
+      "sheetNames": [
+        "160"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川达虹宇建筑工程有限公司",
+      "customerId": "IMP-17E58C8F0761",
+      "projectName": "环球融创未来城项目",
+      "websiteOld": {
+        "receivableAmount": 958606,
+        "contractReceivable": 958606,
+        "receivedAmount": 954506,
+        "unpaidAmount": 4100
+      },
+      "excelSheet": {
+        "receivableAmount": 479303,
+        "contractReceivable": 479303,
+        "receivedAmount": 477253,
+        "unpaidAmount": 2050
+      },
+      "diff": {
+        "receivableAmount": -479303,
+        "contractReceivable": -479303,
+        "receivedAmount": -477253,
+        "unpaidAmount": -2050
+      },
+      "sheetNames": [
+        "149"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川东永胜建设工程有限公司",
+      "customerId": "IMP-CEE20709E03B",
+      "projectName": "中铁双龙艺术小镇=期 (六批次及后续批次)旋挖孔 桩基工程项目",
+      "websiteOld": {
+        "receivableAmount": 962692,
+        "contractReceivable": 962692,
+        "receivedAmount": 962692,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 481346,
+        "contractReceivable": 481346,
+        "receivedAmount": 481346,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -481346,
+        "contractReceivable": -481346,
+        "receivedAmount": -481346,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "81"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "万科天府国际会议中心二期",
+      "websiteOld": {
+        "receivableAmount": 939738,
+        "contractReceivable": 939738,
+        "receivedAmount": 939738,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 469869,
+        "contractReceivable": 469869,
+        "receivedAmount": 469869,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -469869,
+        "contractReceivable": -469869,
+        "receivedAmount": -469869,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "62"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川云遥电力建设有限公司",
+      "customerId": "IMP-A8594E48FF26",
+      "projectName": "彭祖—枣树第三回220KV线路工程",
+      "websiteOld": {
+        "receivableAmount": 916655,
+        "contractReceivable": 916655,
+        "receivedAmount": 916655,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 458327.5,
+        "contractReceivable": 458327.5,
+        "receivedAmount": 458327.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -458327.5,
+        "contractReceivable": -458327.5,
+        "receivedAmount": -458327.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "135"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省第四建筑有限公司",
+      "customerId": "IMP-33F754653826",
+      "projectName": "中法农业科技园配套道路（中区1号路）总承包工程",
+      "websiteOld": {
+        "receivableAmount": 804084.5,
+        "contractReceivable": 804084.5,
+        "receivedAmount": 804084.5,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 402042.25,
+        "contractReceivable": 402042.25,
+        "receivedAmount": 402042.25,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -402042.25,
+        "contractReceivable": -402042.25,
+        "receivedAmount": -402042.25,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "87"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "环球融创未来城-童话小镇项目一期95亩边坡护壁工程",
+      "websiteOld": {
+        "receivableAmount": 769490,
+        "contractReceivable": 769490,
+        "receivedAmount": 769490,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 384745,
+        "contractReceivable": 384745,
+        "receivedAmount": 384745,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -384745,
+        "contractReceivable": -384745,
+        "receivedAmount": -384745,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "59"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川薪隆新能源有限公司",
+      "customerId": "IMP-78E0CD6C5103",
+      "projectName": "籍田充电设备及配套设施",
+      "websiteOld": {
+        "receivableAmount": 730835,
+        "contractReceivable": 730835,
+        "receivedAmount": 730835,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 365417.5,
+        "contractReceivable": 365417.5,
+        "receivedAmount": 365417.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -365417.5,
+        "contractReceivable": -365417.5,
+        "receivedAmount": -365417.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "114"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "深圳市赛能达实业发展有限公司",
+      "customerId": "IMP-AAA2C105A360",
+      "projectName": "水电六局成眉轨道交通S5线",
+      "websiteOld": {
+        "receivableAmount": 662841.08,
+        "contractReceivable": 662841.08,
+        "receivedAmount": 600000,
+        "unpaidAmount": 62841.08
+      },
+      "excelSheet": {
+        "receivableAmount": 331420.54,
+        "contractReceivable": 331420.54,
+        "receivedAmount": 300000,
+        "unpaidAmount": 31420.54
+      },
+      "diff": {
+        "receivableAmount": -331420.54,
+        "contractReceivable": -331420.54,
+        "receivedAmount": -300000,
+        "unpaidAmount": -31420.54
+      },
+      "sheetNames": [
+        "147"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川傲营建筑工程有限公司",
+      "customerId": "IMP-31153F1434E2",
+      "projectName": "天府翡翠城一期一批次项目示范区景观工程",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 337352,
+        "contractReceivable": 337352,
+        "receivedAmount": 337352,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 337352,
+        "contractReceivable": 337352,
+        "receivedAmount": 337352,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "133"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川正龙烨建筑工程有限公司",
+      "customerId": "IMP-2D222097CB32",
+      "projectName": "融创未来城-乐源95一二标段",
+      "websiteOld": {
+        "receivableAmount": 644880,
+        "contractReceivable": 644880,
+        "receivedAmount": 631060,
+        "unpaidAmount": 13820
+      },
+      "excelSheet": {
+        "receivableAmount": 322440,
+        "contractReceivable": 322440,
+        "receivedAmount": 315530,
+        "unpaidAmount": 6910
+      },
+      "diff": {
+        "receivableAmount": -322440,
+        "contractReceivable": -322440,
+        "receivedAmount": -315530,
+        "unpaidAmount": -6910
+      },
+      "sheetNames": [
+        "142"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "天府万科城山体公园二批次(32#地块)二标段边坡支护项目（36#地块",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 326757.6,
+        "contractReceivable": 326757.6,
+        "receivedAmount": 326757.6,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 326757.6,
+        "contractReceivable": 326757.6,
+        "receivedAmount": 326757.6,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "65-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川煌峰建筑工程有限公司",
+      "customerId": "IMP-92A59B812C4A",
+      "projectName": "国产类脑智能，通信安全设备以及龙勃天线产业化项目",
+      "websiteOld": {
+        "receivableAmount": 622649,
+        "contractReceivable": 622649,
+        "receivedAmount": 622649,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 311324.5,
+        "contractReceivable": 311324.5,
+        "receivedAmount": 311324.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -311324.5,
+        "contractReceivable": -311324.5,
+        "receivedAmount": -311324.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "136"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川锦天下园林工程有限公司",
+      "customerId": "IMP-C07A92CE996B",
+      "projectName": "兰大伯克利中外合作办学眉山项目2021-（TR）-1#地块项目示范区园林景观工程",
+      "websiteOld": {
+        "receivableAmount": 326120,
+        "contractReceivable": 326120,
+        "receivedAmount": 600000,
+        "unpaidAmount": -273880
+      },
+      "excelSheet": {
+        "receivableAmount": 163060,
+        "contractReceivable": 163060,
+        "receivedAmount": 300000,
+        "unpaidAmount": -136940
+      },
+      "diff": {
+        "receivableAmount": -163060,
+        "contractReceivable": -163060,
+        "receivedAmount": -300000,
+        "unpaidAmount": 136940
+      },
+      "sheetNames": [
+        "50"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省益正地基基础工程有限公司",
+      "customerId": "IMP-9E09ADEEFE05",
+      "projectName": "天府翡翠城2号地块桩基",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 282523,
+        "contractReceivable": 282523,
+        "receivedAmount": 282523,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 282523,
+        "contractReceivable": 282523,
+        "receivedAmount": 282523,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "168-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "高通环保科技股份有限公司",
+      "customerId": "IMP-C170F95AEB59",
+      "projectName": "地坪",
+      "websiteOld": {
+        "receivableAmount": 563760,
+        "contractReceivable": 563760,
+        "receivedAmount": 563760,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 281880,
+        "contractReceivable": 281880,
+        "receivedAmount": 281880,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -281880,
+        "contractReceivable": -281880,
+        "receivedAmount": -281880,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "129"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川中福盛源供应链管理有限公司",
+      "customerId": "IMP-F137B380B997",
+      "projectName": "西部大区物资堆场及维修中心",
+      "websiteOld": {
+        "receivableAmount": 434760,
+        "contractReceivable": 434760,
+        "receivedAmount": 329960,
+        "unpaidAmount": 104800
+      },
+      "excelSheet": {
+        "receivableAmount": 217380,
+        "contractReceivable": 217380,
+        "receivedAmount": 164980,
+        "unpaidAmount": 52400
+      },
+      "diff": {
+        "receivableAmount": -217380,
+        "contractReceivable": -217380,
+        "receivedAmount": -164980,
+        "unpaidAmount": -52400
+      },
+      "sheetNames": [
+        "165-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川冶创建筑工程集团有限公司",
+      "customerId": "IMP-520F39AA77A5",
+      "projectName": "环天.时代中心2019（TR）-61、62号地块“口袋公园”景观项目",
+      "websiteOld": {
+        "receivableAmount": 534792,
+        "contractReceivable": 534792,
+        "receivedAmount": 534792,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 267396,
+        "contractReceivable": 267396,
+        "receivedAmount": 267396,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -267396,
+        "contractReceivable": -267396,
+        "receivedAmount": -267396,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "26"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川傲营建筑工程有限公司",
+      "customerId": "IMP-31153F1434E2",
+      "projectName": "天府翡翠城一期一批次项目景观园林工程",
+      "websiteOld": {
+        "receivableAmount": 519916.5,
+        "contractReceivable": 519916.5,
+        "receivedAmount": 519916,
+        "unpaidAmount": 0.5
+      },
+      "excelSheet": {
+        "receivableAmount": 259958.25,
+        "contractReceivable": 259958.25,
+        "receivedAmount": 259958,
+        "unpaidAmount": 0.25
+      },
+      "diff": {
+        "receivableAmount": -259958.25,
+        "contractReceivable": -259958.25,
+        "receivedAmount": -259958,
+        "unpaidAmount": -0.25
+      },
+      "sheetNames": [
+        "133-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川华睿能电力建设有限责任公司",
+      "customerId": "IMP-7DFCCF85A49F",
+      "projectName": "眉山清水110千伏输变电工程元通-视高π入清水变110kV线路工程",
+      "websiteOld": {
+        "receivableAmount": 282630,
+        "contractReceivable": 282630,
+        "receivedAmount": 221910,
+        "unpaidAmount": 121440
+      },
+      "excelSheet": {
+        "receivableAmount": 161190,
+        "contractReceivable": 161190,
+        "receivedAmount": 161190,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -121440,
+        "contractReceivable": -121440,
+        "receivedAmount": -60720,
+        "unpaidAmount": -121440
+      },
+      "sheetNames": [
+        "130"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "projectName": "万科城35#地块",
+      "websiteOld": {
+        "receivableAmount": 482092,
+        "contractReceivable": 482092,
+        "receivedAmount": 482092,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 241046,
+        "contractReceivable": 241046,
+        "receivedAmount": 241046,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -241046,
+        "contractReceivable": -241046,
+        "receivedAmount": -241046,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "61"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川润辉鑫成电力工程有限公司",
+      "customerId": "IMP-86D21AA7F105",
+      "projectName": "市域铁路成都至眉山（S5）工程500KV电力线路迁改工程",
+      "websiteOld": {
+        "receivableAmount": 458170,
+        "contractReceivable": 458170,
+        "receivedAmount": 454432,
+        "unpaidAmount": 3738
+      },
+      "excelSheet": {
+        "receivableAmount": 229085,
+        "contractReceivable": 229085,
+        "receivedAmount": 227216,
+        "unpaidAmount": 1869
+      },
+      "diff": {
+        "receivableAmount": -229085,
+        "contractReceivable": -229085,
+        "receivedAmount": -227216,
+        "unpaidAmount": -1869
+      },
+      "sheetNames": [
+        "145"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "攀枝花攀甬路桥建设有限公司",
+      "customerId": "IMP-AD2A1EA07861",
+      "projectName": "眉山天府新区公路平交口改造",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 225400,
+        "contractReceivable": 225400,
+        "receivedAmount": 225400,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 225400,
+        "contractReceivable": 225400,
+        "receivedAmount": 225400,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "146"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "鸿鑫英达",
+      "customerId": "IMP-AC95FF651895",
+      "projectName": "文宫逸雅苑",
+      "websiteOld": {
+        "receivableAmount": 426910,
+        "contractReceivable": 426910,
+        "receivedAmount": 426910,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 213455,
+        "contractReceivable": 213455,
+        "receivedAmount": 213455,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -213455,
+        "contractReceivable": -213455,
+        "receivedAmount": -213455,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "113"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省益正地基基础工程有限公司",
+      "customerId": "IMP-9E09ADEEFE05",
+      "projectName": "天府翡翠城一期二批次桩基",
+      "websiteOld": {
+        "receivableAmount": 373190,
+        "contractReceivable": 529770,
+        "receivedAmount": 499510,
+        "unpaidAmount": 30260
+      },
+      "excelSheet": {
+        "receivableAmount": 186595,
+        "contractReceivable": 264885,
+        "receivedAmount": 249755,
+        "unpaidAmount": 15130
+      },
+      "diff": {
+        "receivableAmount": -186595,
+        "contractReceivable": -264885,
+        "receivedAmount": -249755,
+        "unpaidAmount": -15130
+      },
+      "sheetNames": [
+        "168"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川鼎冠瑞恒建筑工程有限公司",
+      "customerId": "IMP-3C8932029408",
+      "projectName": "五里社区道路硬化改造项目",
+      "websiteOld": {
+        "receivableAmount": 390540,
+        "contractReceivable": 390540,
+        "receivedAmount": 390540,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 195270,
+        "contractReceivable": 195270,
+        "receivedAmount": 195270,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -195270,
+        "contractReceivable": -195270,
+        "receivedAmount": -195270,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "164-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川鼎冠瑞恒建筑工程有限公司",
+      "customerId": "IMP-3C8932029408",
+      "projectName": "眉山天府新区视高154亩商住项目设计、采购、施工（EPC)标段",
+      "websiteOld": {
+        "receivableAmount": 383540,
+        "contractReceivable": 383540,
+        "receivedAmount": 383540,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 191770,
+        "contractReceivable": 191770,
+        "receivedAmount": 191770,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -191770,
+        "contractReceivable": -191770,
+        "receivedAmount": -191770,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "164"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川景秀河山景观工程有限公司",
+      "customerId": "IMP-3AA8369FBE11",
+      "projectName": "仁寿中心城一期一批次项目园林景观工程",
+      "websiteOld": {
+        "receivableAmount": 1385426,
+        "contractReceivable": 1385426,
+        "receivedAmount": 1330000,
+        "unpaidAmount": 55426
+      },
+      "excelSheet": {
+        "receivableAmount": 1241003.7100000002,
+        "contractReceivable": 1038307.09,
+        "receivedAmount": 1280000,
+        "unpaidAmount": 27713
+      },
+      "diff": {
+        "receivableAmount": -144422.29,
+        "contractReceivable": -347118.91,
+        "receivedAmount": -50000,
+        "unpaidAmount": -27713
+      },
+      "sheetNames": [
+        "83"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川中地恒高景观工程有限公司视高分公司",
+      "customerId": "IMP-9C22A1F79902",
+      "projectName": "天府云城B区园林景观工程——1标段",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 160276,
+        "contractReceivable": 160276,
+        "receivedAmount": 160276,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 160276,
+        "contractReceivable": 160276,
+        "receivedAmount": 160276,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "116-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "陕西丰锐达建设工程有限公司",
+      "customerId": "IMP-5AC4B0EA52CE",
+      "projectName": "环球融创未来城--乐源77亩项目",
+      "websiteOld": {
+        "receivableAmount": 70444,
+        "contractReceivable": 140888,
+        "receivedAmount": 75666,
+        "unpaidAmount": 100444
+      },
+      "excelSheet": {
+        "receivableAmount": 0,
+        "contractReceivable": 35222,
+        "receivedAmount": 20222,
+        "unpaidAmount": 15000
+      },
+      "diff": {
+        "receivableAmount": -70444,
+        "contractReceivable": -105666,
+        "receivedAmount": -55444,
+        "unpaidAmount": -85444
+      },
+      "sheetNames": [
+        "118"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川林超元建材有限公司",
+      "customerId": "IMP-478FF4FB1AD7",
+      "projectName": "江口水镇一期",
+      "websiteOld": {
+        "receivableAmount": 310380,
+        "contractReceivable": 310380,
+        "receivedAmount": 310380,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 155190,
+        "contractReceivable": 155190,
+        "receivedAmount": 155190,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -155190,
+        "contractReceivable": -155190,
+        "receivedAmount": -155190,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "139"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川锦天下园林工程有限公司",
+      "customerId": "IMP-C07A92CE996B",
+      "projectName": "恒邦川港66、67地块围墙挡墙工程",
+      "websiteOld": {
+        "receivableAmount": 133540,
+        "contractReceivable": 133540,
+        "receivedAmount": 0,
+        "unpaidAmount": 133540
+      },
+      "excelSheet": {
+        "receivableAmount": 66770,
+        "contractReceivable": 66770,
+        "receivedAmount": 0,
+        "unpaidAmount": 66770
+      },
+      "diff": {
+        "receivableAmount": -66770,
+        "contractReceivable": -66770,
+        "receivedAmount": 0,
+        "unpaidAmount": -66770
+      },
+      "sheetNames": [
+        "51"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "西充聚号宇商贸有限公司",
+      "customerId": "IMP-3CC2D0ADB48B",
+      "projectName": "眉山天府新区牧马镇全域污水处理工程",
+      "websiteOld": {
+        "receivableAmount": 259500,
+        "contractReceivable": 259500,
+        "receivedAmount": 252130,
+        "unpaidAmount": 7370
+      },
+      "excelSheet": {
+        "receivableAmount": 129750,
+        "contractReceivable": 129750,
+        "receivedAmount": 126065,
+        "unpaidAmount": 3685
+      },
+      "diff": {
+        "receivableAmount": -129750,
+        "contractReceivable": -129750,
+        "receivedAmount": -126065,
+        "unpaidAmount": -3685
+      },
+      "sheetNames": [
+        "178"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川中福盛源供应链管理有限公司",
+      "customerId": "IMP-F137B380B997",
+      "projectName": "長湾 2023（TR）-1 号地块一期二标段",
+      "websiteOld": {
+        "receivableAmount": 166920,
+        "contractReceivable": 166920,
+        "receivedAmount": 260000,
+        "unpaidAmount": -93080
+      },
+      "excelSheet": {
+        "receivableAmount": 83460,
+        "contractReceivable": 83460,
+        "receivedAmount": 130000,
+        "unpaidAmount": -46540
+      },
+      "diff": {
+        "receivableAmount": -83460,
+        "contractReceivable": -83460,
+        "receivedAmount": -130000,
+        "unpaidAmount": 46540
+      },
+      "sheetNames": [
+        "165"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川省欧荣岩土工程有限公司/四川蓉筑建设工程有限公司",
+      "customerId": "IMP-5FE120BB69A7",
+      "projectName": "天府云城C地块",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 123058,
+        "contractReceivable": 123058,
+        "receivedAmount": 123058,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 123058,
+        "contractReceivable": 123058,
+        "receivedAmount": 123058,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "117-1"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "成都德裕隆机电工程有限公司",
+      "customerId": "IMP-E18B7129FBDA",
+      "projectName": "盛世锦都",
+      "websiteOld": {
+        "receivableAmount": 236320,
+        "contractReceivable": 236320,
+        "receivedAmount": 236320,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 118160,
+        "contractReceivable": 118160,
+        "receivedAmount": 118160,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -118160,
+        "contractReceivable": -118160,
+        "receivedAmount": -118160,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "121"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川志德岩土工程有限责任公司",
+      "customerId": "IMP-D210A7B582D9",
+      "projectName": "荣盛桩基工程",
+      "websiteOld": {
+        "receivableAmount": 227475,
+        "contractReceivable": 227475,
+        "receivedAmount": 227475,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 113737.5,
+        "contractReceivable": 113737.5,
+        "receivedAmount": 113737.5,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -113737.5,
+        "contractReceivable": -113737.5,
+        "receivedAmount": -113737.5,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "72"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川祥禾齐胜建设工程有限公司",
+      "customerId": "IMP-5384AB88A2ED",
+      "projectName": "环天·青林上城园林景观工程",
+      "websiteOld": {
+        "receivableAmount": 174840,
+        "contractReceivable": 174840,
+        "receivedAmount": 183158,
+        "unpaidAmount": -8318
+      },
+      "excelSheet": {
+        "receivableAmount": 87420,
+        "contractReceivable": 87420,
+        "receivedAmount": 91579,
+        "unpaidAmount": -4159
+      },
+      "diff": {
+        "receivableAmount": -87420,
+        "contractReceivable": -87420,
+        "receivedAmount": -91579,
+        "unpaidAmount": 4159
+      },
+      "sheetNames": [
+        "132"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川中星禾商贸有限公司",
+      "customerId": "IMP-80985F56E614",
+      "projectName": "仁寿县G213.G351易发多发交通事故段综合整治(仙女滩桥加固)工程",
+      "websiteOld": {
+        "receivableAmount": 152520,
+        "contractReceivable": 152520,
+        "receivedAmount": 152520,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 76260,
+        "contractReceivable": 76260,
+        "receivedAmount": 76260,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -76260,
+        "contractReceivable": -76260,
+        "receivedAmount": -76260,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "115"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "成都永安建设集团有限公司",
+      "customerId": "IMP-98320814F770",
+      "projectName": "秦皇帝锦三期二标段",
+      "websiteOld": {
+        "receivableAmount": 105090.18,
+        "contractReceivable": 105090.18,
+        "receivedAmount": 90717.68,
+        "unpaidAmount": 14372.5
+      },
+      "excelSheet": {
+        "receivableAmount": 45358.84,
+        "contractReceivable": 45358.84,
+        "receivedAmount": 45358.84,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -59731.34,
+        "contractReceivable": -59731.34,
+        "receivedAmount": -45358.84,
+        "unpaidAmount": -14372.5
+      },
+      "sheetNames": [
+        "122"
+      ],
+      "ledgerProfileCount": 2,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "存在merged档案副本，已按原始sheet去重",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川华西数产科技集团有限公司",
+      "customerId": "IMP-5BD4CA0F0757",
+      "projectName": "乐山城区旧房改造",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 49820.18,
+        "contractReceivable": 49820.18,
+        "receivedAmount": 37052,
+        "unpaidAmount": 12768.18
+      },
+      "diff": {
+        "receivableAmount": 49820.18,
+        "contractReceivable": 49820.18,
+        "receivedAmount": 37052,
+        "unpaidAmount": 12768.18
+      },
+      "sheetNames": [
+        "188"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川中地恒高景观工程有限公司视高分公司",
+      "customerId": "IMP-9C22A1F79902",
+      "projectName": "眉山联想叠云创新科技园三期74#地园林景观",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 38030,
+        "contractReceivable": 38030,
+        "receivedAmount": 38000,
+        "unpaidAmount": 30
+      },
+      "diff": {
+        "receivableAmount": 38030,
+        "contractReceivable": 38030,
+        "receivedAmount": 38000,
+        "unpaidAmount": 30
+      },
+      "sheetNames": [
+        "144"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川怡诚石油天然气工程有限公司",
+      "customerId": "IMP-70227D561C89",
+      "projectName": "中部片区中建大道管道供气工程",
+      "websiteOld": {
+        "receivableAmount": 49880,
+        "contractReceivable": 49880,
+        "receivedAmount": 49880,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 24940,
+        "contractReceivable": 24940,
+        "receivedAmount": 24940,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -24940,
+        "contractReceivable": -24940,
+        "receivedAmount": -24940,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "109"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "中町建设有限公司",
+      "customerId": "IMP-CD7D54BA9E0E",
+      "projectName": "高家镇2025年一定规模自然村通硬化路项目",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 51750,
+        "receivedAmount": 100000,
+        "unpaidAmount": -48250
+      },
+      "excelSheet": {
+        "receivableAmount": 0,
+        "contractReceivable": 25875,
+        "receivedAmount": 50000,
+        "unpaidAmount": -24125
+      },
+      "diff": {
+        "receivableAmount": 0,
+        "contractReceivable": -25875,
+        "receivedAmount": -50000,
+        "unpaidAmount": 24125
+      },
+      "sheetNames": [
+        "179"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川闻渤建设工程有限公司",
+      "customerId": "IMP-95C80DBF1327",
+      "projectName": "眉山天府新区视高街道老旧小区改造项目施工一标段",
+      "websiteOld": {
+        "receivableAmount": 40920,
+        "contractReceivable": 40920,
+        "receivedAmount": 40920,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 20460,
+        "contractReceivable": 20460,
+        "receivedAmount": 20460,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -20460,
+        "contractReceivable": -20460,
+        "receivedAmount": -20460,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "175"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川坤达誉腾建设工程有限公司",
+      "customerId": "IMP-63D711FE235F",
+      "projectName": "天鹅包项目",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 0,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 12480,
+        "contractReceivable": 12480,
+        "receivedAmount": 12480,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": 12480,
+        "contractReceivable": 12480,
+        "receivedAmount": 12480,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "152"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "远威集团有限公司",
+      "customerId": "IMP-AECA5C3ED105",
+      "projectName": "科创园项目（太行山实验室）",
+      "websiteOld": {
+        "receivableAmount": 22800,
+        "contractReceivable": 22800,
+        "receivedAmount": 22800,
+        "unpaidAmount": 0
+      },
+      "excelSheet": {
+        "receivableAmount": 11400,
+        "contractReceivable": 11400,
+        "receivedAmount": 11400,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -11400,
+        "contractReceivable": -11400,
+        "receivedAmount": -11400,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "107"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川泰宏裕建设工程有限公司",
+      "customerId": "IMP-BB2E1DC3958B",
+      "projectName": "盛世华庭总坪",
+      "websiteOld": {
+        "receivableAmount": 7800,
+        "contractReceivable": 7800,
+        "receivedAmount": 5040,
+        "unpaidAmount": 2760
+      },
+      "excelSheet": {
+        "receivableAmount": 2520,
+        "contractReceivable": 2520,
+        "receivedAmount": 2520,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -5280,
+        "contractReceivable": -5280,
+        "receivedAmount": -2520,
+        "unpaidAmount": -2760
+      },
+      "sheetNames": [
+        "123"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川泰宏裕建设工程有限公司",
+      "customerId": "IMP-BB2E1DC3958B",
+      "projectName": "盛世华庭总坪项目",
+      "websiteOld": {
+        "receivableAmount": 2760,
+        "contractReceivable": 2760,
+        "receivedAmount": 2760,
+        "unpaidAmount": 2760
+      },
+      "excelSheet": {
+        "receivableAmount": 2520,
+        "contractReceivable": 2520,
+        "receivedAmount": 2520,
+        "unpaidAmount": 0
+      },
+      "diff": {
+        "receivableAmount": -240,
+        "contractReceivable": -240,
+        "receivedAmount": -240,
+        "unpaidAmount": -2760
+      },
+      "sheetNames": [
+        "123-merged-cmn7dv"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川筑亿商贸有限公司",
+      "customerId": "IMP-6448711E2C90",
+      "projectName": "成眉高新技术产业园区基础设施项目",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 243932.5,
+        "receivedAmount": 0,
+        "unpaidAmount": 243932.5
+      },
+      "excelSheet": {
+        "receivableAmount": 0,
+        "contractReceivable": 487865,
+        "receivedAmount": 0,
+        "unpaidAmount": 243932.5
+      },
+      "diff": {
+        "receivableAmount": 0,
+        "contractReceivable": 243932.5,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "187"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "昊熠建设集团有限公司",
+      "customerId": "IMP-92204DD781A1",
+      "projectName": "红色传说文化旅游项目",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 70737.45,
+        "receivedAmount": 0,
+        "unpaidAmount": 70737.45
+      },
+      "excelSheet": {
+        "receivableAmount": 0,
+        "contractReceivable": 141474.9,
+        "receivedAmount": 0,
+        "unpaidAmount": 70737.45
+      },
+      "diff": {
+        "receivableAmount": 0,
+        "contractReceivable": 70737.45,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "191"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川良盟建筑工程有限公司",
+      "customerId": "IMP-05AD7160ADF7",
+      "projectName": "滨江郦城二期B1（售楼部首开区地块）",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 109965.07,
+        "receivedAmount": 0,
+        "unpaidAmount": 109965.07
+      },
+      "excelSheet": {
+        "receivableAmount": 0,
+        "contractReceivable": 219930.14,
+        "receivedAmount": 0,
+        "unpaidAmount": 109965.07
+      },
+      "diff": {
+        "receivableAmount": 0,
+        "contractReceivable": 109965.07,
+        "receivedAmount": 0,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "172"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    },
+    {
+      "customerName": "四川忠德油气安装工程有限公司",
+      "customerId": "IMP-5E36C08334F0",
+      "projectName": "中建钢构四川有限公司公共项目压力管道改造工程",
+      "websiteOld": {
+        "receivableAmount": 0,
+        "contractReceivable": 46625,
+        "receivedAmount": 35025,
+        "unpaidAmount": 11600
+      },
+      "excelSheet": {
+        "receivableAmount": 0,
+        "contractReceivable": 93250,
+        "receivedAmount": 81650,
+        "unpaidAmount": 11600
+      },
+      "diff": {
+        "receivableAmount": 0,
+        "contractReceivable": 46625,
+        "receivedAmount": 46625,
+        "unpaidAmount": 0
+      },
+      "sheetNames": [
+        "137"
+      ],
+      "ledgerProfileCount": 1,
+      "distinctSheetCount": 1,
+      "suspectedReasons": [
+        "旧值来自总表导入应收",
+        "原始客户sheet汇总值与项目应收聚合不一致"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "before": {
+      "excelUniqueCustomers": 210,
+      "strictExcelNotSystem": 34,
+      "strictExcelSystemNoLedger": 34
+    },
+    "after": {
+      "normalizedExcelUniqueCustomers": 190,
+      "repairedBySummarySuffix": 34,
+      "realNoFullSheetCustomers": 48,
+      "blankProfileSheets": [
+        "Am",
+        "零星"
+      ]
+    }
+  }
+}

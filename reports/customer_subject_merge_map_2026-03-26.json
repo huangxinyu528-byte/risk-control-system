@@ -1,0 +1,5728 @@
+{
+  "summary": {
+    "generatedAt": "2026-03-26T12:02:41.959Z",
+    "totalCustomers": 196,
+    "splitProjectCount": 19,
+    "aliasOnlyCount": 9,
+    "noSplitCount": 168,
+    "mergeCandidateCount": 28,
+    "targetSubjectExistsCount": 26,
+    "targetSubjectNeedsCreateCount": 2
+  },
+  "examples": [
+    {
+      "currentCustomerName": "中国水利水电第五工程局有限公司（一工区）",
+      "currentCustomerId": "IMP-3DB671917ED2",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中国水利水电第五工程局有限公司(一工区)",
+      "proposedBaseCustomerName": "中国水利水电第五工程局有限公司",
+      "bracketContent": "一工区",
+      "splitKind": "project",
+      "projectAlias": "一工区",
+      "normalizedProjectAlias": "一工区",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "中国水利水电第五工程局有限公司（一工区）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "中国水利水电第十四工程局有限公司（十局）",
+      "currentCustomerId": "IMP-32DFC41456ED",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中国水利水电第十四工程局有限公司(十局)",
+      "proposedBaseCustomerName": "中国水利水电第十四工程局有限公司",
+      "bracketContent": "十局",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "中国水利水电第十四工程局有限公司（十局）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "四川合立智慧城市建设发展有限公司（天府云城）",
+      "currentCustomerId": "IMP-0C3D6A1BDA30",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川合立智慧城市建设发展有限公司(天府云城)",
+      "proposedBaseCustomerName": "四川合立智慧城市建设发展有限公司",
+      "bracketContent": "天府云城",
+      "splitKind": "project",
+      "projectAlias": "天府云城",
+      "normalizedProjectAlias": "天府云城",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川合立智慧城市建设发展有限公司（天府云城）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川昌奕建设工程集团有限公司（恒大文化旅游城）",
+      "currentCustomerId": "IMP-5578B31F18AF",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川昌奕建设工程集团有限公司(恒大文化旅游城)",
+      "proposedBaseCustomerName": "四川昌奕建设工程集团有限公司",
+      "bracketContent": "恒大文化旅游城",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "四川昌奕建设工程集团有限公司（恒大文化旅游城）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "四川昌奕建设工程集团有限公司（清水云庭）",
+      "currentCustomerId": "IMP-64267E03F1E1",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川昌奕建设工程集团有限公司(清水云庭)",
+      "proposedBaseCustomerName": "四川昌奕建设工程集团有限公司",
+      "bracketContent": "清水云庭",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "四川昌奕建设工程集团有限公司（清水云庭）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "四川正矿建设有限公司（商铺）",
+      "currentCustomerId": "IMP-5E6F01E06363",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川正矿建设有限公司(商铺)",
+      "proposedBaseCustomerName": "四川正矿建设有限公司",
+      "bracketContent": "商铺",
+      "splitKind": "project",
+      "projectAlias": "商铺",
+      "normalizedProjectAlias": "商铺",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川正矿建设有限公司（商铺）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川正矿建设有限公司（通威77号地块）",
+      "currentCustomerId": "IMP-478CDBE2DBD8",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川正矿建设有限公司(通威77号地块)",
+      "proposedBaseCustomerName": "四川正矿建设有限公司",
+      "bracketContent": "通威77号地块",
+      "splitKind": "project",
+      "projectAlias": "通威77号地块",
+      "normalizedProjectAlias": "通威77#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川正矿建设有限公司（通威77号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川泰宏裕建设工程有限公司（盛世华庭）",
+      "currentCustomerId": "IMP-8B259BF91C40",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川泰宏裕建设工程有限公司(盛世华庭)",
+      "proposedBaseCustomerName": "四川泰宏裕建设工程有限公司",
+      "bracketContent": "盛世华庭",
+      "splitKind": "project",
+      "projectAlias": "盛世华庭",
+      "normalizedProjectAlias": "盛世华庭",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川泰宏裕建设工程有限公司（盛世华庭）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川良盟建筑工程有限公司（施工二部B1）",
+      "currentCustomerId": "IMP-D7389E7DA932",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川良盟建筑工程有限公司(施工二部B1)",
+      "proposedBaseCustomerName": "四川良盟建筑工程有限公司",
+      "bracketContent": "施工二部B1",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "四川良盟建筑工程有限公司（施工二部B1）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "四川良盟建筑工程有限公司（施工二部B2组团）",
+      "currentCustomerId": "IMP-8DD70A42E1C8",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川良盟建筑工程有限公司(施工二部B2组团)",
+      "proposedBaseCustomerName": "四川良盟建筑工程有限公司",
+      "bracketContent": "施工二部B2组团",
+      "splitKind": "project",
+      "projectAlias": "施工二部B2组团",
+      "normalizedProjectAlias": "施工二部B2组团",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川良盟建筑工程有限公司（施工二部B2组团）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块一批次）",
+      "currentCustomerId": "IMP-B016FCB65B9E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川超前盈欣建设工程有限公司(视高天府翡翠城2#地块一批次)",
+      "proposedBaseCustomerName": "四川超前盈欣建设工程有限公司",
+      "bracketContent": "视高天府翡翠城2#地块一批次",
+      "splitKind": "project",
+      "projectAlias": "视高天府翡翠城2#地块一批次",
+      "normalizedProjectAlias": "视高天府翡翠城2#地块一批次",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块一批次）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块二批次）",
+      "currentCustomerId": "IMP-538AAEF0973D",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川超前盈欣建设工程有限公司(视高天府翡翠城2#地块二批次)",
+      "proposedBaseCustomerName": "四川超前盈欣建设工程有限公司",
+      "bracketContent": "视高天府翡翠城2#地块二批次",
+      "splitKind": "project",
+      "projectAlias": "视高天府翡翠城2#地块二批次",
+      "normalizedProjectAlias": "视高天府翡翠城2#地块二批次",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块二批次）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期一批次）",
+      "currentCustomerId": "IMP-DB2F52EFAC3B",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川超前盈欣建设工程有限公司(视高天府翡翠城一期一批次)",
+      "proposedBaseCustomerName": "四川超前盈欣建设工程有限公司",
+      "bracketContent": "视高天府翡翠城一期一批次",
+      "splitKind": "project",
+      "projectAlias": "视高天府翡翠城一期一批次",
+      "normalizedProjectAlias": "视高天府翡翠城一期一批次",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期一批次）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期二批次）",
+      "currentCustomerId": "IMP-2A2FA9B6CFA4",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川超前盈欣建设工程有限公司(视高天府翡翠城一期二批次)",
+      "proposedBaseCustomerName": "四川超前盈欣建设工程有限公司",
+      "bracketContent": "视高天府翡翠城一期二批次",
+      "splitKind": "project",
+      "projectAlias": "视高天府翡翠城一期二批次",
+      "normalizedProjectAlias": "视高天府翡翠城一期二批次",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期二批次）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川辉航建筑工程有限公司（川港合作示范园95号地块）",
+      "currentCustomerId": "IMP-F2A7E1FF1B27",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川辉航建筑工程有限公司(川港合作示范园95号地块)",
+      "proposedBaseCustomerName": "四川辉航建筑工程有限公司",
+      "bracketContent": "川港合作示范园95号地块",
+      "splitKind": "project",
+      "projectAlias": "川港合作示范园95号地块",
+      "normalizedProjectAlias": "川港合作示范园95#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川辉航建筑工程有限公司（川港合作示范园95号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "成都永安建设集团有限公司（云龙小学）",
+      "currentCustomerId": "IMP-2B44DD2DDEFE",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都永安建设集团有限公司(云龙小学)",
+      "proposedBaseCustomerName": "成都永安建设集团有限公司",
+      "bracketContent": "云龙小学",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "成都永安建设集团有限公司（云龙小学）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "成都永安建设集团有限公司（盛世锦都）",
+      "currentCustomerId": "IMP-B3372FEFA4F3",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都永安建设集团有限公司(盛世锦都)",
+      "proposedBaseCustomerName": "成都永安建设集团有限公司",
+      "bracketContent": "盛世锦都",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "成都永安建设集团有限公司（盛世锦都）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "成都永安建设集团有限公司（秦皇帝锦）",
+      "currentCustomerId": "IMP-5BD63FCC4167",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都永安建设集团有限公司(秦皇帝锦)",
+      "proposedBaseCustomerName": "成都永安建设集团有限公司",
+      "bracketContent": "秦皇帝锦",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "成都永安建设集团有限公司（秦皇帝锦）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司 （祥和润兴建筑劳务）",
+      "currentCustomerId": "IMP-E7E4B17E8320",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司 (祥和润兴建筑劳务)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "祥和润兴建筑劳务",
+      "splitKind": "project",
+      "projectAlias": "祥和润兴建筑劳务",
+      "normalizedProjectAlias": "祥和润兴建筑劳务",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司 （祥和润兴建筑劳务）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（四川祥和润兴建筑劳务有限公司）",
+      "currentCustomerId": "IMP-43647CD4A292",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(四川祥和润兴建筑劳务有限公司)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "四川祥和润兴建筑劳务有限公司",
+      "splitKind": "project",
+      "projectAlias": "四川祥和润兴建筑劳务有限公司",
+      "normalizedProjectAlias": "四川祥和润兴建筑劳务有限公司",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（四川祥和润兴建筑劳务有限公司）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（环天．青水澜湾）",
+      "currentCustomerId": "IMP-BD1C41DFC2C0",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(环天．青水澜湾)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "环天．青水澜湾",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（环天．青水澜湾）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（环天．青水澜湾40号地块）",
+      "currentCustomerId": "IMP-A8A5EEE3F690",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(环天．青水澜湾40号地块)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "环天．青水澜湾40号地块",
+      "splitKind": "project",
+      "projectAlias": "环天．青水澜湾40号地块",
+      "normalizedProjectAlias": "环天．青水澜湾40#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（环天．青水澜湾40号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（环天．青水澜湾41号地块）",
+      "currentCustomerId": "IMP-9EA81B947543",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(环天．青水澜湾41号地块)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "环天．青水澜湾41号地块",
+      "splitKind": "project",
+      "projectAlias": "环天．青水澜湾41号地块",
+      "normalizedProjectAlias": "环天．青水澜湾41#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（环天．青水澜湾41号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（环天时代中心63号地块）",
+      "currentCustomerId": "IMP-269D0917CE46",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(环天时代中心63号地块)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "环天时代中心63号地块",
+      "splitKind": "project",
+      "projectAlias": "环天时代中心63号地块",
+      "normalizedProjectAlias": "环天时代中心63#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（环天时代中心63号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（环天时代中心64号地块）",
+      "currentCustomerId": "IMP-AD7BB1EBC958",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(环天时代中心64号地块)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "环天时代中心64号地块",
+      "splitKind": "project",
+      "projectAlias": "环天时代中心64号地块",
+      "normalizedProjectAlias": "环天时代中心64#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（环天时代中心64号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "深圳市赛能达实业发展有限公司（收票单位为：四川展途鑫建材有限公司）",
+      "currentCustomerId": "IMP-B00BB511238C",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "深圳市赛能达实业发展有限公司(收票单位为：四川展途鑫建材有限公司)",
+      "proposedBaseCustomerName": "深圳市赛能达实业发展有限公司",
+      "bracketContent": "收票单位为：四川展途鑫建材有限公司",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "深圳市赛能达实业发展有限公司（收票单位为：四川展途鑫建材有限公司）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "重庆建工第二建设工程有限公司（35号地块）",
+      "currentCustomerId": "IMP-47BF388AD9D2",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "重庆建工第二建设工程有限公司(35号地块)",
+      "proposedBaseCustomerName": "重庆建工第二建设工程有限公司",
+      "bracketContent": "35号地块",
+      "splitKind": "project",
+      "projectAlias": "35号地块",
+      "normalizedProjectAlias": "35#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": false,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "重庆建工第二建设工程有限公司（35号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "重庆建工第二建设工程有限公司（36号地块）",
+      "currentCustomerId": "IMP-79F312F5F2FB",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "重庆建工第二建设工程有限公司(36号地块)",
+      "proposedBaseCustomerName": "重庆建工第二建设工程有限公司",
+      "bracketContent": "36号地块",
+      "splitKind": "project",
+      "projectAlias": "36号地块",
+      "normalizedProjectAlias": "36#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": false,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "重庆建工第二建设工程有限公司（36号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "currentCustomerName": "中交二航局成都城市建设工程有限公司",
+      "currentCustomerId": "IMP-7ED416D5C2E1",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中交二航局成都城市建设工程有限公司",
+      "proposedBaseCustomerName": "中交二航局成都城市建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中交二航局成都城市建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中国建筑西南勘察设计研究院有限公司",
+      "currentCustomerId": "IMP-0159AC27E4CB",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中国建筑西南勘察设计研究院有限公司",
+      "proposedBaseCustomerName": "中国建筑西南勘察设计研究院有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中国建筑西南勘察设计研究院有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 14,
+        "receivableCount": 13,
+        "ledgerProfileCount": 13,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中国水利水电第五工程局有限公司",
+      "currentCustomerId": "IMP-F5C0639A0DF7",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中国水利水电第五工程局有限公司",
+      "proposedBaseCustomerName": "中国水利水电第五工程局有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中国水利水电第五工程局有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中国水利水电第五工程局有限公司（一工区）",
+      "currentCustomerId": "IMP-3DB671917ED2",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中国水利水电第五工程局有限公司(一工区)",
+      "proposedBaseCustomerName": "中国水利水电第五工程局有限公司",
+      "bracketContent": "一工区",
+      "splitKind": "project",
+      "projectAlias": "一工区",
+      "normalizedProjectAlias": "一工区",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "中国水利水电第五工程局有限公司（一工区）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "中国水利水电第十四工程局有限公司",
+      "currentCustomerId": "IMP-595EB5DAC164",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中国水利水电第十四工程局有限公司",
+      "proposedBaseCustomerName": "中国水利水电第十四工程局有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中国水利水电第十四工程局有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中国水利水电第十四工程局有限公司（十局）",
+      "currentCustomerId": "IMP-32DFC41456ED",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中国水利水电第十四工程局有限公司(十局)",
+      "proposedBaseCustomerName": "中国水利水电第十四工程局有限公司",
+      "bracketContent": "十局",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "中国水利水电第十四工程局有限公司（十局）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "中国水利水电第十工程局有限公司",
+      "currentCustomerId": "IMP-11CB10CCAE52",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中国水利水电第十工程局有限公司",
+      "proposedBaseCustomerName": "中国水利水电第十工程局有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中国水利水电第十工程局有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 3,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中国电建市政建设集团",
+      "currentCustomerId": "IMP-441E341B550A",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中国电建市政建设集团",
+      "proposedBaseCustomerName": "中国电建市政建设集团",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中国电建市政建设集团",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中国电建市政建设集团有限公司眉山分公司",
+      "currentCustomerId": "IMP-773EE192C66E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中国电建市政建设集团有限公司眉山分公司",
+      "proposedBaseCustomerName": "中国电建市政建设集团有限公司眉山分公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中国电建市政建设集团有限公司眉山分公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中建鸿腾建设集团有限公司",
+      "currentCustomerId": "IMP-E1B5971A05D5",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中建鸿腾建设集团有限公司",
+      "proposedBaseCustomerName": "中建鸿腾建设集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中建鸿腾建设集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中桓建工集团有限公司",
+      "currentCustomerId": "IMP-11F4B83ADFF7",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中桓建工集团有限公司",
+      "proposedBaseCustomerName": "中桓建工集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中桓建工集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中烨国际建工有限公司",
+      "currentCustomerId": "IMP-092104235009",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中烨国际建工有限公司",
+      "proposedBaseCustomerName": "中烨国际建工有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中烨国际建工有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中电建路桥集团西部投资发展有限公司",
+      "currentCustomerId": "IMP-F4CFE6C99820",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中电建路桥集团西部投资发展有限公司",
+      "proposedBaseCustomerName": "中电建路桥集团西部投资发展有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中电建路桥集团西部投资发展有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中町建设有限公司",
+      "currentCustomerId": "IMP-CD7D54BA9E0E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中町建设有限公司",
+      "proposedBaseCustomerName": "中町建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中町建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中铁五局集团建筑工程有限责任公司",
+      "currentCustomerId": "IMP-4412058481D3",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中铁五局集团建筑工程有限责任公司",
+      "proposedBaseCustomerName": "中铁五局集团建筑工程有限责任公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中铁五局集团建筑工程有限责任公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "中铁北京工程局集团有限公司",
+      "currentCustomerId": "IMP-E8E66B9B5F60",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "中铁北京工程局集团有限公司",
+      "proposedBaseCustomerName": "中铁北京工程局集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "中铁北京工程局集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "乐山市瑞景园林工程有限公司",
+      "currentCustomerId": "IMP-A80B230240E5",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "乐山市瑞景园林工程有限公司",
+      "proposedBaseCustomerName": "乐山市瑞景园林工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "乐山市瑞景园林工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "仁寿吉冠人造板有限公司",
+      "currentCustomerId": "IMP-A8F1CD105E48",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "仁寿吉冠人造板有限公司",
+      "proposedBaseCustomerName": "仁寿吉冠人造板有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "仁寿吉冠人造板有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 0,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "仁寿胜鑫建材有限公司",
+      "currentCustomerId": "IMP-7AF37B354485",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "仁寿胜鑫建材有限公司",
+      "proposedBaseCustomerName": "仁寿胜鑫建材有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "仁寿胜鑫建材有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "单位",
+      "currentCustomerId": "IMP-8EC8C8C712BE",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "单位",
+      "proposedBaseCustomerName": "单位",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "单位",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "合计",
+      "currentCustomerId": "IMP-92BCBF71CB7B",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "合计",
+      "proposedBaseCustomerName": "合计",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "合计",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "周登文",
+      "currentCustomerId": "IMP-370D6DDF2ACF",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "周登文",
+      "proposedBaseCustomerName": "周登文",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "周登文",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川一库建筑工程有限公司",
+      "currentCustomerId": "IMP-E59D4C19F07B",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川一库建筑工程有限公司",
+      "proposedBaseCustomerName": "四川一库建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川一库建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川东永胜建设工程有限公司",
+      "currentCustomerId": "IMP-CEE20709E03B",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川东永胜建设工程有限公司",
+      "proposedBaseCustomerName": "四川东永胜建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川东永胜建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川中吕建设有限公司",
+      "currentCustomerId": "IMP-670D21AD89D7",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川中吕建设有限公司",
+      "proposedBaseCustomerName": "四川中吕建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川中吕建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川中地恒高景观工程有限公司",
+      "currentCustomerId": "IMP-3EC939FFA62E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川中地恒高景观工程有限公司",
+      "proposedBaseCustomerName": "四川中地恒高景观工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川中地恒高景观工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 4,
+        "receivableCount": 3,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川中地恒高景观工程有限公司 视高分公司",
+      "currentCustomerId": "IMP-1465D02E9479",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川中地恒高景观工程有限公司 视高分公司",
+      "proposedBaseCustomerName": "四川中地恒高景观工程有限公司 视高分公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川中地恒高景观工程有限公司 视高分公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川中地恒高景观工程有限公司视高分公司",
+      "currentCustomerId": "IMP-9C22A1F79902",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川中地恒高景观工程有限公司视高分公司",
+      "proposedBaseCustomerName": "四川中地恒高景观工程有限公司视高分公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川中地恒高景观工程有限公司视高分公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 1,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川中培博天建筑工程有限公司",
+      "currentCustomerId": "IMP-CC8703D2F90B",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川中培博天建筑工程有限公司",
+      "proposedBaseCustomerName": "四川中培博天建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川中培博天建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川中恩岩土工程有限公司",
+      "currentCustomerId": "IMP-6A125BC2B532",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川中恩岩土工程有限公司",
+      "proposedBaseCustomerName": "四川中恩岩土工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川中恩岩土工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川中星禾商贸有限公司",
+      "currentCustomerId": "IMP-80985F56E614",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川中星禾商贸有限公司",
+      "proposedBaseCustomerName": "四川中星禾商贸有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川中星禾商贸有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川中福盛源供应链管理有限公司",
+      "currentCustomerId": "IMP-F137B380B997",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川中福盛源供应链管理有限公司",
+      "proposedBaseCustomerName": "四川中福盛源供应链管理有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川中福盛源供应链管理有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川中荣诚建设工程有限公司",
+      "currentCustomerId": "IMP-34D2E1F3429E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川中荣诚建设工程有限公司",
+      "proposedBaseCustomerName": "四川中荣诚建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川中荣诚建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川中铭建设有限公司",
+      "currentCustomerId": "IMP-B89EBA862C85",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川中铭建设有限公司",
+      "proposedBaseCustomerName": "四川中铭建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川中铭建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 3,
+        "ledgerProfileCount": 3,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川云遥电力建设有限公司",
+      "currentCustomerId": "IMP-A8594E48FF26",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川云遥电力建设有限公司",
+      "proposedBaseCustomerName": "四川云遥电力建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川云遥电力建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川亿博达商贸有限公司",
+      "currentCustomerId": "IMP-E0F161579299",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川亿博达商贸有限公司",
+      "proposedBaseCustomerName": "四川亿博达商贸有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川亿博达商贸有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 0,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川仓宇建设工程有限公司",
+      "currentCustomerId": "IMP-ED84DB11ACA2",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川仓宇建设工程有限公司",
+      "proposedBaseCustomerName": "四川仓宇建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川仓宇建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川俱能达建设工程有限公司",
+      "currentCustomerId": "IMP-64020D0C70FB",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川俱能达建设工程有限公司",
+      "proposedBaseCustomerName": "四川俱能达建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川俱能达建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川傲营建筑工程有限公司",
+      "currentCustomerId": "IMP-31153F1434E2",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川傲营建筑工程有限公司",
+      "proposedBaseCustomerName": "四川傲营建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川傲营建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 1,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川兴南建设有限公司",
+      "currentCustomerId": "IMP-394496D225DA",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川兴南建设有限公司",
+      "proposedBaseCustomerName": "四川兴南建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川兴南建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川兴泰建筑工程有限公司",
+      "currentCustomerId": "IMP-FFD65A18C077",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川兴泰建筑工程有限公司",
+      "proposedBaseCustomerName": "四川兴泰建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川兴泰建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川冶创建筑工程集团有限公司",
+      "currentCustomerId": "IMP-520F39AA77A5",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川冶创建筑工程集团有限公司",
+      "proposedBaseCustomerName": "四川冶创建筑工程集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川冶创建筑工程集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 5,
+        "receivableCount": 5,
+        "ledgerProfileCount": 5,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川华地建设工程有限责任公司",
+      "currentCustomerId": "IMP-EF4224067EE3",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川华地建设工程有限责任公司",
+      "proposedBaseCustomerName": "四川华地建设工程有限责任公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川华地建设工程有限责任公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川华睿能电力建设有限责任公司",
+      "currentCustomerId": "IMP-7DFCCF85A49F",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川华睿能电力建设有限责任公司",
+      "proposedBaseCustomerName": "四川华睿能电力建设有限责任公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川华睿能电力建设有限责任公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川华西数产科技集团有限公司",
+      "currentCustomerId": "IMP-5BD4CA0F0757",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川华西数产科技集团有限公司",
+      "proposedBaseCustomerName": "四川华西数产科技集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川华西数产科技集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川卓昕置业有限公司",
+      "currentCustomerId": "IMP-DFD0713C9FC6",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川卓昕置业有限公司",
+      "proposedBaseCustomerName": "四川卓昕置业有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川卓昕置业有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川南峰建筑工程有限公司",
+      "currentCustomerId": "IMP-B69C2B81292E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川南峰建筑工程有限公司",
+      "proposedBaseCustomerName": "四川南峰建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川南峰建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川合富建筑工程有限公司",
+      "currentCustomerId": "IMP-F41ED76BB612",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川合富建筑工程有限公司",
+      "proposedBaseCustomerName": "四川合富建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川合富建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川合立智慧城市建设发展有限公司",
+      "currentCustomerId": "IMP-4814F1B90C83",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川合立智慧城市建设发展有限公司",
+      "proposedBaseCustomerName": "四川合立智慧城市建设发展有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川合立智慧城市建设发展有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 3,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川合立智慧城市建设发展有限公司（天府云城）",
+      "currentCustomerId": "IMP-0C3D6A1BDA30",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川合立智慧城市建设发展有限公司(天府云城)",
+      "proposedBaseCustomerName": "四川合立智慧城市建设发展有限公司",
+      "bracketContent": "天府云城",
+      "splitKind": "project",
+      "projectAlias": "天府云城",
+      "normalizedProjectAlias": "天府云城",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川合立智慧城市建设发展有限公司（天府云城）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川启宸博创商贸有限公司",
+      "currentCustomerId": "IMP-A448415F4837",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川启宸博创商贸有限公司",
+      "proposedBaseCustomerName": "四川启宸博创商贸有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川启宸博创商贸有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 0,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川启明电力工程有限公司",
+      "currentCustomerId": "IMP-5AE3C6C98C04",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川启明电力工程有限公司",
+      "proposedBaseCustomerName": "四川启明电力工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川启明电力工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川嘉运通供应链管理有限公司",
+      "currentCustomerId": "IMP-1D4BBAB6124E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川嘉运通供应链管理有限公司",
+      "proposedBaseCustomerName": "四川嘉运通供应链管理有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川嘉运通供应链管理有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川圣双园林工程有限公司",
+      "currentCustomerId": "IMP-D4E52EA670BB",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川圣双园林工程有限公司",
+      "proposedBaseCustomerName": "四川圣双园林工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川圣双园林工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 3,
+        "ledgerProfileCount": 3,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川坤达誉腾建设工程有限公司",
+      "currentCustomerId": "IMP-63D711FE235F",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川坤达誉腾建设工程有限公司",
+      "proposedBaseCustomerName": "四川坤达誉腾建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川坤达誉腾建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川塔牌电缆绕组线有限责任公司/四川沁森建筑工程有限公司",
+      "currentCustomerId": "IMP-94D3FDFA8CDB",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川塔牌电缆绕组线有限责任公司/四川沁森建筑工程有限公司",
+      "proposedBaseCustomerName": "四川塔牌电缆绕组线有限责任公司/四川沁森建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川塔牌电缆绕组线有限责任公司/四川沁森建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川大鑫供应链管理有限公司",
+      "currentCustomerId": "IMP-41AFE8614963",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川大鑫供应链管理有限公司",
+      "proposedBaseCustomerName": "四川大鑫供应链管理有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川大鑫供应链管理有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川天府蓉创文化旅游有限责任公司",
+      "currentCustomerId": "IMP-AFB632C7C79E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川天府蓉创文化旅游有限责任公司",
+      "proposedBaseCustomerName": "四川天府蓉创文化旅游有限责任公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川天府蓉创文化旅游有限责任公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川天润装配式钢结构制造有限公司",
+      "currentCustomerId": "IMP-20D9CDD5F5C6",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川天润装配式钢结构制造有限公司",
+      "proposedBaseCustomerName": "四川天润装配式钢结构制造有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川天润装配式钢结构制造有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川天润装配式钢结构工程有限公司",
+      "currentCustomerId": "IMP-997F1C5DA4B8",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川天润装配式钢结构工程有限公司",
+      "proposedBaseCustomerName": "四川天润装配式钢结构工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川天润装配式钢结构工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川如雷建筑工程有限公司",
+      "currentCustomerId": "IMP-732CE5096E9D",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川如雷建筑工程有限公司",
+      "proposedBaseCustomerName": "四川如雷建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川如雷建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川安尔福建筑有限公司",
+      "currentCustomerId": "IMP-8D953AB12BB5",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川安尔福建筑有限公司",
+      "proposedBaseCustomerName": "四川安尔福建筑有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川安尔福建筑有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川嵩嘉建筑工程有限公司",
+      "currentCustomerId": "IMP-DDB338CDD7E8",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川嵩嘉建筑工程有限公司",
+      "proposedBaseCustomerName": "四川嵩嘉建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川嵩嘉建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川广安江泓输变电有限公司",
+      "currentCustomerId": "IMP-E2820CF516A9",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川广安江泓输变电有限公司",
+      "proposedBaseCustomerName": "四川广安江泓输变电有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川广安江泓输变电有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川庚泽建筑工程有限公司",
+      "currentCustomerId": "IMP-8515BA4C85A3",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川庚泽建筑工程有限公司",
+      "proposedBaseCustomerName": "四川庚泽建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川庚泽建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川志德岩土工程有限责任公司",
+      "currentCustomerId": "IMP-D210A7B582D9",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川志德岩土工程有限责任公司",
+      "proposedBaseCustomerName": "四川志德岩土工程有限责任公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川志德岩土工程有限责任公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 5,
+        "receivableCount": 5,
+        "ledgerProfileCount": 5,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川忠德油气安装工程有限公司",
+      "currentCustomerId": "IMP-5E36C08334F0",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川忠德油气安装工程有限公司",
+      "proposedBaseCustomerName": "四川忠德油气安装工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川忠德油气安装工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川怡诚石油天然气工程有限公司",
+      "currentCustomerId": "IMP-70227D561C89",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川怡诚石油天然气工程有限公司",
+      "proposedBaseCustomerName": "四川怡诚石油天然气工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川怡诚石油天然气工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川恒远安建筑工程有限公司",
+      "currentCustomerId": "IMP-2C24E6FEAB57",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川恒远安建筑工程有限公司",
+      "proposedBaseCustomerName": "四川恒远安建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川恒远安建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川昌奕建设工程集团有限公司",
+      "currentCustomerId": "IMP-5A3568C64C3F",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川昌奕建设工程集团有限公司",
+      "proposedBaseCustomerName": "四川昌奕建设工程集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川昌奕建设工程集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 6,
+        "receivableCount": 6,
+        "ledgerProfileCount": 5,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川昌奕建设工程集团有限公司（恒大文化旅游城）",
+      "currentCustomerId": "IMP-5578B31F18AF",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川昌奕建设工程集团有限公司(恒大文化旅游城)",
+      "proposedBaseCustomerName": "四川昌奕建设工程集团有限公司",
+      "bracketContent": "恒大文化旅游城",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "四川昌奕建设工程集团有限公司（恒大文化旅游城）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "四川昌奕建设工程集团有限公司（清水云庭）",
+      "currentCustomerId": "IMP-64267E03F1E1",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川昌奕建设工程集团有限公司(清水云庭)",
+      "proposedBaseCustomerName": "四川昌奕建设工程集团有限公司",
+      "bracketContent": "清水云庭",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "四川昌奕建设工程集团有限公司（清水云庭）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "四川春航建设集团有限公司",
+      "currentCustomerId": "IMP-F2E6FBA4A156",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川春航建设集团有限公司",
+      "proposedBaseCustomerName": "四川春航建设集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川春航建设集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 0,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川景秀河山景观工程有限公司",
+      "currentCustomerId": "IMP-3AA8369FBE11",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川景秀河山景观工程有限公司",
+      "proposedBaseCustomerName": "四川景秀河山景观工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川景秀河山景观工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川林超元建材有限公司",
+      "currentCustomerId": "IMP-478FF4FB1AD7",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川林超元建材有限公司",
+      "proposedBaseCustomerName": "四川林超元建材有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川林超元建材有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川正矿建设有限公司",
+      "currentCustomerId": "IMP-4713300420E5",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川正矿建设有限公司",
+      "proposedBaseCustomerName": "四川正矿建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川正矿建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 7,
+        "receivableCount": 5,
+        "ledgerProfileCount": 4,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川正矿建设有限公司（商铺）",
+      "currentCustomerId": "IMP-5E6F01E06363",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川正矿建设有限公司(商铺)",
+      "proposedBaseCustomerName": "四川正矿建设有限公司",
+      "bracketContent": "商铺",
+      "splitKind": "project",
+      "projectAlias": "商铺",
+      "normalizedProjectAlias": "商铺",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川正矿建设有限公司（商铺）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川正矿建设有限公司（通威77号地块）",
+      "currentCustomerId": "IMP-478CDBE2DBD8",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川正矿建设有限公司(通威77号地块)",
+      "proposedBaseCustomerName": "四川正矿建设有限公司",
+      "bracketContent": "通威77号地块",
+      "splitKind": "project",
+      "projectAlias": "通威77号地块",
+      "normalizedProjectAlias": "通威77#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川正矿建设有限公司（通威77号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川正龙烨建筑工程有限公司",
+      "currentCustomerId": "IMP-2D222097CB32",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川正龙烨建筑工程有限公司",
+      "proposedBaseCustomerName": "四川正龙烨建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川正龙烨建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川沁森建筑工程有限公司",
+      "currentCustomerId": "IMP-EABB17CB66BE",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川沁森建筑工程有限公司",
+      "proposedBaseCustomerName": "四川沁森建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川沁森建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川泰宏裕建设工程有限公司",
+      "currentCustomerId": "IMP-BB2E1DC3958B",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川泰宏裕建设工程有限公司",
+      "proposedBaseCustomerName": "四川泰宏裕建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川泰宏裕建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川泰宏裕建设工程有限公司（盛世华庭）",
+      "currentCustomerId": "IMP-8B259BF91C40",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川泰宏裕建设工程有限公司(盛世华庭)",
+      "proposedBaseCustomerName": "四川泰宏裕建设工程有限公司",
+      "bracketContent": "盛世华庭",
+      "splitKind": "project",
+      "projectAlias": "盛世华庭",
+      "normalizedProjectAlias": "盛世华庭",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川泰宏裕建设工程有限公司（盛世华庭）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川泰鸿裕建设工程有限公司",
+      "currentCustomerId": "IMP-C4F829DEF201",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川泰鸿裕建设工程有限公司",
+      "proposedBaseCustomerName": "四川泰鸿裕建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川泰鸿裕建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川润辉鑫成电力工程有限公司",
+      "currentCustomerId": "IMP-86D21AA7F105",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川润辉鑫成电力工程有限公司",
+      "proposedBaseCustomerName": "四川润辉鑫成电力工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川润辉鑫成电力工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川湖屿川建筑工程有限公司",
+      "currentCustomerId": "IMP-16519BB29762",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川湖屿川建筑工程有限公司",
+      "proposedBaseCustomerName": "四川湖屿川建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川湖屿川建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川烁全建筑工程有限公司",
+      "currentCustomerId": "IMP-1DA1AA355EFC",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川烁全建筑工程有限公司",
+      "proposedBaseCustomerName": "四川烁全建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川烁全建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川煌峰建筑工程有限公司",
+      "currentCustomerId": "IMP-92A59B812C4A",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川煌峰建筑工程有限公司",
+      "proposedBaseCustomerName": "四川煌峰建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川煌峰建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 4,
+        "receivableCount": 4,
+        "ledgerProfileCount": 4,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川犍新宇建筑劳务有限公司",
+      "currentCustomerId": "IMP-82E0A49136AF",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川犍新宇建筑劳务有限公司",
+      "proposedBaseCustomerName": "四川犍新宇建筑劳务有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川犍新宇建筑劳务有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省启明电力工程有限公司",
+      "currentCustomerId": "IMP-C650A3D875F1",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省启明电力工程有限公司",
+      "proposedBaseCustomerName": "四川省启明电力工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省启明电力工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省建福岩土工程有限公司",
+      "currentCustomerId": "IMP-CEE3A9680C08",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省建福岩土工程有限公司",
+      "proposedBaseCustomerName": "四川省建福岩土工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省建福岩土工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省恒新建筑有限公司",
+      "currentCustomerId": "IMP-1F337CC08947",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省恒新建筑有限公司",
+      "proposedBaseCustomerName": "四川省恒新建筑有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省恒新建筑有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省慧博智城建设工程有限公司",
+      "currentCustomerId": "IMP-8AF57151D041",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省慧博智城建设工程有限公司",
+      "proposedBaseCustomerName": "四川省慧博智城建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省慧博智城建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省欧荣岩土工程有限公司",
+      "currentCustomerId": "IMP-AC76A200DE95",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省欧荣岩土工程有限公司",
+      "proposedBaseCustomerName": "四川省欧荣岩土工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省欧荣岩土工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 3,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省欧荣岩土工程有限公司/四川蓉筑建设工程有限公司",
+      "currentCustomerId": "IMP-5FE120BB69A7",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省欧荣岩土工程有限公司/四川蓉筑建设工程有限公司",
+      "proposedBaseCustomerName": "四川省欧荣岩土工程有限公司/四川蓉筑建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省欧荣岩土工程有限公司/四川蓉筑建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省益正地基基础工程有限公司",
+      "currentCustomerId": "IMP-9E09ADEEFE05",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省益正地基基础工程有限公司",
+      "proposedBaseCustomerName": "四川省益正地基基础工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省益正地基基础工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 4,
+        "receivableCount": 3,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省祥福建设工程有限公司",
+      "currentCustomerId": "IMP-7A144D04F055",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省祥福建设工程有限公司",
+      "proposedBaseCustomerName": "四川省祥福建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省祥福建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 2,
+        "riskCount": 3
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省第四建筑有限公司",
+      "currentCustomerId": "IMP-33F754653826",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省第四建筑有限公司",
+      "proposedBaseCustomerName": "四川省第四建筑有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省第四建筑有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省蜀通岩土工程公司",
+      "currentCustomerId": "IMP-F0A983B38D1B",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省蜀通岩土工程公司",
+      "proposedBaseCustomerName": "四川省蜀通岩土工程公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省蜀通岩土工程公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省贝瑞达建筑工程有限公司",
+      "currentCustomerId": "IMP-9D4E0064DEAD",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省贝瑞达建筑工程有限公司",
+      "proposedBaseCustomerName": "四川省贝瑞达建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省贝瑞达建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省通力建设工程有限公司",
+      "currentCustomerId": "IMP-42C2034F8F35",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省通力建设工程有限公司",
+      "proposedBaseCustomerName": "四川省通力建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省通力建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 4,
+        "receivableCount": 4,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川省顶鑫建筑工程有限公司",
+      "currentCustomerId": "IMP-BC784628FACB",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川省顶鑫建筑工程有限公司",
+      "proposedBaseCustomerName": "四川省顶鑫建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川省顶鑫建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川祥乔齐胜建设工程有限公司",
+      "currentCustomerId": "IMP-33ED6F277D70",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川祥乔齐胜建设工程有限公司",
+      "proposedBaseCustomerName": "四川祥乔齐胜建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川祥乔齐胜建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川祥禾齐胜建设工程有限公司",
+      "currentCustomerId": "IMP-5384AB88A2ED",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川祥禾齐胜建设工程有限公司",
+      "proposedBaseCustomerName": "四川祥禾齐胜建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川祥禾齐胜建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川立君建筑工程有限公司",
+      "currentCustomerId": "IMP-AF245853C59E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川立君建筑工程有限公司",
+      "proposedBaseCustomerName": "四川立君建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川立君建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川筑亿商贸有限公司",
+      "currentCustomerId": "IMP-6448711E2C90",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川筑亿商贸有限公司",
+      "proposedBaseCustomerName": "四川筑亿商贸有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川筑亿商贸有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川良盟建筑工程有限公司",
+      "currentCustomerId": "IMP-05AD7160ADF7",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川良盟建筑工程有限公司",
+      "proposedBaseCustomerName": "四川良盟建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川良盟建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 3,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川良盟建筑工程有限公司（施工二部B1）",
+      "currentCustomerId": "IMP-D7389E7DA932",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川良盟建筑工程有限公司(施工二部B1)",
+      "proposedBaseCustomerName": "四川良盟建筑工程有限公司",
+      "bracketContent": "施工二部B1",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "四川良盟建筑工程有限公司（施工二部B1）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "四川良盟建筑工程有限公司（施工二部B2组团）",
+      "currentCustomerId": "IMP-8DD70A42E1C8",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川良盟建筑工程有限公司(施工二部B2组团)",
+      "proposedBaseCustomerName": "四川良盟建筑工程有限公司",
+      "bracketContent": "施工二部B2组团",
+      "splitKind": "project",
+      "projectAlias": "施工二部B2组团",
+      "normalizedProjectAlias": "施工二部B2组团",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川良盟建筑工程有限公司（施工二部B2组团）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川蓉筑建筑工程有限公司",
+      "currentCustomerId": "IMP-76414F3161A7",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川蓉筑建筑工程有限公司",
+      "proposedBaseCustomerName": "四川蓉筑建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川蓉筑建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川蓉筑建设工程有限公司",
+      "currentCustomerId": "IMP-C55FC57B4E94",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川蓉筑建设工程有限公司",
+      "proposedBaseCustomerName": "四川蓉筑建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川蓉筑建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川薪隆新能源有限公司",
+      "currentCustomerId": "IMP-78E0CD6C5103",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川薪隆新能源有限公司",
+      "proposedBaseCustomerName": "四川薪隆新能源有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川薪隆新能源有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川蜀巴电力建设工程有限公司",
+      "currentCustomerId": "IMP-747F59852111",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川蜀巴电力建设工程有限公司",
+      "proposedBaseCustomerName": "四川蜀巴电力建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川蜀巴电力建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川蜀巴电力建设有限公司",
+      "currentCustomerId": "IMP-200B40277534",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川蜀巴电力建设有限公司",
+      "proposedBaseCustomerName": "四川蜀巴电力建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川蜀巴电力建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川衡信建设工程有限公司",
+      "currentCustomerId": "IMP-51A4BE2F8949",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川衡信建设工程有限公司",
+      "proposedBaseCustomerName": "四川衡信建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川衡信建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川讯隆建设工程有限公司",
+      "currentCustomerId": "IMP-D4A362937FC6",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川讯隆建设工程有限公司",
+      "proposedBaseCustomerName": "四川讯隆建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川讯隆建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川诚合汇超建筑劳务有限公司",
+      "currentCustomerId": "IMP-190FDDA3E6BF",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川诚合汇超建筑劳务有限公司",
+      "proposedBaseCustomerName": "四川诚合汇超建筑劳务有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川诚合汇超建筑劳务有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川谦禾建设工程有限公司",
+      "currentCustomerId": "IMP-D956716513FF",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川谦禾建设工程有限公司",
+      "proposedBaseCustomerName": "四川谦禾建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川谦禾建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川贯旭达建设工程有限公司",
+      "currentCustomerId": "IMP-FA07BE713E7F",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川贯旭达建设工程有限公司",
+      "proposedBaseCustomerName": "四川贯旭达建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川贯旭达建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川超前盈欣建设工程有限公司",
+      "currentCustomerId": "IMP-EEEA0EFAB6C0",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川超前盈欣建设工程有限公司",
+      "proposedBaseCustomerName": "四川超前盈欣建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川超前盈欣建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 5,
+        "receivableCount": 4,
+        "ledgerProfileCount": 5,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块一批次）",
+      "currentCustomerId": "IMP-B016FCB65B9E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川超前盈欣建设工程有限公司(视高天府翡翠城2#地块一批次)",
+      "proposedBaseCustomerName": "四川超前盈欣建设工程有限公司",
+      "bracketContent": "视高天府翡翠城2#地块一批次",
+      "splitKind": "project",
+      "projectAlias": "视高天府翡翠城2#地块一批次",
+      "normalizedProjectAlias": "视高天府翡翠城2#地块一批次",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块一批次）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块二批次）",
+      "currentCustomerId": "IMP-538AAEF0973D",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川超前盈欣建设工程有限公司(视高天府翡翠城2#地块二批次)",
+      "proposedBaseCustomerName": "四川超前盈欣建设工程有限公司",
+      "bracketContent": "视高天府翡翠城2#地块二批次",
+      "splitKind": "project",
+      "projectAlias": "视高天府翡翠城2#地块二批次",
+      "normalizedProjectAlias": "视高天府翡翠城2#地块二批次",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块二批次）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期一批次）",
+      "currentCustomerId": "IMP-DB2F52EFAC3B",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川超前盈欣建设工程有限公司(视高天府翡翠城一期一批次)",
+      "proposedBaseCustomerName": "四川超前盈欣建设工程有限公司",
+      "bracketContent": "视高天府翡翠城一期一批次",
+      "splitKind": "project",
+      "projectAlias": "视高天府翡翠城一期一批次",
+      "normalizedProjectAlias": "视高天府翡翠城一期一批次",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期一批次）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期二批次）",
+      "currentCustomerId": "IMP-2A2FA9B6CFA4",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川超前盈欣建设工程有限公司(视高天府翡翠城一期二批次)",
+      "proposedBaseCustomerName": "四川超前盈欣建设工程有限公司",
+      "bracketContent": "视高天府翡翠城一期二批次",
+      "splitKind": "project",
+      "projectAlias": "视高天府翡翠城一期二批次",
+      "normalizedProjectAlias": "视高天府翡翠城一期二批次",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期二批次）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川路航建设工程有限责任公司",
+      "currentCustomerId": "IMP-DE435633E0D7",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川路航建设工程有限责任公司",
+      "proposedBaseCustomerName": "四川路航建设工程有限责任公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川路航建设工程有限责任公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川辉航建筑工程有限公司",
+      "currentCustomerId": "IMP-FDB0224A3CC6",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川辉航建筑工程有限公司",
+      "proposedBaseCustomerName": "四川辉航建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川辉航建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 17,
+        "receivableCount": 15,
+        "ledgerProfileCount": 15,
+        "riskCount": 3
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川辉航建筑工程有限公司（川港合作示范园95号地块）",
+      "currentCustomerId": "IMP-F2A7E1FF1B27",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川辉航建筑工程有限公司(川港合作示范园95号地块)",
+      "proposedBaseCustomerName": "四川辉航建筑工程有限公司",
+      "bracketContent": "川港合作示范园95号地块",
+      "splitKind": "project",
+      "projectAlias": "川港合作示范园95号地块",
+      "normalizedProjectAlias": "川港合作示范园95#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川辉航建筑工程有限公司（川港合作示范园95号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "四川达虹宇建筑工程有限公司",
+      "currentCustomerId": "IMP-17E58C8F0761",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川达虹宇建筑工程有限公司",
+      "proposedBaseCustomerName": "四川达虹宇建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川达虹宇建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川金苇园林绿化工程有限公司",
+      "currentCustomerId": "IMP-BBFFFF25623A",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川金苇园林绿化工程有限公司",
+      "proposedBaseCustomerName": "四川金苇园林绿化工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川金苇园林绿化工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川锦天下园林工程有限公司",
+      "currentCustomerId": "IMP-C07A92CE996B",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川锦天下园林工程有限公司",
+      "proposedBaseCustomerName": "四川锦天下园林工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川锦天下园林工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川闻渤建设工程有限公司",
+      "currentCustomerId": "IMP-95C80DBF1327",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川闻渤建设工程有限公司",
+      "proposedBaseCustomerName": "四川闻渤建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川闻渤建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川陆通建设有限公司",
+      "currentCustomerId": "IMP-D8EFE15E68AD",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川陆通建设有限公司",
+      "proposedBaseCustomerName": "四川陆通建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川陆通建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川鼎冠瑞恒建筑工程有限公司",
+      "currentCustomerId": "IMP-3C8932029408",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川鼎冠瑞恒建筑工程有限公司",
+      "proposedBaseCustomerName": "四川鼎冠瑞恒建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川鼎冠瑞恒建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 3,
+        "ledgerProfileCount": 3,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川鼎宸固基建设有限公司",
+      "currentCustomerId": "IMP-76E766EA3319",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川鼎宸固基建设有限公司",
+      "proposedBaseCustomerName": "四川鼎宸固基建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川鼎宸固基建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "四川鼎立鸿大建筑工程有限公司",
+      "currentCustomerId": "IMP-62D3FE4DED58",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "四川鼎立鸿大建筑工程有限公司",
+      "proposedBaseCustomerName": "四川鼎立鸿大建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "四川鼎立鸿大建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 3,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "峨眉山产投供应链管理集团有限公司",
+      "currentCustomerId": "IMP-971DFFE8BB7A",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "峨眉山产投供应链管理集团有限公司",
+      "proposedBaseCustomerName": "峨眉山产投供应链管理集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "峨眉山产投供应链管理集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "广西建工集团基础建设有限公司",
+      "currentCustomerId": "IMP-588142B0CC12",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "广西建工集团基础建设有限公司",
+      "proposedBaseCustomerName": "广西建工集团基础建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "广西建工集团基础建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 2,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "广西建工集团第二建筑工程有限责任公司",
+      "currentCustomerId": "IMP-5C420B55A0D9",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "广西建工集团第二建筑工程有限责任公司",
+      "proposedBaseCustomerName": "广西建工集团第二建筑工程有限责任公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "广西建工集团第二建筑工程有限责任公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 3,
+        "ledgerProfileCount": 4,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "张明建",
+      "currentCustomerId": "IMP-B374CB991E3E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "张明建",
+      "proposedBaseCustomerName": "张明建",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "张明建",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "张明建自运",
+      "currentCustomerId": "IMP-EA23890F8369",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "张明建自运",
+      "proposedBaseCustomerName": "张明建自运",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "张明建自运",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 0,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "成眉S5号线",
+      "currentCustomerId": "IMP-91101440D99F",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成眉S5号线",
+      "proposedBaseCustomerName": "成眉S5号线",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "成眉S5号线",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "成都天府新区鑫磊隆贸易有限公司",
+      "currentCustomerId": "IMP-F5330A24B071",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都天府新区鑫磊隆贸易有限公司",
+      "proposedBaseCustomerName": "成都天府新区鑫磊隆贸易有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "成都天府新区鑫磊隆贸易有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "成都天府新区鑫磊隆贸易有限公司/四川堡闰建筑工程有限公司",
+      "currentCustomerId": "IMP-E2F8FC2FE1F6",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都天府新区鑫磊隆贸易有限公司/四川堡闰建筑工程有限公司",
+      "proposedBaseCustomerName": "成都天府新区鑫磊隆贸易有限公司/四川堡闰建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "成都天府新区鑫磊隆贸易有限公司/四川堡闰建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "成都建工第四建筑工程有限公司",
+      "currentCustomerId": "IMP-AB162306F1CC",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都建工第四建筑工程有限公司",
+      "proposedBaseCustomerName": "成都建工第四建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "成都建工第四建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "成都德裕隆机电工程有限公司",
+      "currentCustomerId": "IMP-E18B7129FBDA",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都德裕隆机电工程有限公司",
+      "proposedBaseCustomerName": "成都德裕隆机电工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "成都德裕隆机电工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "成都恒秀宏远景观工程有限公司/四川天益建筑工程有限公司",
+      "currentCustomerId": "IMP-D44BA5FCF129",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都恒秀宏远景观工程有限公司/四川天益建筑工程有限公司",
+      "proposedBaseCustomerName": "成都恒秀宏远景观工程有限公司/四川天益建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "成都恒秀宏远景观工程有限公司/四川天益建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "成都横竖景观设计工程有限公司",
+      "currentCustomerId": "IMP-A896ECE5C5DC",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都横竖景观设计工程有限公司",
+      "proposedBaseCustomerName": "成都横竖景观设计工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "成都横竖景观设计工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "成都永安建设集团有限公司",
+      "currentCustomerId": "IMP-98320814F770",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都永安建设集团有限公司",
+      "proposedBaseCustomerName": "成都永安建设集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "成都永安建设集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 4,
+        "receivableCount": 4,
+        "ledgerProfileCount": 4,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "成都永安建设集团有限公司（云龙小学）",
+      "currentCustomerId": "IMP-2B44DD2DDEFE",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都永安建设集团有限公司(云龙小学)",
+      "proposedBaseCustomerName": "成都永安建设集团有限公司",
+      "bracketContent": "云龙小学",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "成都永安建设集团有限公司（云龙小学）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "成都永安建设集团有限公司（盛世锦都）",
+      "currentCustomerId": "IMP-B3372FEFA4F3",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都永安建设集团有限公司(盛世锦都)",
+      "proposedBaseCustomerName": "成都永安建设集团有限公司",
+      "bracketContent": "盛世锦都",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "成都永安建设集团有限公司（盛世锦都）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "成都永安建设集团有限公司（秦皇帝锦）",
+      "currentCustomerId": "IMP-5BD63FCC4167",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都永安建设集团有限公司(秦皇帝锦)",
+      "proposedBaseCustomerName": "成都永安建设集团有限公司",
+      "bracketContent": "秦皇帝锦",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "成都永安建设集团有限公司（秦皇帝锦）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "成都美家绿城园林有限公司",
+      "currentCustomerId": "IMP-2430037E74C7",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都美家绿城园林有限公司",
+      "proposedBaseCustomerName": "成都美家绿城园林有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "成都美家绿城园林有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 3,
+        "ledgerProfileCount": 1,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "成都轨道新山实业有限公司",
+      "currentCustomerId": "IMP-C9544FA6CF93",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都轨道新山实业有限公司",
+      "proposedBaseCustomerName": "成都轨道新山实业有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "成都轨道新山实业有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "成都鸿盛行贸易有限公司",
+      "currentCustomerId": "IMP-BC76567735F9",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "成都鸿盛行贸易有限公司",
+      "proposedBaseCustomerName": "成都鸿盛行贸易有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "成都鸿盛行贸易有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "攀枝花攀甬路桥建设有限公司",
+      "currentCustomerId": "IMP-AD2A1EA07861",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "攀枝花攀甬路桥建设有限公司",
+      "proposedBaseCustomerName": "攀枝花攀甬路桥建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "攀枝花攀甬路桥建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "新疆苏中建设工程有限公司",
+      "currentCustomerId": "IMP-E7B4D841C7D1",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "新疆苏中建设工程有限公司",
+      "proposedBaseCustomerName": "新疆苏中建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "新疆苏中建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "昊熠建设集团有限公司",
+      "currentCustomerId": "IMP-92204DD781A1",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "昊熠建设集团有限公司",
+      "proposedBaseCustomerName": "昊熠建设集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "昊熠建设集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "李合林",
+      "currentCustomerId": "IMP-731391329F00",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "李合林",
+      "proposedBaseCustomerName": "李合林",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "李合林",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "李合林自运",
+      "currentCustomerId": "IMP-320F49F9CC2A",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "李合林自运",
+      "proposedBaseCustomerName": "李合林自运",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "李合林自运",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 0,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "核工业西南勘察设计研究院有限公司",
+      "currentCustomerId": "IMP-879335AC2DDD",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "核工业西南勘察设计研究院有限公司",
+      "proposedBaseCustomerName": "核工业西南勘察设计研究院有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "核工业西南勘察设计研究院有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "樊先生、南雁",
+      "currentCustomerId": "IMP-48875D87415E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "樊先生、南雁",
+      "proposedBaseCustomerName": "樊先生、南雁",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "樊先生、南雁",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 0,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司",
+      "currentCustomerId": "IMP-6D234F735633",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 9,
+        "receivableCount": 8,
+        "ledgerProfileCount": 9,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司 （祥和润兴建筑劳务）",
+      "currentCustomerId": "IMP-E7E4B17E8320",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司 (祥和润兴建筑劳务)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "祥和润兴建筑劳务",
+      "splitKind": "project",
+      "projectAlias": "祥和润兴建筑劳务",
+      "normalizedProjectAlias": "祥和润兴建筑劳务",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司 （祥和润兴建筑劳务）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（四川祥和润兴建筑劳务有限公司）",
+      "currentCustomerId": "IMP-43647CD4A292",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(四川祥和润兴建筑劳务有限公司)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "四川祥和润兴建筑劳务有限公司",
+      "splitKind": "project",
+      "projectAlias": "四川祥和润兴建筑劳务有限公司",
+      "normalizedProjectAlias": "四川祥和润兴建筑劳务有限公司",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（四川祥和润兴建筑劳务有限公司）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（环天．青水澜湾）",
+      "currentCustomerId": "IMP-BD1C41DFC2C0",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(环天．青水澜湾)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "环天．青水澜湾",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（环天．青水澜湾）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（环天．青水澜湾40号地块）",
+      "currentCustomerId": "IMP-A8A5EEE3F690",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(环天．青水澜湾40号地块)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "环天．青水澜湾40号地块",
+      "splitKind": "project",
+      "projectAlias": "环天．青水澜湾40号地块",
+      "normalizedProjectAlias": "环天．青水澜湾40#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（环天．青水澜湾40号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（环天．青水澜湾41号地块）",
+      "currentCustomerId": "IMP-9EA81B947543",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(环天．青水澜湾41号地块)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "环天．青水澜湾41号地块",
+      "splitKind": "project",
+      "projectAlias": "环天．青水澜湾41号地块",
+      "normalizedProjectAlias": "环天．青水澜湾41#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（环天．青水澜湾41号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（环天时代中心63号地块）",
+      "currentCustomerId": "IMP-269D0917CE46",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(环天时代中心63号地块)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "环天时代中心63号地块",
+      "splitKind": "project",
+      "projectAlias": "环天时代中心63号地块",
+      "normalizedProjectAlias": "环天时代中心63#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（环天时代中心63号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "江西建工第三建筑有限责任公司（环天时代中心64号地块）",
+      "currentCustomerId": "IMP-AD7BB1EBC958",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "江西建工第三建筑有限责任公司(环天时代中心64号地块)",
+      "proposedBaseCustomerName": "江西建工第三建筑有限责任公司",
+      "bracketContent": "环天时代中心64号地块",
+      "splitKind": "project",
+      "projectAlias": "环天时代中心64号地块",
+      "normalizedProjectAlias": "环天时代中心64#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "江西建工第三建筑有限责任公司（环天时代中心64号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "浙江恒宸建设集团有限公司",
+      "currentCustomerId": "IMP-9AA1CBBC8407",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "浙江恒宸建设集团有限公司",
+      "proposedBaseCustomerName": "浙江恒宸建设集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "浙江恒宸建设集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 2,
+        "riskCount": 3
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "深圳市赛能达实业发展有限公司",
+      "currentCustomerId": "IMP-AAA2C105A360",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "深圳市赛能达实业发展有限公司",
+      "proposedBaseCustomerName": "深圳市赛能达实业发展有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "深圳市赛能达实业发展有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "深圳市赛能达实业发展有限公司（收票单位为：四川展途鑫建材有限公司）",
+      "currentCustomerId": "IMP-B00BB511238C",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "深圳市赛能达实业发展有限公司(收票单位为：四川展途鑫建材有限公司)",
+      "proposedBaseCustomerName": "深圳市赛能达实业发展有限公司",
+      "bracketContent": "收票单位为：四川展途鑫建材有限公司",
+      "splitKind": "alias",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": true,
+      "suggestedAction": "review_alias_before_merge",
+      "traceability": {
+        "originalSourceName": "深圳市赛能达实业发展有限公司（收票单位为：四川展途鑫建材有限公司）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容更像别名或组织说明"
+      ]
+    },
+    {
+      "currentCustomerName": "王斌",
+      "currentCustomerId": "IMP-EEF85859E759",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "王斌",
+      "proposedBaseCustomerName": "王斌",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "王斌",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "王斌自运",
+      "currentCustomerId": "IMP-6B6E82C2475E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "王斌自运",
+      "proposedBaseCustomerName": "王斌自运",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "王斌自运",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "眉山市志同道合建筑工程有限公司",
+      "currentCustomerId": "IMP-125D74A7CC27",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "眉山市志同道合建筑工程有限公司",
+      "proposedBaseCustomerName": "眉山市志同道合建筑工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "眉山市志同道合建筑工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 2,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "眉山特驱双林教育咨询有限公司",
+      "currentCustomerId": "IMP-8F2BCAB47746",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "眉山特驱双林教育咨询有限公司",
+      "proposedBaseCustomerName": "眉山特驱双林教育咨询有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "眉山特驱双林教育咨询有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "眉山维港置业有限公司",
+      "currentCustomerId": "IMP-2A7E15C3407B",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "眉山维港置业有限公司",
+      "proposedBaseCustomerName": "眉山维港置业有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "眉山维港置业有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "眉山诚宇商贸有限公司",
+      "currentCustomerId": "IMP-A38531531C50",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "眉山诚宇商贸有限公司",
+      "proposedBaseCustomerName": "眉山诚宇商贸有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "眉山诚宇商贸有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "私人",
+      "currentCustomerId": "IMP-82B464FC64FB",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "私人",
+      "proposedBaseCustomerName": "私人",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "私人",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 4,
+        "receivableCount": 4,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "自用",
+      "currentCustomerId": "IMP-5688F6956365",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "自用",
+      "proposedBaseCustomerName": "自用",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "自用",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "蜀耳",
+      "currentCustomerId": "IMP-8236BF9BA5CA",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "蜀耳",
+      "proposedBaseCustomerName": "蜀耳",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "蜀耳",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "西充聚号宇商贸有限公司",
+      "currentCustomerId": "IMP-3CC2D0ADB48B",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "西充聚号宇商贸有限公司",
+      "proposedBaseCustomerName": "西充聚号宇商贸有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "西充聚号宇商贸有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "购货单位",
+      "currentCustomerId": "IMP-FB3FB348357F",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "购货单位",
+      "proposedBaseCustomerName": "购货单位",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "购货单位",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "远威集团有限公司",
+      "currentCustomerId": "IMP-AECA5C3ED105",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "远威集团有限公司",
+      "proposedBaseCustomerName": "远威集团有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "远威集团有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "邓军",
+      "currentCustomerId": "IMP-7AE1DC9C3E6C",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "邓军",
+      "proposedBaseCustomerName": "邓军",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "邓军",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "邓军自运",
+      "currentCustomerId": "IMP-B9DC80BF9042",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "邓军自运",
+      "proposedBaseCustomerName": "邓军自运",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "邓军自运",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 0,
+        "receivableCount": 0,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "重庆二建",
+      "currentCustomerId": "IMP-FE5BEB9CCCBC",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "重庆二建",
+      "proposedBaseCustomerName": "重庆二建",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "重庆二建",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "重庆兆旋建设有限公司",
+      "currentCustomerId": "IMP-09791F0AEC0C",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "重庆兆旋建设有限公司",
+      "proposedBaseCustomerName": "重庆兆旋建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "重庆兆旋建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 3,
+        "receivableCount": 2,
+        "ledgerProfileCount": 1,
+        "riskCount": 3
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "重庆利融建设有限公司",
+      "currentCustomerId": "IMP-8C6E9669BAA2",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "重庆利融建设有限公司",
+      "proposedBaseCustomerName": "重庆利融建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "重庆利融建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "重庆吉盛园林景观有限公司",
+      "currentCustomerId": "IMP-1E19167CE60E",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "重庆吉盛园林景观有限公司",
+      "proposedBaseCustomerName": "重庆吉盛园林景观有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "重庆吉盛园林景观有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "重庆建工第二建设工程有限公司（35号地块）",
+      "currentCustomerId": "IMP-47BF388AD9D2",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "重庆建工第二建设工程有限公司(35号地块)",
+      "proposedBaseCustomerName": "重庆建工第二建设工程有限公司",
+      "bracketContent": "35号地块",
+      "splitKind": "project",
+      "projectAlias": "35号地块",
+      "normalizedProjectAlias": "35#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": false,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "重庆建工第二建设工程有限公司（35号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "重庆建工第二建设工程有限公司（36号地块）",
+      "currentCustomerId": "IMP-79F312F5F2FB",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "重庆建工第二建设工程有限公司(36号地块)",
+      "proposedBaseCustomerName": "重庆建工第二建设工程有限公司",
+      "bracketContent": "36号地块",
+      "splitKind": "project",
+      "projectAlias": "36号地块",
+      "normalizedProjectAlias": "36#地块",
+      "shouldMergeToBaseCustomer": true,
+      "targetSubjectExists": false,
+      "suggestedAction": "merge_to_subject_customer",
+      "traceability": {
+        "originalSourceName": "重庆建工第二建设工程有限公司（36号地块）",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 2,
+        "receivableCount": 2,
+        "ledgerProfileCount": 0,
+        "riskCount": 0
+      },
+      "reasons": [
+        "括号内容命中项目关键词"
+      ]
+    },
+    {
+      "currentCustomerName": "重庆建工第二建设有限公司",
+      "currentCustomerId": "IMP-8B9637AFC6BA",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "重庆建工第二建设有限公司",
+      "proposedBaseCustomerName": "重庆建工第二建设有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "重庆建工第二建设有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 8,
+        "receivableCount": 4,
+        "ledgerProfileCount": 8,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "重庆黄金建设（集团）有限公司",
+      "currentCustomerId": "IMP-5C60C86CBC9D",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "重庆黄金建设(集团)有限公司",
+      "proposedBaseCustomerName": "重庆黄金建设(集团)有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "重庆黄金建设（集团）有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "陕西丰锐达建设工程有限公司",
+      "currentCustomerId": "IMP-5AC4B0EA52CE",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "陕西丰锐达建设工程有限公司",
+      "proposedBaseCustomerName": "陕西丰锐达建设工程有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "陕西丰锐达建设工程有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 1
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "高通环保科技股份有限公司",
+      "currentCustomerId": "IMP-C170F95AEB59",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "高通环保科技股份有限公司",
+      "proposedBaseCustomerName": "高通环保科技股份有限公司",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "高通环保科技股份有限公司",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    },
+    {
+      "currentCustomerName": "鸿鑫英达",
+      "currentCustomerId": "IMP-AC95FF651895",
+      "currentCustomerCode": null,
+      "normalizedOriginalName": "鸿鑫英达",
+      "proposedBaseCustomerName": "鸿鑫英达",
+      "bracketContent": null,
+      "splitKind": "none",
+      "projectAlias": null,
+      "normalizedProjectAlias": null,
+      "shouldMergeToBaseCustomer": false,
+      "targetSubjectExists": true,
+      "suggestedAction": "keep_as_subject_customer",
+      "traceability": {
+        "originalSourceName": "鸿鑫英达",
+        "keepSourceReference": true
+      },
+      "impactPreview": {
+        "projectCount": 1,
+        "receivableCount": 1,
+        "ledgerProfileCount": 1,
+        "riskCount": 0
+      },
+      "reasons": []
+    }
+  ]
+}

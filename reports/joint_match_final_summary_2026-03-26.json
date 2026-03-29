@@ -1,0 +1,253 @@
+{
+  "ledgerUniqueCustomersAfter": 155,
+  "noFullSheetAfter": 35,
+  "repairedByJointMatch": 13,
+  "noSheet": [
+    {
+      "customerName": "成都天府新区鑫磊隆贸易有限公司/四川堡闰建筑工程有限公司",
+      "customerId": "IMP-E2F8FC2FE1F6"
+    },
+    {
+      "customerName": "重庆建工第二建设工程有限公司（35号地块）",
+      "customerId": "IMP-47BF388AD9D2"
+    },
+    {
+      "customerName": "重庆建工第二建设工程有限公司（36号地块）",
+      "customerId": "IMP-79F312F5F2FB"
+    },
+    {
+      "customerName": "邓军",
+      "customerId": "IMP-7AE1DC9C3E6C"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司 （祥和润兴建筑劳务）",
+      "customerId": "IMP-E7E4B17E8320"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾40号地块）",
+      "customerId": "IMP-A8A5EEE3F690"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾41号地块）",
+      "customerId": "IMP-9EA81B947543"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天时代中心63号地块）",
+      "customerId": "IMP-269D0917CE46"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天时代中心64号地块）",
+      "customerId": "IMP-AD7BB1EBC958"
+    },
+    {
+      "customerName": "李合林",
+      "customerId": "IMP-731391329F00"
+    },
+    {
+      "customerName": "深圳市赛能达实业发展有限公司",
+      "customerId": "IMP-AAA2C105A360"
+    },
+    {
+      "customerName": "私人",
+      "customerId": "IMP-82B464FC64FB"
+    },
+    {
+      "customerName": "四川昌奕建设工程集团有限公司（恒大文化旅游城）",
+      "customerId": "IMP-5578B31F18AF"
+    },
+    {
+      "customerName": "四川贯旭达建设工程有限公司",
+      "customerId": "IMP-FA07BE713E7F"
+    },
+    {
+      "customerName": "四川湖屿川建筑工程有限公司",
+      "customerId": "IMP-16519BB29762"
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司（川港合作示范园95号地块）",
+      "customerId": "IMP-F2A7E1FF1B27"
+    },
+    {
+      "customerName": "四川良盟建筑工程有限公司（施工二部B1）",
+      "customerId": "IMP-D7389E7DA932"
+    },
+    {
+      "customerName": "四川良盟建筑工程有限公司（施工二部B2组团）",
+      "customerId": "IMP-8DD70A42E1C8"
+    },
+    {
+      "customerName": "四川启明电力工程有限公司",
+      "customerId": "IMP-5AE3C6C98C04"
+    },
+    {
+      "customerName": "四川沁森建筑工程有限公司",
+      "customerId": "IMP-EABB17CB66BE"
+    },
+    {
+      "customerName": "四川蓉筑建筑工程有限公司",
+      "customerId": "IMP-76414F3161A7"
+    },
+    {
+      "customerName": "四川如雷建筑工程有限公司",
+      "customerId": "IMP-732CE5096E9D"
+    },
+    {
+      "customerName": "四川省顶鑫建筑工程有限公司",
+      "customerId": "IMP-BC784628FACB"
+    },
+    {
+      "customerName": "四川蜀巴电力建设有限公司",
+      "customerId": "IMP-200B40277534"
+    },
+    {
+      "customerName": "四川天润装配式钢结构制造有限公司",
+      "customerId": "IMP-20D9CDD5F5C6"
+    },
+    {
+      "customerName": "四川祥乔齐胜建设工程有限公司",
+      "customerId": "IMP-33ED6F277D70"
+    },
+    {
+      "customerName": "四川中地恒高景观工程有限公司 视高分公司",
+      "customerId": "IMP-1465D02E9479"
+    },
+    {
+      "customerName": "四川中吕建设有限公司",
+      "customerId": "IMP-670D21AD89D7"
+    },
+    {
+      "customerName": "王斌",
+      "customerId": "IMP-EEF85859E759"
+    },
+    {
+      "customerName": "张明建",
+      "customerId": "IMP-B374CB991E3E"
+    },
+    {
+      "customerName": "中国电建市政建设集团有限公司眉山分公司",
+      "customerId": "IMP-773EE192C66E"
+    },
+    {
+      "customerName": "中国水利水电第十四工程局有限公司（十局）",
+      "customerId": "IMP-32DFC41456ED"
+    },
+    {
+      "customerName": "中国水利水电第五工程局有限公司",
+      "customerId": "IMP-F5C0639A0DF7"
+    },
+    {
+      "customerName": "中国水利水电第五工程局有限公司（一工区）",
+      "customerId": "IMP-3DB671917ED2"
+    },
+    {
+      "customerName": "自用",
+      "customerId": "IMP-5688F6956365"
+    }
+  ],
+  "repaired": [
+    {
+      "customerName": "四川合立智慧城市建设发展有限公司（天府云城）",
+      "customerId": "IMP-0C3D6A1BDA30",
+      "status": "created",
+      "sourceSheet": "120",
+      "sourceCustomerName": "四川合立智慧城市建设发展有限公司",
+      "sourceProjectName": "悦府·天府云城"
+    },
+    {
+      "customerName": "四川昌奕建设工程集团有限公司（清水云庭）",
+      "customerId": "IMP-64267E03F1E1",
+      "status": "created",
+      "sourceSheet": "157-1",
+      "sourceCustomerName": "四川昌奕建设工程集团有限公司",
+      "sourceProjectName": "清水云庭"
+    },
+    {
+      "customerName": "四川正矿建设有限公司（商铺）",
+      "customerId": "IMP-5E6F01E06363",
+      "status": "created",
+      "sourceSheet": "89-1",
+      "sourceCustomerName": "四川正矿建设有限公司",
+      "sourceProjectName": "通威·長湾一期（2020（TR）-75#地块商铺）"
+    },
+    {
+      "customerName": "四川正矿建设有限公司（通威77号地块）",
+      "customerId": "IMP-478CDBE2DBD8",
+      "status": "created",
+      "sourceSheet": "104",
+      "sourceCustomerName": "四川正矿建设有限公司",
+      "sourceProjectName": "通威77号地块"
+    },
+    {
+      "customerName": "四川泰宏裕建设工程有限公司（盛世华庭）",
+      "customerId": "IMP-8B259BF91C40",
+      "status": "created",
+      "sourceSheet": "123",
+      "sourceCustomerName": "四川泰宏裕建设工程有限公司",
+      "sourceProjectName": "盛世华庭总坪"
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块一批次）",
+      "customerId": "IMP-B016FCB65B9E",
+      "status": "created",
+      "sourceSheet": "110-3",
+      "sourceCustomerName": "四川超前盈欣建设工程有限公司",
+      "sourceProjectName": "视高天府翡翠城2#地块一批次"
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块二批次）",
+      "customerId": "IMP-538AAEF0973D",
+      "status": "created",
+      "sourceSheet": "110-1",
+      "sourceCustomerName": "四川超前盈欣建设工程有限公司",
+      "sourceProjectName": "视高天府翡翠城2#地块二批次"
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期一批次）",
+      "customerId": "IMP-DB2F52EFAC3B",
+      "status": "created",
+      "sourceSheet": "110",
+      "sourceCustomerName": "四川超前盈欣建设工程有限公司",
+      "sourceProjectName": "视高天府翡翠城一期一批次"
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期二批次）",
+      "customerId": "IMP-2A2FA9B6CFA4",
+      "status": "created",
+      "sourceSheet": "110-2",
+      "sourceCustomerName": "四川超前盈欣建设工程有限公司",
+      "sourceProjectName": "视高天府翡翠城一期二批次"
+    },
+    {
+      "customerName": "成都永安建设集团有限公司（云龙小学）",
+      "customerId": "IMP-2B44DD2DDEFE",
+      "status": "created",
+      "sourceSheet": "124",
+      "sourceCustomerName": "成都永安建设集团有限公司",
+      "sourceProjectName": "云龙小学"
+    },
+    {
+      "customerName": "成都永安建设集团有限公司（盛世锦都）",
+      "customerId": "IMP-B3372FEFA4F3",
+      "status": "created",
+      "sourceSheet": "52-1",
+      "sourceCustomerName": "成都永安建设集团有限公司",
+      "sourceProjectName": "四川天府新区盛世锦都住宅建设项目"
+    },
+    {
+      "customerName": "成都永安建设集团有限公司（秦皇帝锦）",
+      "customerId": "IMP-5BD63FCC4167",
+      "status": "created",
+      "sourceSheet": "122",
+      "sourceCustomerName": "成都永安建设集团有限公司",
+      "sourceProjectName": "秦皇帝锦三期二标段"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾）",
+      "customerId": "IMP-BD1C41DFC2C0",
+      "status": "created",
+      "sourceSheet": "31",
+      "sourceCustomerName": "江西建工第三建筑有限责任公司",
+      "sourceProjectName": "环天．青水澜湾项目37、38#"
+    }
+  ]
+}

@@ -1,0 +1,1827 @@
+{
+  "excelUniqueCustomers": 210,
+  "systemUniqueCustomers": 196,
+  "ledgerUniqueCustomers": 142,
+  "matchedWithLedger": 142,
+  "excelSystemNoLedger": 34,
+  "excelNotSystem": 34,
+  "systemNotExcel": 20,
+  "blankProfileSheets": [
+    "Am",
+    "零星"
+  ],
+  "list1": [
+    {
+      "customerName": "成都德裕隆机电工程有限公司",
+      "customerId": "IMP-E18B7129FBDA",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "成都轨道新山实业有限公司",
+      "customerId": "IMP-C9544FA6CF93",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "成都恒秀宏远景观工程有限公司/四川天益建筑工程有限公司",
+      "customerId": "IMP-D44BA5FCF129",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "成都横竖景观设计工程有限公司",
+      "customerId": "IMP-A896ECE5C5DC",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "成都鸿盛行贸易有限公司",
+      "customerId": "IMP-BC76567735F9",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "成都建工第四建筑工程有限公司",
+      "customerId": "IMP-AB162306F1CC",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "成都美家绿城园林有限公司",
+      "customerId": "IMP-2430037E74C7",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "成都天府新区鑫磊隆贸易有限公司",
+      "customerId": "IMP-F5330A24B071",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "成都永安建设集团有限公司",
+      "customerId": "IMP-98320814F770",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 4
+    },
+    {
+      "customerName": "重庆黄金建设（集团）有限公司",
+      "customerId": "IMP-5C60C86CBC9D",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "重庆吉盛园林景观有限公司",
+      "customerId": "IMP-1E19167CE60E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "重庆建工第二建设有限公司",
+      "customerId": "IMP-8B9637AFC6BA",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 8
+    },
+    {
+      "customerName": "重庆利融建设有限公司",
+      "customerId": "IMP-8C6E9669BAA2",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "重庆兆旋建设有限公司",
+      "customerId": "IMP-09791F0AEC0C",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "邓军自运",
+      "customerId": "IMP-B9DC80BF9042",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "峨眉山产投供应链管理集团有限公司",
+      "customerId": "IMP-971DFFE8BB7A",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "樊先生、南雁",
+      "customerId": "IMP-48875D87415E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "高通环保科技股份有限公司",
+      "customerId": "IMP-C170F95AEB59",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "广西建工集团第二建筑工程有限责任公司",
+      "customerId": "IMP-5C420B55A0D9",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 4
+    },
+    {
+      "customerName": "广西建工集团基础建设有限公司",
+      "customerId": "IMP-588142B0CC12",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "昊熠建设集团有限公司",
+      "customerId": "IMP-92204DD781A1",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "核工业西南勘察设计研究院有限公司",
+      "customerId": "IMP-879335AC2DDD",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "鸿鑫英达",
+      "customerId": "IMP-AC95FF651895",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司",
+      "customerId": "IMP-6D234F735633",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 9
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（四川祥和润兴建筑劳务有限公司）",
+      "customerId": "IMP-43647CD4A292",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "乐山市瑞景园林工程有限公司",
+      "customerId": "IMP-A80B230240E5",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "李合林自运",
+      "customerId": "IMP-320F49F9CC2A",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "眉山诚宇商贸有限公司",
+      "customerId": "IMP-A38531531C50",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "眉山市志同道合建筑工程有限公司",
+      "customerId": "IMP-125D74A7CC27",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "眉山特驱双林教育咨询有限公司",
+      "customerId": "IMP-8F2BCAB47746",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "眉山维港置业有限公司",
+      "customerId": "IMP-2A7E15C3407B",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "攀枝花攀甬路桥建设有限公司",
+      "customerId": "IMP-AD2A1EA07861",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "仁寿吉冠人造板有限公司",
+      "customerId": "IMP-A8F1CD105E48",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "仁寿胜鑫建材有限公司",
+      "customerId": "IMP-7AF37B354485",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "陕西丰锐达建设工程有限公司",
+      "customerId": "IMP-5AC4B0EA52CE",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "深圳市赛能达实业发展有限公司（收票单位为：四川展途鑫建材有限公司）",
+      "customerId": "IMP-B00BB511238C",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川安尔福建筑有限公司",
+      "customerId": "IMP-8D953AB12BB5",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川傲营建筑工程有限公司",
+      "customerId": "IMP-31153F1434E2",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "四川仓宇建设工程有限公司",
+      "customerId": "IMP-ED84DB11ACA2",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川昌奕建设工程集团有限公司",
+      "customerId": "IMP-5A3568C64C3F",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 5
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司",
+      "customerId": "IMP-EEEA0EFAB6C0",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 5
+    },
+    {
+      "customerName": "四川诚合汇超建筑劳务有限公司",
+      "customerId": "IMP-190FDDA3E6BF",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川春航建设集团有限公司",
+      "customerId": "IMP-F2E6FBA4A156",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川达虹宇建筑工程有限公司",
+      "customerId": "IMP-17E58C8F0761",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川大鑫供应链管理有限公司",
+      "customerId": "IMP-41AFE8614963",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川鼎宸固基建设有限公司",
+      "customerId": "IMP-76E766EA3319",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川鼎冠瑞恒建筑工程有限公司",
+      "customerId": "IMP-3C8932029408",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 3
+    },
+    {
+      "customerName": "四川鼎立鸿大建筑工程有限公司",
+      "customerId": "IMP-62D3FE4DED58",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "四川东永胜建设工程有限公司",
+      "customerId": "IMP-CEE20709E03B",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川庚泽建筑工程有限公司",
+      "customerId": "IMP-8515BA4C85A3",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川广安江泓输变电有限公司",
+      "customerId": "IMP-E2820CF516A9",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川合富建筑工程有限公司",
+      "customerId": "IMP-F41ED76BB612",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川合立智慧城市建设发展有限公司",
+      "customerId": "IMP-4814F1B90C83",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "四川恒远安建筑工程有限公司",
+      "customerId": "IMP-2C24E6FEAB57",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川衡信建设工程有限公司",
+      "customerId": "IMP-51A4BE2F8949",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川华地建设工程有限责任公司",
+      "customerId": "IMP-EF4224067EE3",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川华睿能电力建设有限责任公司",
+      "customerId": "IMP-7DFCCF85A49F",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川华西数产科技集团有限公司",
+      "customerId": "IMP-5BD4CA0F0757",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川煌峰建筑工程有限公司",
+      "customerId": "IMP-92A59B812C4A",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 4
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司",
+      "customerId": "IMP-FDB0224A3CC6",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 15
+    },
+    {
+      "customerName": "四川嘉运通供应链管理有限公司",
+      "customerId": "IMP-1D4BBAB6124E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川犍新宇建筑劳务有限公司",
+      "customerId": "IMP-82E0A49136AF",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川金苇园林绿化工程有限公司",
+      "customerId": "IMP-BBFFFF25623A",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川锦天下园林工程有限公司",
+      "customerId": "IMP-C07A92CE996B",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "四川景秀河山景观工程有限公司",
+      "customerId": "IMP-3AA8369FBE11",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川俱能达建设工程有限公司",
+      "customerId": "IMP-64020D0C70FB",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川坤达誉腾建设工程有限公司",
+      "customerId": "IMP-63D711FE235F",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川立君建筑工程有限公司",
+      "customerId": "IMP-AF245853C59E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川良盟建筑工程有限公司",
+      "customerId": "IMP-05AD7160ADF7",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "四川林超元建材有限公司",
+      "customerId": "IMP-478FF4FB1AD7",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川陆通建设有限公司",
+      "customerId": "IMP-D8EFE15E68AD",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川路航建设工程有限责任公司",
+      "customerId": "IMP-DE435633E0D7",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川南峰建筑工程有限公司",
+      "customerId": "IMP-B69C2B81292E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川启宸博创商贸有限公司",
+      "customerId": "IMP-A448415F4837",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川谦禾建设工程有限公司",
+      "customerId": "IMP-D956716513FF",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川蓉筑建设工程有限公司",
+      "customerId": "IMP-C55FC57B4E94",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川润辉鑫成电力工程有限公司",
+      "customerId": "IMP-86D21AA7F105",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川省贝瑞达建筑工程有限公司",
+      "customerId": "IMP-9D4E0064DEAD",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川省第四建筑有限公司",
+      "customerId": "IMP-33F754653826",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川省恒新建筑有限公司",
+      "customerId": "IMP-1F337CC08947",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川省慧博智城建设工程有限公司",
+      "customerId": "IMP-8AF57151D041",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川省建福岩土工程有限公司",
+      "customerId": "IMP-CEE3A9680C08",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川省欧荣岩土工程有限公司",
+      "customerId": "IMP-AC76A200DE95",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "四川省欧荣岩土工程有限公司/四川蓉筑建设工程有限公司",
+      "customerId": "IMP-5FE120BB69A7",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川省启明电力工程有限公司",
+      "customerId": "IMP-C650A3D875F1",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川省蜀通岩土工程公司",
+      "customerId": "IMP-F0A983B38D1B",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川省通力建设工程有限公司",
+      "customerId": "IMP-42C2034F8F35",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "四川省祥福建设工程有限公司",
+      "customerId": "IMP-7A144D04F055",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "四川省益正地基基础工程有限公司",
+      "customerId": "IMP-9E09ADEEFE05",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "四川圣双园林工程有限公司",
+      "customerId": "IMP-D4E52EA670BB",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 3
+    },
+    {
+      "customerName": "四川蜀巴电力建设工程有限公司",
+      "customerId": "IMP-747F59852111",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川烁全建筑工程有限公司",
+      "customerId": "IMP-1DA1AA355EFC",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川嵩嘉建筑工程有限公司",
+      "customerId": "IMP-DDB338CDD7E8",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川塔牌电缆绕组线有限责任公司/四川沁森建筑工程有限公司",
+      "customerId": "IMP-94D3FDFA8CDB",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川泰宏裕建设工程有限公司",
+      "customerId": "IMP-BB2E1DC3958B",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川泰鸿裕建设工程有限公司",
+      "customerId": "IMP-C4F829DEF201",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川天府蓉创文化旅游有限责任公司",
+      "customerId": "IMP-AFB632C7C79E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川天润装配式钢结构工程有限公司",
+      "customerId": "IMP-997F1C5DA4B8",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川闻渤建设工程有限公司",
+      "customerId": "IMP-95C80DBF1327",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川祥禾齐胜建设工程有限公司",
+      "customerId": "IMP-5384AB88A2ED",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川薪隆新能源有限公司",
+      "customerId": "IMP-78E0CD6C5103",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川兴南建设有限公司",
+      "customerId": "IMP-394496D225DA",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川兴泰建筑工程有限公司",
+      "customerId": "IMP-FFD65A18C077",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川讯隆建设工程有限公司",
+      "customerId": "IMP-D4A362937FC6",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川冶创建筑工程集团有限公司",
+      "customerId": "IMP-520F39AA77A5",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 5
+    },
+    {
+      "customerName": "四川一库建筑工程有限公司",
+      "customerId": "IMP-E59D4C19F07B",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川怡诚石油天然气工程有限公司",
+      "customerId": "IMP-70227D561C89",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川亿博达商贸有限公司",
+      "customerId": "IMP-E0F161579299",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川云遥电力建设有限公司",
+      "customerId": "IMP-A8594E48FF26",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川正矿建设有限公司",
+      "customerId": "IMP-4713300420E5",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 4
+    },
+    {
+      "customerName": "四川正龙烨建筑工程有限公司",
+      "customerId": "IMP-2D222097CB32",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川志德岩土工程有限责任公司",
+      "customerId": "IMP-D210A7B582D9",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 5
+    },
+    {
+      "customerName": "四川中地恒高景观工程有限公司",
+      "customerId": "IMP-3EC939FFA62E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川中地恒高景观工程有限公司视高分公司",
+      "customerId": "IMP-9C22A1F79902",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "四川中恩岩土工程有限公司",
+      "customerId": "IMP-6A125BC2B532",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川中福盛源供应链管理有限公司",
+      "customerId": "IMP-F137B380B997",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "四川中铭建设有限公司",
+      "customerId": "IMP-B89EBA862C85",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 3
+    },
+    {
+      "customerName": "四川中培博天建筑工程有限公司",
+      "customerId": "IMP-CC8703D2F90B",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川中荣诚建设工程有限公司",
+      "customerId": "IMP-34D2E1F3429E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川中星禾商贸有限公司",
+      "customerId": "IMP-80985F56E614",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川忠德油气安装工程有限公司",
+      "customerId": "IMP-5E36C08334F0",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川筑亿商贸有限公司",
+      "customerId": "IMP-6448711E2C90",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "四川卓昕置业有限公司",
+      "customerId": "IMP-DFD0713C9FC6",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "王斌自运",
+      "customerId": "IMP-6B6E82C2475E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "西充聚号宇商贸有限公司",
+      "customerId": "IMP-3CC2D0ADB48B",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "新疆苏中建设工程有限公司",
+      "customerId": "IMP-E7B4D841C7D1",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "远威集团有限公司",
+      "customerId": "IMP-AECA5C3ED105",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "张明建自运",
+      "customerId": "IMP-EA23890F8369",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "浙江恒宸建设集团有限公司",
+      "customerId": "IMP-9AA1CBBC8407",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "中电建路桥集团西部投资发展有限公司",
+      "customerId": "IMP-F4CFE6C99820",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "中国电建市政建设集团",
+      "customerId": "IMP-441E341B550A",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "中国建筑西南勘察设计研究院有限公司",
+      "customerId": "IMP-0159AC27E4CB",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 13
+    },
+    {
+      "customerName": "中国水利水电第十工程局有限公司",
+      "customerId": "IMP-11CB10CCAE52",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 3
+    },
+    {
+      "customerName": "中国水利水电第十四工程局有限公司",
+      "customerId": "IMP-595EB5DAC164",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "中桓建工集团有限公司",
+      "customerId": "IMP-11F4B83ADFF7",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "中建鸿腾建设集团有限公司",
+      "customerId": "IMP-E1B5971A05D5",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 2
+    },
+    {
+      "customerName": "中交二航局成都城市建设工程有限公司",
+      "customerId": "IMP-7ED416D5C2E1",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "中铁北京工程局集团有限公司",
+      "customerId": "IMP-E8E66B9B5F60",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "中铁五局集团建筑工程有限责任公司",
+      "customerId": "IMP-4412058481D3",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "中町建设有限公司",
+      "customerId": "IMP-CD7D54BA9E0E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "中烨国际建工有限公司",
+      "customerId": "IMP-092104235009",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    },
+    {
+      "customerName": "周登文",
+      "customerId": "IMP-370D6DDF2ACF",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": true,
+      "sheetCount": 1
+    }
+  ],
+  "list2": [
+    {
+      "customerName": "成都天府新区鑫磊隆贸易有限公司/四川堡闰建筑工程有限公司",
+      "customerId": "IMP-E2F8FC2FE1F6",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "重庆建工第二建设工程有限公司（35号地块）",
+      "customerId": "IMP-47BF388AD9D2",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "重庆建工第二建设工程有限公司（36号地块）",
+      "customerId": "IMP-79F312F5F2FB",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "邓军",
+      "customerId": "IMP-7AE1DC9C3E6C",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司 （祥和润兴建筑劳务）",
+      "customerId": "IMP-E7E4B17E8320",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天时代中心63号地块）",
+      "customerId": "IMP-269D0917CE46",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "李合林",
+      "customerId": "IMP-731391329F00",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "深圳市赛能达实业发展有限公司",
+      "customerId": "IMP-AAA2C105A360",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "私人",
+      "customerId": "IMP-82B464FC64FB",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川昌奕建设工程集团有限公司（恒大文化旅游城）",
+      "customerId": "IMP-5578B31F18AF",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川昌奕建设工程集团有限公司（清水云庭）",
+      "customerId": "IMP-64267E03F1E1",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块一批次）",
+      "customerId": "IMP-B016FCB65B9E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期二批次）",
+      "customerId": "IMP-2A2FA9B6CFA4",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川贯旭达建设工程有限公司",
+      "customerId": "IMP-FA07BE713E7F",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川合立智慧城市建设发展有限公司（天府云城）",
+      "customerId": "IMP-0C3D6A1BDA30",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川湖屿川建筑工程有限公司",
+      "customerId": "IMP-16519BB29762",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川良盟建筑工程有限公司（施工二部B1）",
+      "customerId": "IMP-D7389E7DA932",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川良盟建筑工程有限公司（施工二部B2组团）",
+      "customerId": "IMP-8DD70A42E1C8",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川启明电力工程有限公司",
+      "customerId": "IMP-5AE3C6C98C04",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川沁森建筑工程有限公司",
+      "customerId": "IMP-EABB17CB66BE",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川蓉筑建筑工程有限公司",
+      "customerId": "IMP-76414F3161A7",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川如雷建筑工程有限公司",
+      "customerId": "IMP-732CE5096E9D",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川省顶鑫建筑工程有限公司",
+      "customerId": "IMP-BC784628FACB",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川蜀巴电力建设有限公司",
+      "customerId": "IMP-200B40277534",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川天润装配式钢结构制造有限公司",
+      "customerId": "IMP-20D9CDD5F5C6",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川祥乔齐胜建设工程有限公司",
+      "customerId": "IMP-33ED6F277D70",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川中地恒高景观工程有限公司 视高分公司",
+      "customerId": "IMP-1465D02E9479",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "四川中吕建设有限公司",
+      "customerId": "IMP-670D21AD89D7",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "王斌",
+      "customerId": "IMP-EEF85859E759",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "张明建",
+      "customerId": "IMP-B374CB991E3E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "中国电建市政建设集团有限公司眉山分公司",
+      "customerId": "IMP-773EE192C66E",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "中国水利水电第十四工程局有限公司（十局）",
+      "customerId": "IMP-32DFC41456ED",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "中国水利水电第五工程局有限公司",
+      "customerId": "IMP-F5C0639A0DF7",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    },
+    {
+      "customerName": "自用",
+      "customerId": "IMP-5688F6956365",
+      "inExcel": true,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "Excel中存在客户记录，但未识别到对应客户完整sheet"
+    }
+  ],
+  "list3": [
+    {
+      "customerName": "成都美家绿城园林有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "成都永安建设集团有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "成都永安建设集团有限公司（秦皇帝锦） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "成都永安建设集团有限公司（盛世锦都） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "成都永安建设集团有限公司（云龙小学） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "重庆建工第二建设工程有限公司（35号地块） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "重庆建工第二建设工程有限公司（36号地块） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "重庆建工第二建设有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾40号地块） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾41号地块） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天时代中心63号地块） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天时代中心64号地块） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "陕西丰锐达建设工程有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川安尔福建筑有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块二批次） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期一批次） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川合立智慧城市建设发展有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川合立智慧城市建设发展有限公司（天府云城） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川湖屿川建筑工程有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川华睿能电力建设有限责任公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司（川港合作示范园95号地块） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川省通力建设工程有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川泰宏裕建设工程有限公司（盛世华庭） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川祥乔齐胜建设工程有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川正矿建设有限公司（商铺） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川正矿建设有限公司（通威77号地块） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川中地恒高景观工程有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "四川中铭建设有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "王斌自运 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "中国水利水电第十四工程局有限公司（十局） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "中国水利水电第五工程局有限公司（一工区） 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "中交二航局成都城市建设工程有限公司 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    },
+    {
+      "customerName": "自用 汇总",
+      "inExcel": true,
+      "inSystem": false,
+      "inLedger": false,
+      "remark": "Excel有客户记录，但系统客户表无此客户"
+    }
+  ],
+  "list4": [
+    {
+      "customerName": "成都永安建设集团有限公司（秦皇帝锦）",
+      "customerId": "IMP-5BD63FCC4167",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "成都永安建设集团有限公司（盛世锦都）",
+      "customerId": "IMP-B3372FEFA4F3",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "成都永安建设集团有限公司（云龙小学）",
+      "customerId": "IMP-2B44DD2DDEFE",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "成眉S5号线",
+      "customerId": "IMP-91101440D99F",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "重庆二建",
+      "customerId": "IMP-FE5BEB9CCCBC",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "单位",
+      "customerId": "IMP-8EC8C8C712BE",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "购货单位",
+      "customerId": "IMP-FB3FB348357F",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "合计",
+      "customerId": "IMP-92BCBF71CB7B",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾）",
+      "customerId": "IMP-BD1C41DFC2C0",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾40号地块）",
+      "customerId": "IMP-A8A5EEE3F690",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾41号地块）",
+      "customerId": "IMP-9EA81B947543",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天时代中心64号地块）",
+      "customerId": "IMP-AD7BB1EBC958",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "蜀耳",
+      "customerId": "IMP-8236BF9BA5CA",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块二批次）",
+      "customerId": "IMP-538AAEF0973D",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期一批次）",
+      "customerId": "IMP-DB2F52EFAC3B",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司（川港合作示范园95号地块）",
+      "customerId": "IMP-F2A7E1FF1B27",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "四川泰宏裕建设工程有限公司（盛世华庭）",
+      "customerId": "IMP-8B259BF91C40",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "四川正矿建设有限公司（商铺）",
+      "customerId": "IMP-5E6F01E06363",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "四川正矿建设有限公司（通威77号地块）",
+      "customerId": "IMP-478CDBE2DBD8",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    },
+    {
+      "customerName": "中国水利水电第五工程局有限公司（一工区）",
+      "customerId": "IMP-3DB671917ED2",
+      "inExcel": false,
+      "inSystem": true,
+      "inLedger": false,
+      "remark": "系统客户存在，但本次Excel名单中不存在"
+    }
+  ]
+}

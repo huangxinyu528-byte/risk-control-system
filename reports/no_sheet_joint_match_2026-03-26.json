@@ -1,0 +1,477 @@
+{
+  "repairedCount": 13,
+  "stillUnmatchedCount": 35,
+  "repaired": [
+    {
+      "customerName": "四川合立智慧城市建设发展有限公司（天府云城）",
+      "customerId": "IMP-0C3D6A1BDA30",
+      "baseUnit": "四川合立智慧城市建设发展有限公司",
+      "projectHint": "天府云城",
+      "matches": [
+        {
+          "sheetName": "120",
+          "sheetCustomer": "四川合立智慧城市建设发展有限公司",
+          "sheetProject": "悦府·天府云城",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "四川昌奕建设工程集团有限公司（清水云庭）",
+      "customerId": "IMP-64267E03F1E1",
+      "baseUnit": "四川昌奕建设工程集团有限公司",
+      "projectHint": "清水云庭",
+      "matches": [
+        {
+          "sheetName": "157-1",
+          "sheetCustomer": "四川昌奕建设工程集团有限公司",
+          "sheetProject": "清水云庭",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "四川正矿建设有限公司（商铺）",
+      "customerId": "IMP-5E6F01E06363",
+      "baseUnit": "四川正矿建设有限公司",
+      "projectHint": "商铺",
+      "matches": [
+        {
+          "sheetName": "89-1",
+          "sheetCustomer": "四川正矿建设有限公司",
+          "sheetProject": "通威·長湾一期（2020（TR）-75#地块商铺）",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "四川正矿建设有限公司（通威77号地块）",
+      "customerId": "IMP-478CDBE2DBD8",
+      "baseUnit": "四川正矿建设有限公司",
+      "projectHint": "通威77号地块",
+      "matches": [
+        {
+          "sheetName": "104",
+          "sheetCustomer": "四川正矿建设有限公司",
+          "sheetProject": "通威77号地块",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "四川泰宏裕建设工程有限公司（盛世华庭）",
+      "customerId": "IMP-8B259BF91C40",
+      "baseUnit": "四川泰宏裕建设工程有限公司",
+      "projectHint": "盛世华庭",
+      "matches": [
+        {
+          "sheetName": "123",
+          "sheetCustomer": "四川泰宏裕建设工程有限公司",
+          "sheetProject": "盛世华庭总坪",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块一批次）",
+      "customerId": "IMP-B016FCB65B9E",
+      "baseUnit": "四川超前盈欣建设工程有限公司",
+      "projectHint": "视高天府翡翠城2#地块一批次",
+      "matches": [
+        {
+          "sheetName": "超前盈欣汇总",
+          "sheetCustomer": "四川超前盈欣建设工程有限公司",
+          "sheetProject": "视高天府翡翠城",
+          "matchMode": "unit_plus_project"
+        },
+        {
+          "sheetName": "110-3",
+          "sheetCustomer": "四川超前盈欣建设工程有限公司",
+          "sheetProject": "视高天府翡翠城2#地块一批次",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城2#地块二批次）",
+      "customerId": "IMP-538AAEF0973D",
+      "baseUnit": "四川超前盈欣建设工程有限公司",
+      "projectHint": "视高天府翡翠城2#地块二批次",
+      "matches": [
+        {
+          "sheetName": "超前盈欣汇总",
+          "sheetCustomer": "四川超前盈欣建设工程有限公司",
+          "sheetProject": "视高天府翡翠城",
+          "matchMode": "unit_plus_project"
+        },
+        {
+          "sheetName": "110-1",
+          "sheetCustomer": "四川超前盈欣建设工程有限公司",
+          "sheetProject": "视高天府翡翠城2#地块二批次",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期一批次）",
+      "customerId": "IMP-DB2F52EFAC3B",
+      "baseUnit": "四川超前盈欣建设工程有限公司",
+      "projectHint": "视高天府翡翠城一期一批次",
+      "matches": [
+        {
+          "sheetName": "超前盈欣汇总",
+          "sheetCustomer": "四川超前盈欣建设工程有限公司",
+          "sheetProject": "视高天府翡翠城",
+          "matchMode": "unit_plus_project"
+        },
+        {
+          "sheetName": "110",
+          "sheetCustomer": "四川超前盈欣建设工程有限公司",
+          "sheetProject": "视高天府翡翠城一期一批次",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "四川超前盈欣建设工程有限公司（视高天府翡翠城一期二批次）",
+      "customerId": "IMP-2A2FA9B6CFA4",
+      "baseUnit": "四川超前盈欣建设工程有限公司",
+      "projectHint": "视高天府翡翠城一期二批次",
+      "matches": [
+        {
+          "sheetName": "超前盈欣汇总",
+          "sheetCustomer": "四川超前盈欣建设工程有限公司",
+          "sheetProject": "视高天府翡翠城",
+          "matchMode": "unit_plus_project"
+        },
+        {
+          "sheetName": "110-2",
+          "sheetCustomer": "四川超前盈欣建设工程有限公司",
+          "sheetProject": "视高天府翡翠城一期二批次",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "成都永安建设集团有限公司（云龙小学）",
+      "customerId": "IMP-2B44DD2DDEFE",
+      "baseUnit": "成都永安建设集团有限公司",
+      "projectHint": "云龙小学",
+      "matches": [
+        {
+          "sheetName": "124",
+          "sheetCustomer": "成都永安建设集团有限公司",
+          "sheetProject": "云龙小学",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "成都永安建设集团有限公司（盛世锦都）",
+      "customerId": "IMP-B3372FEFA4F3",
+      "baseUnit": "成都永安建设集团有限公司",
+      "projectHint": "盛世锦都",
+      "matches": [
+        {
+          "sheetName": "52-1",
+          "sheetCustomer": "成都永安建设集团有限公司",
+          "sheetProject": "四川天府新区盛世锦都住宅建设项目",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "成都永安建设集团有限公司（秦皇帝锦）",
+      "customerId": "IMP-5BD63FCC4167",
+      "baseUnit": "成都永安建设集团有限公司",
+      "projectHint": "秦皇帝锦",
+      "matches": [
+        {
+          "sheetName": "122",
+          "sheetCustomer": "成都永安建设集团有限公司",
+          "sheetProject": "秦皇帝锦三期二标段",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾）",
+      "customerId": "IMP-BD1C41DFC2C0",
+      "baseUnit": "江西建工第三建筑有限责任公司",
+      "projectHint": "环天．青水澜湾",
+      "matches": [
+        {
+          "sheetName": "青水澜湾汇总",
+          "sheetCustomer": "江西建工第三建筑有限责任公司",
+          "sheetProject": "环天．青水澜湾项目37、38#",
+          "matchMode": "unit_plus_project"
+        },
+        {
+          "sheetName": "31",
+          "sheetCustomer": "江西建工第三建筑有限责任公司",
+          "sheetProject": "环天．青水澜湾项目37、38#",
+          "matchMode": "unit_plus_project"
+        },
+        {
+          "sheetName": "31-1",
+          "sheetCustomer": "江西建工第三建筑有限责任公司",
+          "sheetProject": "环天．青水澜湾40#地块",
+          "matchMode": "unit_plus_project"
+        },
+        {
+          "sheetName": "31-2",
+          "sheetCustomer": "江西建工第三建筑有限责任公司",
+          "sheetProject": "环天．青水澜湾41#地块",
+          "matchMode": "unit_plus_project"
+        }
+      ]
+    }
+  ],
+  "stillUnmatched": [
+    {
+      "customerName": "中国水利水电第五工程局有限公司",
+      "customerId": "IMP-F5C0639A0DF7",
+      "baseUnit": "中国水利水电第五工程局有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "中国水利水电第五工程局有限公司（一工区）",
+      "customerId": "IMP-3DB671917ED2",
+      "baseUnit": "中国水利水电第五工程局有限公司",
+      "projectHint": "一工区",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "中国水利水电第十四工程局有限公司（十局）",
+      "customerId": "IMP-32DFC41456ED",
+      "baseUnit": "中国水利水电第十四工程局有限公司",
+      "projectHint": "十局",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "中国电建市政建设集团有限公司眉山分公司",
+      "customerId": "IMP-773EE192C66E",
+      "baseUnit": "中国电建市政建设集团有限公司眉山分公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川中吕建设有限公司",
+      "customerId": "IMP-670D21AD89D7",
+      "baseUnit": "四川中吕建设有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川中地恒高景观工程有限公司 视高分公司",
+      "customerId": "IMP-1465D02E9479",
+      "baseUnit": "四川中地恒高景观工程有限公司 视高分公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川启明电力工程有限公司",
+      "customerId": "IMP-5AE3C6C98C04",
+      "baseUnit": "四川启明电力工程有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川天润装配式钢结构制造有限公司",
+      "customerId": "IMP-20D9CDD5F5C6",
+      "baseUnit": "四川天润装配式钢结构制造有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川如雷建筑工程有限公司",
+      "customerId": "IMP-732CE5096E9D",
+      "baseUnit": "四川如雷建筑工程有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川昌奕建设工程集团有限公司（恒大文化旅游城）",
+      "customerId": "IMP-5578B31F18AF",
+      "baseUnit": "四川昌奕建设工程集团有限公司",
+      "projectHint": "恒大文化旅游城",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "四川沁森建筑工程有限公司",
+      "customerId": "IMP-EABB17CB66BE",
+      "baseUnit": "四川沁森建筑工程有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川湖屿川建筑工程有限公司",
+      "customerId": "IMP-16519BB29762",
+      "baseUnit": "四川湖屿川建筑工程有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川省顶鑫建筑工程有限公司",
+      "customerId": "IMP-BC784628FACB",
+      "baseUnit": "四川省顶鑫建筑工程有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川祥乔齐胜建设工程有限公司",
+      "customerId": "IMP-33ED6F277D70",
+      "baseUnit": "四川祥乔齐胜建设工程有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川良盟建筑工程有限公司（施工二部B1）",
+      "customerId": "IMP-D7389E7DA932",
+      "baseUnit": "四川良盟建筑工程有限公司",
+      "projectHint": "施工二部B1",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "四川良盟建筑工程有限公司（施工二部B2组团）",
+      "customerId": "IMP-8DD70A42E1C8",
+      "baseUnit": "四川良盟建筑工程有限公司",
+      "projectHint": "施工二部B2组团",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "四川蓉筑建筑工程有限公司",
+      "customerId": "IMP-76414F3161A7",
+      "baseUnit": "四川蓉筑建筑工程有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川蜀巴电力建设有限公司",
+      "customerId": "IMP-200B40277534",
+      "baseUnit": "四川蜀巴电力建设有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川贯旭达建设工程有限公司",
+      "customerId": "IMP-FA07BE713E7F",
+      "baseUnit": "四川贯旭达建设工程有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "四川辉航建筑工程有限公司（川港合作示范园95号地块）",
+      "customerId": "IMP-F2A7E1FF1B27",
+      "baseUnit": "四川辉航建筑工程有限公司",
+      "projectHint": "川港合作示范园95号地块",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "张明建",
+      "customerId": "IMP-B374CB991E3E",
+      "baseUnit": "张明建",
+      "projectHint": "",
+      "reason": "名称异常/个人或特殊主体"
+    },
+    {
+      "customerName": "成都天府新区鑫磊隆贸易有限公司/四川堡闰建筑工程有限公司",
+      "customerId": "IMP-E2F8FC2FE1F6",
+      "baseUnit": "成都天府新区鑫磊隆贸易有限公司/四川堡闰建筑工程有限公司",
+      "projectHint": "",
+      "reason": "多主体混合"
+    },
+    {
+      "customerName": "李合林",
+      "customerId": "IMP-731391329F00",
+      "baseUnit": "李合林",
+      "projectHint": "",
+      "reason": "名称异常/个人或特殊主体"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司 （祥和润兴建筑劳务）",
+      "customerId": "IMP-E7E4B17E8320",
+      "baseUnit": "江西建工第三建筑有限责任公司",
+      "projectHint": "祥和润兴建筑劳务",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天时代中心63号地块）",
+      "customerId": "IMP-269D0917CE46",
+      "baseUnit": "江西建工第三建筑有限责任公司",
+      "projectHint": "环天时代中心63号地块",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天时代中心64号地块）",
+      "customerId": "IMP-AD7BB1EBC958",
+      "baseUnit": "江西建工第三建筑有限责任公司",
+      "projectHint": "环天时代中心64号地块",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾40号地块）",
+      "customerId": "IMP-A8A5EEE3F690",
+      "baseUnit": "江西建工第三建筑有限责任公司",
+      "projectHint": "环天．青水澜湾40号地块",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "江西建工第三建筑有限责任公司（环天．青水澜湾41号地块）",
+      "customerId": "IMP-9EA81B947543",
+      "baseUnit": "江西建工第三建筑有限责任公司",
+      "projectHint": "环天．青水澜湾41号地块",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "深圳市赛能达实业发展有限公司",
+      "customerId": "IMP-AAA2C105A360",
+      "baseUnit": "深圳市赛能达实业发展有限公司",
+      "projectHint": "",
+      "reason": "Excel确实无独立sheet"
+    },
+    {
+      "customerName": "王斌",
+      "customerId": "IMP-EEF85859E759",
+      "baseUnit": "王斌",
+      "projectHint": "",
+      "reason": "名称异常/个人或特殊主体"
+    },
+    {
+      "customerName": "私人",
+      "customerId": "IMP-82B464FC64FB",
+      "baseUnit": "私人",
+      "projectHint": "",
+      "reason": "名称异常/个人或特殊主体"
+    },
+    {
+      "customerName": "自用",
+      "customerId": "IMP-5688F6956365",
+      "baseUnit": "自用",
+      "projectHint": "",
+      "reason": "名称异常/个人或特殊主体"
+    },
+    {
+      "customerName": "邓军",
+      "customerId": "IMP-7AE1DC9C3E6C",
+      "baseUnit": "邓军",
+      "projectHint": "",
+      "reason": "名称异常/个人或特殊主体"
+    },
+    {
+      "customerName": "重庆建工第二建设工程有限公司（35号地块）",
+      "customerId": "IMP-47BF388AD9D2",
+      "baseUnit": "重庆建工第二建设工程有限公司",
+      "projectHint": "35号地块",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    },
+    {
+      "customerName": "重庆建工第二建设工程有限公司（36号地块）",
+      "customerId": "IMP-79F312F5F2FB",
+      "baseUnit": "重庆建工第二建设工程有限公司",
+      "projectHint": "36号地块",
+      "reason": "单位存在，但未找到与括号项目相匹配的独立sheet"
+    }
+  ]
+}

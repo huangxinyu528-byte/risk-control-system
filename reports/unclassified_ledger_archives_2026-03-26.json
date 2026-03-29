@@ -1,0 +1,280 @@
+{
+  "generatedAt": "2026-03-26T12:50:54.442Z",
+  "totalUnclassifiedArchives": 14,
+  "totalCustomers": 14,
+  "customers": [
+    {
+      "customerId": "IMP-2430037E74C7",
+      "customerName": "成都美家绿城园林有限公司",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702oq04ycjfzc0d1gnprn",
+          "sheetName": "126",
+          "projectName": null,
+          "settlementClause": "三个月一结",
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-B9DC80BF9042",
+      "customerName": "邓军自运",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702jf03u9jfzcml43utvu",
+          "sheetName": "86",
+          "projectName": null,
+          "settlementClause": null,
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-48875D87415E",
+      "customerName": "樊先生、南雁",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702kn0443jfzctibsx9nx",
+          "sheetName": "97",
+          "projectName": null,
+          "settlementClause": null,
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-320F49F9CC2A",
+      "customerName": "李合林自运",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702jc03tfjfzcrmpd93lt",
+          "sheetName": "85",
+          "projectName": null,
+          "settlementClause": null,
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-A8F1CD105E48",
+      "customerName": "仁寿吉冠人造板有限公司",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702si05sejfzch72kx681",
+          "sheetName": "159",
+          "projectName": null,
+          "settlementClause": "先款后货",
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-7AF37B354485",
+      "customerName": "仁寿胜鑫建材有限公司",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702oo04y5jfzcaoed0xzj",
+          "sheetName": "125",
+          "projectName": null,
+          "settlementClause": null,
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-190FDDA3E6BF",
+      "customerName": "四川诚合汇超建筑劳务有限公司",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702rl05jnjfzcddue9731",
+          "sheetName": "156",
+          "projectName": null,
+          "settlementClause": "月结100%",
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-F2E6FBA4A156",
+      "customerName": "四川春航建设集团有限公司",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702uh068ajfzcqx2b5p4c",
+          "sheetName": "174",
+          "projectName": null,
+          "settlementClause": "预付款",
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-A448415F4837",
+      "customerName": "四川启宸博创商贸有限公司",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702q00580jfzcpb0dw7gg",
+          "sheetName": "141",
+          "projectName": null,
+          "settlementClause": "预付款",
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-E0F161579299",
+      "customerName": "四川亿博达商贸有限公司",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702vy06lsjfzcyq6ruch7",
+          "sheetName": "189",
+          "projectName": null,
+          "settlementClause": null,
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-B89EBA862C85",
+      "customerName": "四川中铭建设有限公司",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702p4051kjfzchy9u8r24",
+          "sheetName": "131",
+          "projectName": null,
+          "settlementClause": "月结",
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-6B6E82C2475E",
+      "customerName": "王斌自运",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702jl03vnjfzce6odau71",
+          "sheetName": "88",
+          "projectName": null,
+          "settlementClause": null,
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-EA23890F8369",
+      "customerName": "张明建自运",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702j703sajfzc83s5wi23",
+          "sheetName": "84",
+          "projectName": null,
+          "settlementClause": null,
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    },
+    {
+      "customerId": "IMP-370D6DDF2ACF",
+      "customerName": "周登文",
+      "unclassifiedArchiveCount": 1,
+      "archives": [
+        {
+          "id": "cmn6702o204uejfzc2ihsfu6m",
+          "sheetName": "119",
+          "projectName": null,
+          "settlementClause": "现金",
+          "workbookSource": "应收账款情况汇总表-截至2026年2月28日.xlsx"
+        }
+      ]
+    }
+  ],
+  "maxCount": 1,
+  "customersWithMostUnclassified": [
+    {
+      "customerName": "成都美家绿城园林有限公司",
+      "customerId": "IMP-2430037E74C7",
+      "count": 1
+    },
+    {
+      "customerName": "邓军自运",
+      "customerId": "IMP-B9DC80BF9042",
+      "count": 1
+    },
+    {
+      "customerName": "樊先生、南雁",
+      "customerId": "IMP-48875D87415E",
+      "count": 1
+    },
+    {
+      "customerName": "李合林自运",
+      "customerId": "IMP-320F49F9CC2A",
+      "count": 1
+    },
+    {
+      "customerName": "仁寿吉冠人造板有限公司",
+      "customerId": "IMP-A8F1CD105E48",
+      "count": 1
+    },
+    {
+      "customerName": "仁寿胜鑫建材有限公司",
+      "customerId": "IMP-7AF37B354485",
+      "count": 1
+    },
+    {
+      "customerName": "四川诚合汇超建筑劳务有限公司",
+      "customerId": "IMP-190FDDA3E6BF",
+      "count": 1
+    },
+    {
+      "customerName": "四川春航建设集团有限公司",
+      "customerId": "IMP-F2E6FBA4A156",
+      "count": 1
+    },
+    {
+      "customerName": "四川启宸博创商贸有限公司",
+      "customerId": "IMP-A448415F4837",
+      "count": 1
+    },
+    {
+      "customerName": "四川亿博达商贸有限公司",
+      "customerId": "IMP-E0F161579299",
+      "count": 1
+    },
+    {
+      "customerName": "四川中铭建设有限公司",
+      "customerId": "IMP-B89EBA862C85",
+      "count": 1
+    },
+    {
+      "customerName": "王斌自运",
+      "customerId": "IMP-6B6E82C2475E",
+      "count": 1
+    },
+    {
+      "customerName": "张明建自运",
+      "customerId": "IMP-EA23890F8369",
+      "count": 1
+    },
+    {
+      "customerName": "周登文",
+      "customerId": "IMP-370D6DDF2ACF",
+      "count": 1
+    }
+  ],
+  "autoClassificationOpportunity": {
+    "likelyNow": 0,
+    "reason": "当前这14份档案的 projectId 全为空，且顶层 profile 元数据里的 projectName 也都为空。按现有规则无法安全继续自动归类，除非后续增加对 sheet 内部首行/标题区项目字段的再解析。"
+  }
+}

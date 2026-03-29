@@ -1,0 +1,39 @@
+{
+  "name": "credit-ops-admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "local:stop": "node scripts/stop-local-servers.mjs",
+    "local:prepare": "node scripts/prepare-local-build.mjs",
+    "local:stable": "npm run local:stop && npm run local:prepare && npm run build && npm run start -- --port 3006",
+    "local:dev": "npm run local:stop && npm run local:prepare && npm run dev -- --port 3007",
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "import:zhongcheng": "node scripts/import-zhongcheng-data.mjs",
+    "import:zhongcheng:dry": "node scripts/import-zhongcheng-data.mjs --dry-run",
+    "backfill:customer-codes": "node scripts/backfill-customer-codes.mjs",
+    "report:customer-merge-map": "node scripts/generate-customer-merge-map.mjs",
+    "migrate:customer-subjects": "node scripts/execute-customer-subject-merge.mjs"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "next": "14.2.14",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "x-data-spreadsheet": "^1.1.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.14",
+    "playwright": "^1.58.2",
+    "prisma": "^5.20.0",
+    "typescript": "^5.6.3"
+  }
+}
