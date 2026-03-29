@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { createCustomer, listCustomers } from "@/lib/server/data-access";
 import type { CustomerPayload } from "@/lib/types";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export async function GET(request: NextRequest) {
   const keyword = request.nextUrl.searchParams.get("keyword") ?? "";
   const data = await listCustomers({ keyword });

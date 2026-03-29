@@ -1506,14 +1506,16 @@ export async function getRiskOverview(): Promise<RiskOverviewData> {
   const [ledger, customers, newAlertCount] = await Promise.all([
     listCustomerLedger({ page: 1, pageSize: 5000 }),
     listCustomers({}),
-    prisma.riskRecord.count({
-      where: {
-        status: "open",
-        detectedAt: {
-          gte: recentAlertSince,
-        },
-      },
-    }),
+    process.env.DATABASE_URL
+      ? prisma.riskRecord.count({
+          where: {
+            status: "open",
+            detectedAt: {
+              gte: recentAlertSince,
+            },
+          },
+        })
+      : Promise.resolve(0),
   ]);
 
   const importanceMap = buildImportanceMap(customers);

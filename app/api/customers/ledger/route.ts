@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { listCustomerLedger } from "@/lib/server/data-access";
 import type { CustomerLedgerFilters, CustomerLedgerSortField, CustomerLedgerSortOrder } from "@/lib/types";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 function parseBoolean(value: string | null) {
   if (value === null || value === "") return undefined;
   if (value === "true") return true;
