@@ -50,6 +50,7 @@ import type {
   HighRiskCustomerRecord,
   KeyAttentionCustomerFilters,
   KeyAttentionCustomerRecord,
+  ProjectRecord,
   ReportEntry,
   RiskFilters,
   RiskCustomerFilters,
@@ -77,6 +78,176 @@ const memoryStore = {
   creditScores: [...(importedDataset?.creditScores ?? creditScores)],
   collections: [...(importedDataset?.collections ?? collectionReports)],
 };
+
+function isoDateFromOffset(daysOffset: number) {
+  const date = new Date(Date.UTC(2024, 0, 1));
+  date.setUTCDate(date.getUTCDate() + daysOffset);
+  return date.toISOString().slice(0, 10);
+}
+
+function buildDevelopmentLedgerRows(project: ProjectRecord) {
+  const portions = [0.35, 0.35, 0.3];
+  const statementAmounts = portions.map((portion, index) => {
+    if (index === portions.length - 1) {
+      const previous = portions
+        .slice(0, index)
+        .reduce((sum, current) => sum + Number((project.receivableAmount * current).toFixed(2)), 0);
+      return Number((project.receivableAmount - previous).toFixed(2));
+    }
+    return Number((project.receivableAmount * portion).toFixed(2));
+  });
+  const receivedRatio = project.receivableAmount > 0 ? Math.min(1, project.receivedAmount / project.receivableAmount) : 0;
+  let cumulative = 0;
+
+  return statementAmounts.map((statementAmount, index) => {
+    cumulative += statementAmount;
+    const contractReceivable = statementAmount;
+    const receivedAmount = Number((statementAmount * receivedRatio).toFixed(2));
+    const quantity = Number((20 + index * 6 + Math.max(0, project.receivableAmount / 1_000_000)).toFixed(2));
+
+    return {
+      id: `dev-ledger-row-${project.id}-${index + 1}`,
+      rowOrder: index + 1,
+      statementDate: isoDateFromOffset(index * 30 + 10),
+      quantity,
+      statementAmount,
+      contractReceivable,
+      receivedDate: receivedAmount > 0 ? isoDateFromOffset(index * 30 + 38) : null,
+      receivedAmount,
+      cumulativeReceivable: Number(cumulative.toFixed(2)),
+      invoiceDate: isoDateFromOffset(index * 30 + 20),
+      invoiceQuantity: quantity,
+      invoiceAmount: statementAmount,
+      remark: index === 0 ? (project.remark || "试运行环境开发档案回退展示") : "",
+      extraFields: null,
+    };
+  });
+}
+
+function buildDevelopmentLedgerSheetData(project: ProjectRecord, rows: CustomerLedgerArchiveRecord["archives"][number]["rows"]) {
+  const sheetRows: Record<string, { cells?: Record<string, { text?: string | number | null }> }> = {
+    "0": {
+      cells: {
+        "0": { text: `${project.projectName} - 开发档案预览` },
+      },
+    },
+    "3": {
+      cells: {
+        "0": { text: "对账时间" },
+        "1": { text: "方量" },
+        "2": { text: "对账金额" },
+        "3": { text: "按合同应收金额" },
+        "4": { text: "实际收款时间" },
+        "5": { text: "实际收款金额" },
+        "6": { text: "累计应收" },
+        "7": { text: "开票时间" },
+        "8": { text: "开票方量" },
+        "9": { text: "开票金额" },
+        "10": { text: "备注" },
+        "11": { text: "汇总!A1" },
+        "12": { text: "结算期间" },
+        "13": { text: "计提方量" },
+        "14": { text: "回款金额" },
+        "15": { text: "应回款月份" },
+      },
+    },
+  };
+
+  rows.forEach((row, index) => {
+    const displayRow = 4 + index;
+    sheetRows[String(displayRow)] = {
+      cells: {
+        "0": { text: row.statementDate ?? "" },
+        "1": { text: row.quantity ?? "" },
+        "2": { text: row.statementAmount ?? "" },
+        "3": { text: row.contractReceivable ?? "" },
+        "4": { text: row.receivedDate ?? "" },
+        "5": { text: row.receivedAmount ?? "" },
+        "6": { text: row.cumulativeReceivable ?? "" },
+        "7": { text: row.invoiceDate ?? "" },
+        "8": { text: row.invoiceQuantity ?? "" },
+        "9": { text: row.invoiceAmount ?? "" },
+        "10": { text: row.remark ?? "" },
+        "11": { text: project.projectName },
+        "12": { text: row.statementDate ? row.statementDate.slice(0, 7) : "" },
+        "13": { text: row.quantity ?? "" },
+        "14": { text: row.receivedAmount ?? "" },
+        "15": { text: row.receivedDate ? row.receivedDate.slice(0, 7) : "" },
+      },
+    };
+  });
+
+  sheetRows["46"] = {
+    cells: {
+      "0": { text: "按合同未收款：" },
+      "1": { text: Number(project.unpaidAmount.toFixed(2)) },
+      "3": { text: "未制票：" },
+      "4": { text: 0 },
+    },
+  };
+  sheetRows["47"] = {
+    cells: {
+      "0": { text: "验证：" },
+      "1": { text: "开发环境回退生成档案，仅用于试运行展示" },
+    },
+  };
+  sheetRows["48"] = {
+    cells: {
+      "0": { text: "其他底部信息" },
+      "1": { text: project.businessType || project.projectStatus || "进行中" },
+    },
+  };
+
+  return {
+    name: project.projectName,
+    rows: sheetRows,
+    merges: ["A1:K1"],
+  };
+}
+
+function buildDevelopmentLedgerArchives(
+  customer: Pick<CustomerRecord, "id" | "customerId" | "customerCode" | "name">,
+  projects: ProjectRecord[],
+): CustomerLedgerArchiveRecord {
+  const archives = projects
+    .filter((project) => !isNoiseProjectName(project.projectName))
+    .map((project, index) => {
+      const rows = buildDevelopmentLedgerRows(project);
+      const sheetData = buildDevelopmentLedgerSheetData(project, rows);
+      const sheetName =
+        project.projectName.length <= 20 ? project.projectName : `${index + 1}-${project.projectName.slice(0, 18)}`;
+
+      return {
+        id: `dev-ledger-${project.id}`,
+        projectId: project.id,
+        sheetName,
+        workbookSource: `${customer.name}（开发回退档案）`,
+        projectName: project.projectName,
+        settlementClause: "开发环境回退生成，用于无数据库试运行展示",
+        sheetData,
+        summary: {
+          contractUnpaidTotal: Number(project.unpaidAmount.toFixed(2)),
+          uninvoicedTotal: 0,
+          extraSummary: {
+            generatedFrom: "development-fallback",
+            businessType: project.businessType ?? "",
+            projectStatus: project.projectStatus,
+          },
+        },
+        rows,
+      };
+    });
+
+  return {
+    customer: {
+      id: customer.id,
+      customerId: customer.customerId,
+      customerCode: customer.customerCode ?? "",
+      name: customer.name,
+    },
+    archives,
+  };
+}
 
 function containsKeyword(keyword: string, values: Array<string | number | null | undefined>) {
   const normalized = keyword.trim().toLowerCase();
@@ -2712,15 +2883,16 @@ export async function getCustomerLedgerArchive(customerId: string): Promise<Cust
     // Fallback below
   }
 
-  return {
-    customer: {
+  const projects = await listProjectsByCustomer(customer.customerId);
+  return buildDevelopmentLedgerArchives(
+    {
       id: customer.id,
       customerId: customer.customerId,
       customerCode: customer.customerCode ?? "",
       name: customer.name,
     },
-    archives: [],
-  };
+    projects,
+  );
 }
 
 export async function updateCustomerLedgerArchive(
