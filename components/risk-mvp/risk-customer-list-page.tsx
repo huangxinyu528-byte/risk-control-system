@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { PageHeader } from "@/components/shared/page-header";
+import { HorizontalScrollArea } from "@/components/shared/horizontal-scroll-area";
 import { displayMetaText, summarizeRiskText } from "@/components/risk-mvp/risk-display";
 import { RiskModuleNav } from "@/components/risk-mvp/risk-module-nav";
 import type {
@@ -211,11 +212,11 @@ export function RiskCustomerListPage() {
       </section>
 
       <section className="risk-customer-summary-grid">
-        <article className="card risk-metric-card">
+        <article className="card risk-metric-card risk-metric-card-highlight">
           <span>风险客户数</span>
           <strong>{summary?.customerCount ?? 0}</strong>
         </article>
-        <article className="card risk-metric-card">
+        <article className="card risk-metric-card risk-metric-card-highlight">
           <span>高风险客户数</span>
           <strong>{summary?.highRiskCustomerCount ?? 0}</strong>
         </article>
@@ -226,6 +227,17 @@ export function RiskCustomerListPage() {
         <article className="card risk-metric-card">
           <span>风险客户总未收</span>
           <strong>{formatCurrency(summary?.totalUnpaidAmount ?? 0)}</strong>
+        </article>
+      </section>
+
+      <section className="risk-page-guide-grid">
+        <article className="card risk-page-guide-card">
+          <strong>先看谁</strong>
+          <p className="muted">优先看高风险/极高风险客户、重点客户、未闭环客户，以及总未收金额高的客户。</p>
+        </article>
+        <article className="card risk-page-guide-card">
+          <strong>重点字段</strong>
+          <p className="muted">客户名称、风险等级、总未收金额、高风险项目数量、主要风险原因是当前页最关键字段。</p>
         </article>
       </section>
 
@@ -244,9 +256,12 @@ export function RiskCustomerListPage() {
               当前共 {summary?.customerCount ?? 0} 个客户，页面直接展示后端已计算好的风险等级、原因和建议动作。
             </span>
           </div>
+          <div className="risk-table-note">
+            点击客户名称或右侧“查看详情”，可继续进入客户详情页核查风险来源、项目情况和完整账款档案。
+          </div>
 
-          <div className="table-wrapper">
-            <table className="data-table">
+          <HorizontalScrollArea hint="可在表格区域内按住鼠标左右拖动，或使用顶部滚动条查看完整客户风险列">
+            <table className="data-table risk-customer-table">
               <thead>
                 <tr>
                   <th>客户名称</th>
@@ -260,6 +275,7 @@ export function RiskCustomerListPage() {
                   <th>高风险项目数量</th>
                   <th>是否重点客户</th>
                   <th>是否未闭环</th>
+                  <th>操作</th>
                 </tr>
               </thead>
               <tbody>
@@ -267,14 +283,14 @@ export function RiskCustomerListPage() {
                   data.customers.map((customer) => <RiskCustomerRowView key={customer.customerId} customer={customer} />)
                 ) : (
                   <tr>
-                    <td className="empty-cell" colSpan={11}>
+                    <td className="empty-cell" colSpan={12}>
                       当前筛选条件下没有风险客户
                     </td>
                   </tr>
                 )}
               </tbody>
             </table>
-          </div>
+          </HorizontalScrollArea>
         </section>
       )}
     </>
@@ -286,18 +302,30 @@ function RiskCustomerRowView({ customer }: { customer: RiskCustomerRow }) {
   const actionText = summarizeRiskText(customer.riskActions, "暂无建议动作", 2);
   const currentStatusText = displayMetaText(customer.currentStatusSummary);
   const creditStatusText = displayMetaText(customer.creditStatusSummary);
+  const urgencyLabel =
+    customer.riskLevel === "极高风险"
+      ? "立即关注"
+      : customer.riskLevel === "高风险"
+        ? "优先跟进"
+        : customer.riskLevel === "中风险"
+          ? "持续跟进"
+          : "常规观察";
 
   return (
-    <tr>
+    <tr className={`risk-table-row risk-table-row-${customer.riskLevel.replace("风险", "")}`}>
       <td>
-        <Link className="table-link-block" href={`/customers/${encodeURIComponent(customer.customerId)}`}>
-          <span className="table-link">{customer.customerName}</span>
+        <Link className="table-link-block risk-name-block" href={`/customers/${encodeURIComponent(customer.customerId)}`}>
+          <span className="table-link risk-primary-name">{customer.customerName}</span>
           <span className="table-link-helper">{customer.triggeredRules.join("、") || "未命中规则编码"}</span>
+          <span className="risk-row-helper">{urgencyLabel}</span>
         </Link>
       </td>
       <td>{customer.customerType}</td>
       <td>
-        <span className={riskBadgeClass(customer.riskLevel)}>{customer.riskLevel}</span>
+        <div className="risk-badge-stack">
+          <span className={riskBadgeClass(customer.riskLevel)}>{customer.riskLevel}</span>
+          {customer.isImportantCustomer ? <span className="status-badge status-info">重点客户</span> : null}
+        </div>
       </td>
       <td>
         <div className="risk-text-stack">
@@ -312,9 +340,15 @@ function RiskCustomerRowView({ customer }: { customer: RiskCustomerRow }) {
         </div>
       </td>
       <td>{formatCurrency(customer.totalReceivableAmount)}</td>
-      <td>{formatCurrency(customer.totalUnpaidAmount)}</td>
+      <td>
+        <div className="risk-amount-emphasis">
+          <strong>{formatCurrency(customer.totalUnpaidAmount)}</strong>
+        </div>
+      </td>
       <td>{customer.projectCount}</td>
-      <td>{customer.highRiskProjectCount}</td>
+      <td>
+        <span className="risk-count-chip">{customer.highRiskProjectCount}</span>
+      </td>
       <td>{customer.isImportantCustomer ? <span className="status-badge status-info">重点客户</span> : <span className="muted">否</span>}</td>
       <td>
         {customer.hasUnclosedProjects ? (
@@ -322,6 +356,16 @@ function RiskCustomerRowView({ customer }: { customer: RiskCustomerRow }) {
         ) : (
           <span className="status-badge status-success">已闭环</span>
         )}
+      </td>
+      <td>
+        <div className="risk-inline-actions">
+          <Link
+            className="button button-secondary button-small"
+            href={`/customers/${encodeURIComponent(customer.customerId)}?from=risk-customers`}
+          >
+            查看详情
+          </Link>
+        </div>
       </td>
     </tr>
   );

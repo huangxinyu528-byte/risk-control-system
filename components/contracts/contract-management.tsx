@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { useEffect, useId, useMemo, useState, type FormEvent } from "react";
 import { PageHeader } from "@/components/shared/page-header";
 import { displayOptionalNote, displayOwnerValue } from "@/lib/display";
 import { formatCurrency, formatOptionalText } from "@/lib/format";
@@ -22,6 +22,7 @@ const emptyForm: ContractPayload = {
 const statusOptions = ["执行中", "待回款", "已完成", "已终止", "暂停中"];
 
 export function ContractManagement() {
+  const formId = useId();
   const [contracts, setContracts] = useState<ContractRecord[]>([]);
   const [customers, setCustomers] = useState<CustomerRecord[]>([]);
   const [keyword, setKeyword] = useState("");
@@ -31,6 +32,9 @@ export function ContractManagement() {
   const [form, setForm] = useState<ContractPayload>(emptyForm);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [detail, setDetail] = useState<ContractRecord | null>(null);
+  const [formOpen, setFormOpen] = useState(false);
+  const [importFile, setImportFile] = useState<File | null>(null);
+  const [importMessage, setImportMessage] = useState("");
 
   async function loadCustomers() {
     const response = await fetch("/api/customers");
@@ -76,6 +80,7 @@ export function ContractManagement() {
       projectStatus: item.projectStatus,
       remark: item.remark,
     });
+    setFormOpen(true);
   };
   const filteredContracts = useMemo(
     () => (showIncompleteOnly ? contracts.filter((item) => getMissingFields(item).length > 0) : contracts),
@@ -104,7 +109,22 @@ export function ContractManagement() {
 
     setForm(emptyForm);
     setEditingId(null);
+    setFormOpen(false);
     await loadContracts();
+  }
+
+  function openCreateForm() {
+    setEditingId(null);
+    setForm(emptyForm);
+    setFormOpen(true);
+  }
+
+  function closeForm() {
+    setFormOpen(false);
+    setEditingId(null);
+    setForm(emptyForm);
+    setImportFile(null);
+    setImportMessage("");
   }
 
   return (
@@ -171,168 +191,213 @@ export function ContractManagement() {
         </article>
       </section>
 
-      <section className="management-layout">
-        <section className="table-card">
-          <div className="table-header">
-            <h3>合同列表</h3>
-            <span className="muted">当前显示 {filteredContracts.length} / 共 {contracts.length} 条</span>
-            <button
-              className="button button-primary"
-              type="button"
-              onClick={() => {
-                setEditingId(null);
-                setForm(emptyForm);
-              }}
-            >
-              新增合同
-            </button>
-          </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>客户编号</th>
-                <th>客户名称</th>
-                <th>项目名称</th>
-                <th>合同编号</th>
-                <th>合同金额</th>
-                <th>签订日期</th>
-                <th>账期</th>
-                <th>业务负责人</th>
-                <th>项目状态</th>
-                <th>待补字段</th>
-                <th>操作</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredContracts.map((item) => {
-                const missingFields = getMissingFields(item);
-                return <tr key={item.id}>
-                  <td>{item.customerCode || "待生成"}</td>
-                  <td>{item.customerName}</td>
-                  <td>{item.projectName}</td>
-                  <td>{item.contractNo}</td>
-                  <td>{formatCurrency(item.amount)}</td>
-                  <td>{formatOptionalText(item.signedAt, "待补数据")}</td>
-                  <td>{formatOptionalText(item.billingPeriodDays, "待补数据")}</td>
-                  <td>{displayOwnerValue(item.salesOwnerName)}</td>
-                  <td>{item.projectStatus}</td>
-                  <td>{missingFields.length ? missingFields.join("、") : "已完善"}</td>
-                  <td>
-                    <div className="table-actions">
-                      <button className="button button-ghost" type="button" onClick={() => setDetail(item)}>
-                        查看
-                      </button>
-                      <button
-                        className="button button-secondary"
-                        type="button"
-                        onClick={() => startEditContract(item)}
-                      >
-                        {missingFields.length ? "补录" : "编辑"}
-                      </button>
-                    </div>
-                  </td>
-                </tr>;
-              })}
-            </tbody>
-          </table>
-        </section>
-
-        <section className="form-card">
-          <h3 style={{ marginTop: 0 }}>{editingId ? "编辑合同" : "新增合同"}</h3>
-          <form className="form-layout" onSubmit={handleSubmit}>
-            <label className="form-row">
-              <span>客户</span>
-              <select
-                className="search-input"
-                value={form.customerId}
-                onChange={(event) => setForm((current) => ({ ...current, customerId: event.target.value }))}
-              >
-                <option value="">请选择客户</option>
-                {customers.map((customer) => (
-                <option key={customer.id} value={customer.customerId}>
-                    {customer.customerCode} / {customer.name}
-                  </option>
-                ))}
-              </select>
-            </label>
-            {[
-              ["contractId", "台账编号（可选）"],
-              ["projectName", "项目名称"],
-              ["contractNo", "合同编号"],
-              ["salesOwnerName", "业务负责人"],
-            ].map(([field, label]) => (
-              <label className="form-row" key={field}>
-                <span>{label}</span>
-                <input
-                  value={String(form[field as keyof ContractPayload] ?? "")}
-                  onChange={(event) =>
-                    setForm((current) => ({ ...current, [field]: event.target.value }))
-                  }
-                />
-              </label>
-            ))}
-            <label className="form-row">
-              <span>合同金额</span>
-              <input
-                type="number"
-                value={form.amount}
-                onChange={(event) =>
-                  setForm((current) => ({ ...current, amount: Number(event.target.value) || 0 }))
-                }
-              />
-            </label>
-            <label className="form-row">
-              <span>签订日期</span>
-              <input
-                type="date"
-                value={form.signedAt ?? ""}
-                onChange={(event) =>
-                  setForm((current) => ({ ...current, signedAt: event.target.value || null }))
-                }
-              />
-            </label>
-            <label className="form-row">
-              <span>账期</span>
-              <input
-                type="number"
-                value={form.billingPeriodDays ?? ""}
-                placeholder="可留空"
-                onChange={(event) =>
-                  setForm((current) => ({
-                    ...current,
-                    billingPeriodDays: event.target.value === "" ? null : Number(event.target.value),
-                  }))
-                }
-              />
-            </label>
-            <label className="form-row">
-              <span>项目状态</span>
-              <select
-                className="search-input"
-                value={form.projectStatus}
-                onChange={(event) => setForm((current) => ({ ...current, projectStatus: event.target.value }))}
-              >
-                {statusOptions.map((status) => (
-                  <option key={status} value={status}>
-                    {status}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label className="form-row">
-              <span>备注</span>
-              <textarea
-                className="form-textarea"
-                value={form.remark}
-                onChange={(event) => setForm((current) => ({ ...current, remark: event.target.value }))}
-              />
-            </label>
-            <button className="button button-primary" type="submit">
-              {editingId ? "保存修改" : "创建合同"}
-            </button>
-          </form>
-        </section>
+      <section className="table-card">
+        <div className="table-header">
+          <h3>合同列表</h3>
+          <span className="muted">当前显示 {filteredContracts.length} / 共 {contracts.length} 条</span>
+          <button className="button button-primary" type="button" onClick={openCreateForm}>
+            新增合同
+          </button>
+        </div>
+        <table className="data-table">
+          <thead>
+            <tr>
+              <th>客户编号</th>
+              <th>客户名称</th>
+              <th>项目名称</th>
+              <th>合同编号</th>
+              <th>合同金额</th>
+              <th>签订日期</th>
+              <th>账期</th>
+              <th>业务负责人</th>
+              <th>项目状态</th>
+              <th>待补字段</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredContracts.map((item) => {
+              const missingFields = getMissingFields(item);
+              return <tr key={item.id}>
+                <td>{item.customerCode || "待生成"}</td>
+                <td>{item.customerName}</td>
+                <td>{item.projectName}</td>
+                <td>{item.contractNo}</td>
+                <td>{formatCurrency(item.amount)}</td>
+                <td>{formatOptionalText(item.signedAt, "待补数据")}</td>
+                <td>{formatOptionalText(item.billingPeriodDays, "待补数据")}</td>
+                <td>{displayOwnerValue(item.salesOwnerName)}</td>
+                <td>{item.projectStatus}</td>
+                <td>{missingFields.length ? missingFields.join("、") : "已完善"}</td>
+                <td>
+                  <div className="table-actions">
+                    <button className="button button-ghost" type="button" onClick={() => setDetail(item)}>
+                      查看
+                    </button>
+                    <button
+                      className="button button-secondary"
+                      type="button"
+                      onClick={() => startEditContract(item)}
+                    >
+                      {missingFields.length ? "补录" : "编辑"}
+                    </button>
+                  </div>
+                </td>
+              </tr>;
+            })}
+          </tbody>
+        </table>
       </section>
+
+      {formOpen ? (
+        <div className="modal-overlay" onClick={closeForm}>
+          <section className="modal-card modal-card-form" onClick={(event) => event.stopPropagation()}>
+            <div className="table-header">
+              <h3>{editingId ? "编辑合同" : "新增合同"}</h3>
+              <div className="table-actions">
+                <button className="button button-ghost" type="button" onClick={closeForm}>
+                  关闭
+                </button>
+              </div>
+            </div>
+            <div className="modal-body">
+              <div className="modal-intro-stack">
+                <section className="modal-import-card">
+                  <div className="modal-import-header">
+                    <div>
+                      <strong>Excel 导入</strong>
+                      <p className="muted">用于批量导入合同。当前先开放上传入口和操作说明。</p>
+                    </div>
+                    <span className="status-tag neutral">合同导入待接后端</span>
+                  </div>
+                  <div className="modal-import-actions">
+                    <input
+                      className="search-input"
+                      type="file"
+                      accept=".xlsx,.xls"
+                      onChange={(event) => setImportFile(event.target.files?.[0] ?? null)}
+                    />
+                    <button
+                      className="button button-secondary"
+                      type="button"
+                      onClick={() => {
+                        if (!importFile) {
+                          setImportMessage("请先选择合同 Excel 文件");
+                          return;
+                        }
+                        setImportMessage("当前合同管理尚未接入独立 Excel 导入接口；本轮已完成弹窗入口和上传交互，后端导入链路待下一步接入。");
+                      }}
+                    >
+                      导入合同 Excel
+                    </button>
+                  </div>
+                  <span className="muted">
+                    {importMessage || "当前阶段先完成前端入口；合同专用导入接口尚未打通。"}
+                  </span>
+                </section>
+              </div>
+              <form id={formId} className="form-layout modal-form-layout" onSubmit={handleSubmit}>
+                <div className="form-section-title">手动新增 / 编辑</div>
+                <label className="form-row">
+                  <span>客户</span>
+                  <select
+                    className="search-input"
+                    value={form.customerId}
+                    onChange={(event) => setForm((current) => ({ ...current, customerId: event.target.value }))}
+                  >
+                    <option value="">请选择客户</option>
+                    {customers.map((customer) => (
+                    <option key={customer.id} value={customer.customerId}>
+                        {customer.customerCode} / {customer.name}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                {[
+                  ["contractId", "台账编号（可选）"],
+                  ["projectName", "项目名称"],
+                  ["contractNo", "合同编号"],
+                  ["salesOwnerName", "业务负责人"],
+                ].map(([field, label]) => (
+                  <label className="form-row" key={field}>
+                    <span>{label}</span>
+                    <input
+                      value={String(form[field as keyof ContractPayload] ?? "")}
+                      onChange={(event) =>
+                        setForm((current) => ({ ...current, [field]: event.target.value }))
+                      }
+                    />
+                  </label>
+                ))}
+                <label className="form-row">
+                  <span>合同金额</span>
+                  <input
+                    type="number"
+                    value={form.amount}
+                    onChange={(event) =>
+                      setForm((current) => ({ ...current, amount: Number(event.target.value) || 0 }))
+                    }
+                  />
+                </label>
+                <label className="form-row">
+                  <span>签订日期</span>
+                  <input
+                    type="date"
+                    value={form.signedAt ?? ""}
+                    onChange={(event) =>
+                      setForm((current) => ({ ...current, signedAt: event.target.value || null }))
+                    }
+                  />
+                </label>
+                <label className="form-row">
+                  <span>账期</span>
+                  <input
+                    type="number"
+                    value={form.billingPeriodDays ?? ""}
+                    placeholder="可留空"
+                    onChange={(event) =>
+                      setForm((current) => ({
+                        ...current,
+                        billingPeriodDays: event.target.value === "" ? null : Number(event.target.value),
+                      }))
+                    }
+                  />
+                </label>
+                <label className="form-row">
+                  <span>项目状态</span>
+                  <select
+                    className="search-input"
+                    value={form.projectStatus}
+                    onChange={(event) => setForm((current) => ({ ...current, projectStatus: event.target.value }))}
+                  >
+                    {statusOptions.map((status) => (
+                      <option key={status} value={status}>
+                        {status}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <label className="form-row">
+                  <span>备注</span>
+                  <textarea
+                    className="form-textarea"
+                    value={form.remark}
+                    onChange={(event) => setForm((current) => ({ ...current, remark: event.target.value }))}
+                  />
+                </label>
+              </form>
+            </div>
+            <div className="modal-footer">
+              <button className="button button-ghost" type="button" onClick={closeForm}>
+                取消
+              </button>
+              <button className="button button-primary" type="submit" form={formId}>
+                {editingId ? "保存修改" : "创建合同"}
+              </button>
+            </div>
+          </section>
+        </div>
+      ) : null}
 
       {detail ? (
         <section className="detail-panel card">

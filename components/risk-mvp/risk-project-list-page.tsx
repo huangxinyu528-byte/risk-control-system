@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { PageHeader } from "@/components/shared/page-header";
+import { HorizontalScrollArea } from "@/components/shared/horizontal-scroll-area";
 import {
   displayLabelText,
   displayMetaText,
@@ -231,11 +232,11 @@ export function RiskProjectListPage() {
       </section>
 
       <section className="risk-project-summary-grid">
-        <article className="card risk-metric-card">
+        <article className="card risk-metric-card risk-metric-card-highlight">
           <span>风险项目数</span>
           <strong>{summary?.projectCount ?? 0}</strong>
         </article>
-        <article className="card risk-metric-card">
+        <article className="card risk-metric-card risk-metric-card-highlight">
           <span>高风险项目数</span>
           <strong>{summary?.highRiskProjectCount ?? 0}</strong>
         </article>
@@ -246,6 +247,17 @@ export function RiskProjectListPage() {
         <article className="card risk-metric-card">
           <span>风险项目总未收</span>
           <strong>{formatCurrency(summary?.totalUnpaidAmount ?? 0)}</strong>
+        </article>
+      </section>
+
+      <section className="risk-page-guide-grid">
+        <article className="card risk-page-guide-card">
+          <strong>优先筛什么</strong>
+          <p className="muted">建议先筛高风险/极高风险，再按未收金额排序，优先排查金额大、档案异常、规则命中多的项目。</p>
+        </article>
+        <article className="card risk-page-guide-card">
+          <strong>本页最关键字段</strong>
+          <p className="muted">项目名称、客户名称、风险等级、未收金额、命中规则、档案状态，是当前页最适合快速决策的字段。</p>
         </article>
       </section>
 
@@ -279,9 +291,12 @@ export function RiskProjectListPage() {
               当前共 {summary?.projectCount ?? 0} 个项目，页面直接展示后端已计算好的风险结果。
             </span>
           </div>
+          <div className="risk-table-note">
+            点击项目名称或右侧“查看项目上下文”，可带项目上下文进入客户详情页；点击客户名称可继续查看主体档案。
+          </div>
 
-          <div className="table-wrapper">
-            <table className="data-table">
+          <HorizontalScrollArea hint="可在表格区域内按住鼠标左右拖动，或使用顶部滚动条查看项目名称、规则、金额和档案状态">
+            <table className="data-table risk-project-table">
               <thead>
                 <tr>
                   <th>客户名称</th>
@@ -298,6 +313,7 @@ export function RiskProjectListPage() {
                   <th>命中规则</th>
                   <th>是否未闭环</th>
                   <th>是否有原始档案</th>
+                  <th>操作</th>
                 </tr>
               </thead>
               <tbody>
@@ -305,14 +321,14 @@ export function RiskProjectListPage() {
                   data.projects.map((project) => <RiskProjectRowView key={project.projectId} project={project} />)
                 ) : (
                   <tr>
-                    <td className="empty-cell" colSpan={14}>
+                    <td className="empty-cell" colSpan={15}>
                       当前筛选条件下没有风险项目
                     </td>
                   </tr>
                 )}
               </tbody>
             </table>
-          </div>
+          </HorizontalScrollArea>
         </section>
       )}
     </>
@@ -324,27 +340,43 @@ function RiskProjectRowView({ project }: { project: RiskProjectRow }) {
   const actionText = summarizeRiskText(project.riskActions, "暂无建议动作", 2);
   const currentStatusText = displayMetaText(project.currentStatusSummary);
   const creditStatusText = displayMetaText(project.creditStatusSummary);
+  const ruleCount = project.triggeredRules.length;
+  const attentionLabel =
+    project.riskLevel === "极高风险"
+      ? "立即处理"
+      : project.riskLevel === "高风险"
+        ? "优先跟进"
+        : project.riskLevel === "中风险"
+          ? "持续跟进"
+          : "常规观察";
 
   return (
-    <tr>
+    <tr className={`risk-table-row risk-table-row-${project.riskLevel.replace("风险", "")}`}>
       <td>
-        <Link className="table-link" href={`/customers/${encodeURIComponent(project.customerId)}`}>
+        <Link
+          className="table-link"
+          href={`/customers/${encodeURIComponent(project.customerId)}?from=risk-projects`}
+        >
           {project.customerName}
         </Link>
       </td>
       <td>
         <Link
-          className="table-link-block"
-          href={`/customers/${encodeURIComponent(project.customerId)}?projectId=${encodeURIComponent(project.projectId)}`}
+          className="table-link-block risk-name-block"
+          href={`/customers/${encodeURIComponent(project.customerId)}?projectId=${encodeURIComponent(project.projectId)}&projectName=${encodeURIComponent(project.projectName)}&from=risk-projects`}
         >
-          <span className="table-link">{project.projectName}</span>
+          <span className="table-link risk-primary-name">{project.projectName}</span>
           <span className="table-link-helper">{project.triggeredRules.join("、") || "未命中规则编码"}</span>
+          <span className="risk-row-helper">{attentionLabel}</span>
         </Link>
       </td>
       <td>{displayLabelText(project.projectBelonging)}</td>
       <td>{displayLabelText(project.businessType)}</td>
       <td>
-        <span className={riskBadgeClass(project.riskLevel)}>{project.riskLevel}</span>
+        <div className="risk-badge-stack">
+          <span className={riskBadgeClass(project.riskLevel)}>{project.riskLevel}</span>
+          <span className="status-badge status-info">命中 {ruleCount} 条</span>
+        </div>
       </td>
       <td>
         <div className="risk-text-stack">
@@ -360,9 +392,18 @@ function RiskProjectRowView({ project }: { project: RiskProjectRow }) {
       </td>
       <td>{formatCurrency(project.receivableAmount)}</td>
       <td>{formatCurrency(project.receivedAmount)}</td>
-      <td>{formatCurrency(project.unpaidAmount)}</td>
+      <td>
+        <div className="risk-amount-emphasis">
+          <strong>{formatCurrency(project.unpaidAmount)}</strong>
+        </div>
+      </td>
       <td>{formatPercent(project.collectionRate)}</td>
-      <td>{project.triggeredRules.join("、") || "未命中规则编码"}</td>
+      <td>
+        <div className="risk-rule-stack">
+          <strong>{ruleCount} 条</strong>
+          <span>{project.triggeredRules.join("、") || "未命中规则编码"}</span>
+        </div>
+      </td>
       <td>
         {project.isUnclosed ? (
           <span className="status-badge status-warning">未闭环</span>
@@ -376,6 +417,16 @@ function RiskProjectRowView({ project }: { project: RiskProjectRow }) {
         ) : (
           <span className="muted">无档案</span>
         )}
+      </td>
+      <td>
+        <div className="risk-inline-actions">
+          <Link
+            className="button button-secondary button-small"
+            href={`/customers/${encodeURIComponent(project.customerId)}?projectId=${encodeURIComponent(project.projectId)}&projectName=${encodeURIComponent(project.projectName)}&from=risk-projects`}
+          >
+            查看项目上下文
+          </Link>
+        </div>
       </td>
     </tr>
   );

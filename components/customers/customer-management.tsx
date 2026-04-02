@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useId, useMemo, useState, type FormEvent } from "react";
+import { HorizontalScrollArea } from "@/components/shared/horizontal-scroll-area";
 import { PageHeader } from "@/components/shared/page-header";
 import { formatCurrency } from "@/lib/format";
 import type {
+  CustomerPayload,
   CustomerEntityType,
   CustomerLedgerCustomerRow,
   CustomerLedgerFilters,
@@ -34,6 +36,43 @@ const archiveFilterOptions = [
   { label: "全部主体", value: "all" },
   { label: "仅看有未归类档案", value: "only-unclassified" },
 ] as const;
+
+const emptyCustomerForm: CustomerPayload = {
+  customerId: "",
+  customerCode: "",
+  name: "",
+  normalizedName: "",
+  sourceCustomerName: "",
+  isMerged: false,
+  mergedIntoCustomerId: null,
+  creditStatus: "",
+  currentStatus: "",
+  customerNature: "",
+  hasGuarantee: false,
+  creditStanding: "",
+  dueDiligenceCompleted: false,
+  unifiedSocialCreditCode: "",
+  industry: "",
+  contactName: "",
+  contactPhone: "",
+  salesOwnerName: "",
+  currentCreditLevel: "",
+  creditScore: null,
+  creditLevel: "",
+  riskAction: "常规跟进",
+  riskStatus: "正常",
+  scoreDelta: null,
+  creditLimit: null,
+  stopSupply: false,
+  remark: "",
+  riskRemark: "",
+  receivableBalance: 0,
+  creditUtilizationRate: null,
+  creditUtilizationStatus: "未启用",
+  highRiskCustomer: false,
+  keyAttentionCustomer: false,
+  ruleFlags: [],
+};
 
 function displaySummary(value: string | null | undefined, fallback = "待补数据") {
   const text = String(value ?? "").trim();
@@ -104,6 +143,7 @@ function matchesProjectKeyword(keyword: string, project: CustomerLedgerProjectRo
 }
 
 export function CustomerManagement() {
+  const formId = useId();
   const [filters, setFilters] = useState<CustomerLedgerFilters>({
     keyword: "",
     customerType: "",
@@ -118,6 +158,11 @@ export function CustomerManagement() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [selectedCustomerId, setSelectedCustomerId] = useState<string | null>(null);
   const [focusedCustomerId, setFocusedCustomerId] = useState<string | null>(null);
+  const [formOpen, setFormOpen] = useState(false);
+  const [form, setForm] = useState<CustomerPayload>(emptyCustomerForm);
+  const [createMessage, setCreateMessage] = useState("");
+  const [importFile, setImportFile] = useState<File | null>(null);
+  const [importMessage, setImportMessage] = useState("");
 
   async function loadLedger(nextFilters = filters) {
     setLoading(true);
@@ -196,6 +241,75 @@ export function CustomerManagement() {
     ? expandedSet.has(selectedCustomer.customerId)
     : false;
 
+  async function handleCreateCustomer(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setCreateMessage("");
+
+    const payload: CustomerPayload = {
+      ...emptyCustomerForm,
+      ...form,
+      customerId: String(form.customerId || form.name || "").trim(),
+      name: String(form.name || "").trim(),
+      customerCode: String(form.customerCode || "").trim(),
+      unifiedSocialCreditCode: String(form.unifiedSocialCreditCode || "").trim(),
+      industry: String(form.industry || "").trim(),
+      contactName: String(form.contactName || "").trim(),
+      contactPhone: String(form.contactPhone || "").trim(),
+      salesOwnerName: String(form.salesOwnerName || "").trim(),
+      creditStatus: String(form.creditStatus || "").trim(),
+      currentStatus: String(form.currentStatus || "").trim(),
+      remark: String(form.remark || "").trim(),
+      riskRemark: String(form.riskRemark || "").trim(),
+      creditLimit: form.creditLimit === null ? null : Number(form.creditLimit) || 0,
+    };
+
+    if (!payload.name) {
+      setCreateMessage("请先填写客户名称");
+      return;
+    }
+
+    if (!payload.customerId) {
+      payload.customerId = payload.name;
+    }
+
+    const response = await fetch("/api/customers", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      setCreateMessage(result.message ?? "新增客户失败");
+      return;
+    }
+
+    setCreateMessage("新增客户成功");
+    setForm(emptyCustomerForm);
+    setFormOpen(false);
+    await loadLedger({
+      ...filters,
+      keyword: payload.name,
+      page: 1,
+    });
+  }
+
+  function openCreateForm() {
+    setForm(emptyCustomerForm);
+    setCreateMessage("");
+    setImportFile(null);
+    setImportMessage("");
+    setFormOpen(true);
+  }
+
+  function closeCreateForm() {
+    setFormOpen(false);
+    setForm(emptyCustomerForm);
+    setCreateMessage("");
+    setImportFile(null);
+    setImportMessage("");
+  }
+
   function expandFocusedCustomerProjects() {
     if (!selectedCustomer) return;
     setExpandedCustomerIds((current) =>
@@ -226,6 +340,9 @@ export function CustomerManagement() {
             <div className="muted">先筛主体，再展开项目；保持 Excel 宽表式阅读。</div>
           </div>
           <div className="ledger-toolbar-actions">
+            <button className="button button-primary" type="button" onClick={openCreateForm}>
+              新增客户
+            </button>
             <button className="button button-ghost" type="button" onClick={() => setDrawerOpen(true)}>
               打开右侧摘要
             </button>
@@ -364,12 +481,32 @@ export function CustomerManagement() {
           <span className="muted">当前显示 {visibleCustomers.length} 个主体，可横向滚动查看完整列</span>
         </div>
 
-        <div className="ledger-table-shell">
+        <HorizontalScrollArea
+          className="ledger-horizontal-area"
+          hint="可在表格区域内按住鼠标左右拖动，或使用顶部滚动条查看完整客户总账列"
+        >
           <table className="data-table ledger-table">
+            <colgroup>
+              <col className="ledger-col-subject" />
+              <col className="ledger-col-type" />
+              <col className="ledger-col-amount" />
+              <col className="ledger-col-amount" />
+              <col className="ledger-col-amount" />
+              <col className="ledger-col-amount" />
+              <col className="ledger-col-count" />
+              <col className="ledger-col-summary" />
+              <col className="ledger-col-summary" />
+              <col className="ledger-col-summary" />
+              <col className="ledger-col-summary" />
+              <col className="ledger-col-summary" />
+              <col className="ledger-col-risk" />
+              <col className="ledger-col-archive" />
+              <col className="ledger-col-action" />
+            </colgroup>
             <thead>
               <tr>
-                <th className="sticky-col">主体 / 项目</th>
-                <th>类型</th>
+                <th className="ledger-first-col ledger-subject-col">主体 / 项目</th>
+                <th className="ledger-type-col">类型</th>
                 <th>对账金额</th>
                 <th>按合同应收</th>
                 <th>实际收款</th>
@@ -415,7 +552,7 @@ export function CustomerManagement() {
                       }`}
                       onClick={() => setSelectedCustomerId(customer.customerId)}
                     >
-                      <td className="sticky-col ledger-subject-cell">
+                      <td className="ledger-first-col ledger-subject-cell">
                         <button
                           className="ledger-expand-button"
                           type="button"
@@ -424,8 +561,8 @@ export function CustomerManagement() {
                           {isExpanded ? "收起" : "展开"}
                         </button>
                         <div className="ledger-name-block">
-                          <strong>{customer.customerName}</strong>
-                          <span className="muted">
+                          <strong className="ledger-name-title">{customer.customerName}</strong>
+                          <span className="muted ledger-name-meta">
                             主体客户
                             {customer.projectCount >= 8 ? " · 项目较多" : ""}
                             {customer.hasUnclassifiedArchives ? " · 含未归类档案" : ""}
@@ -433,7 +570,7 @@ export function CustomerManagement() {
                           </span>
                         </div>
                       </td>
-                      <td>
+                      <td className="ledger-type-cell">
                         <span className="status-badge status-info">{customer.customerType}</span>
                       </td>
                       <td className="ledger-amount-cell">{formatCurrency(customer.totalReceivableAmount)}</td>
@@ -511,10 +648,10 @@ export function CustomerManagement() {
                               hasProjectKeywordMatch ? " is-project-search-open" : ""
                             }${onlyUnclassified && customer.hasUnclassifiedArchives ? " is-unclassified-focus" : ""}`}
                           >
-                            <td className="sticky-col ledger-project-cell">
+                            <td className="ledger-first-col ledger-project-cell">
                               <div className="ledger-name-block">
-                                <strong>{project.projectName}</strong>
-                                <span className="muted">
+                                <strong className="ledger-name-title">{project.projectName}</strong>
+                                <span className="muted ledger-name-meta">
                                   {project.projectAlias || project.sourceCustomerName || "项目明细"}
                                 </span>
                                 {customer.hasUnclassifiedArchives ? (
@@ -524,7 +661,7 @@ export function CustomerManagement() {
                                 ) : null}
                               </div>
                             </td>
-                            <td>
+                            <td className="ledger-type-cell">
                               <span className="status-badge">项目</span>
                             </td>
                             <td className="ledger-amount-cell">{formatCurrency(project.receivableAmount)}</td>
@@ -585,7 +722,7 @@ export function CustomerManagement() {
               })}
             </tbody>
           </table>
-        </div>
+        </HorizontalScrollArea>
       </section>
 
       {drawerOpen ? (
@@ -638,6 +775,160 @@ export function CustomerManagement() {
               </article>
             </div>
           </aside>
+        </div>
+      ) : null}
+
+      {formOpen ? (
+        <div className="modal-overlay" onClick={closeCreateForm}>
+          <section className="modal-card modal-card-form" onClick={(event) => event.stopPropagation()}>
+            <div className="table-header">
+              <h3>新增客户</h3>
+              <div className="table-actions">
+                <button className="button button-ghost" type="button" onClick={closeCreateForm}>
+                  关闭
+                </button>
+              </div>
+            </div>
+            <div className="modal-body">
+              <div className="modal-intro-stack">
+                <section className="modal-import-card">
+                  <div className="modal-import-header">
+                    <div>
+                      <strong>Excel 导入</strong>
+                      <p className="muted">优先收口客户主数据导入入口、字段映射和自动识别方案。</p>
+                    </div>
+                    <span className="status-tag neutral">客户专用导入待接后端</span>
+                  </div>
+                  <div className="modal-import-actions">
+                    <input
+                      className="search-input"
+                      type="file"
+                      accept=".xlsx,.xls"
+                      onChange={(event) => setImportFile(event.target.files?.[0] ?? null)}
+                    />
+                    <button
+                      className="button button-secondary"
+                      type="button"
+                      onClick={async () => {
+                        if (!importFile) {
+                          setImportMessage("请先选择客户主数据 Excel 文件");
+                          return;
+                        }
+                        const body = new FormData();
+                        body.append("file", importFile);
+
+                        const response = await fetch("/api/import/customers", {
+                          method: "POST",
+                          body,
+                        });
+                        const result = await response.json();
+
+                        if (!response.ok || !result.success) {
+                          setImportMessage(result.message ?? "客户 Excel 导入失败");
+                          return;
+                        }
+
+                        setImportMessage(
+                          `导入完成：新增 ${result.data.addedCount} 条，更新 ${result.data.updatedCount} 条，跳过 ${result.data.skippedCount} 条，失败 ${result.data.failedCount} 条。`,
+                        );
+                        setImportFile(null);
+                        await loadLedger({
+                          ...filters,
+                          page: 1,
+                        });
+                      }}
+                    >
+                      导入客户 Excel
+                    </button>
+                  </div>
+                  <div className="modal-mapping-grid">
+                    <div>
+                      <strong>客户主数据最小必填字段</strong>
+                      <ul className="modal-bullet-list">
+                        <li>客户名称</li>
+                        <li>客户编号（可空，系统可生成）</li>
+                        <li>业务负责人</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <strong>建议映射字段</strong>
+                      <ul className="modal-bullet-list">
+                        <li>统一社会信用代码 → `unifiedSocialCreditCode`</li>
+                        <li>行业 → `industry`</li>
+                        <li>联系人 / 电话 → `contactName` / `contactPhone`</li>
+                        <li>资信状况 / 当前状况 / 备注 → `creditStatus` / `currentStatus` / `remark`</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="modal-linkage-note">
+                    <strong>导入后自然受益模块</strong>
+                    <span className="muted">
+                      客户列表、客户详情、合同/应收下拉选择项会直接受益；风控关联需要已有项目、应收或风险数据后才会完整呈现。
+                    </span>
+                  </div>
+                  <span className="muted">
+                    {importMessage || "支持导入客户主数据，导入成功后可在客户列表、客户详情、合同/应收客户选择项中验证。"}
+                  </span>
+                </section>
+              </div>
+
+              <form id={formId} className="form-layout modal-form-layout" onSubmit={handleCreateCustomer}>
+                <div className="form-section-title">手动新增客户</div>
+                {[
+                  ["name", "客户名称"],
+                  ["customerCode", "客户编号（可选）"],
+                  ["salesOwnerName", "业务负责人"],
+                  ["unifiedSocialCreditCode", "统一社会信用代码"],
+                  ["industry", "行业"],
+                  ["contactName", "联系人"],
+                  ["contactPhone", "联系电话"],
+                  ["creditStatus", "资信状况"],
+                  ["currentStatus", "目前状况"],
+                ].map(([field, label]) => (
+                  <label className="form-row" key={field}>
+                    <span>{label}</span>
+                    <input
+                      value={String(form[field as keyof CustomerPayload] ?? "")}
+                      onChange={(event) =>
+                        setForm((current) => ({ ...current, [field]: event.target.value }))
+                      }
+                    />
+                  </label>
+                ))}
+                <label className="form-row">
+                  <span>信用额度</span>
+                  <input
+                    type="number"
+                    value={form.creditLimit ?? ""}
+                    placeholder="可留空"
+                    onChange={(event) =>
+                      setForm((current) => ({
+                        ...current,
+                        creditLimit: event.target.value === "" ? null : Number(event.target.value),
+                      }))
+                    }
+                  />
+                </label>
+                <label className="form-row">
+                  <span>备注</span>
+                  <textarea
+                    className="form-textarea"
+                    value={form.remark}
+                    onChange={(event) => setForm((current) => ({ ...current, remark: event.target.value }))}
+                  />
+                </label>
+                {createMessage ? <div className="inline-notice inline-notice-warning">{createMessage}</div> : null}
+              </form>
+            </div>
+            <div className="modal-footer">
+              <button className="button button-ghost" type="button" onClick={closeCreateForm}>
+                取消
+              </button>
+              <button className="button button-primary" type="submit" form={formId}>
+                创建客户
+              </button>
+            </div>
+          </section>
         </div>
       ) : null}
     </>

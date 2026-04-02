@@ -2934,6 +2934,14 @@ export async function updateCustomerLedgerArchive(
 
 type ImportedCustomerSeed = {
   customerName: string;
+  customerCode?: string | null;
+  salesOwnerName?: string | null;
+  unifiedSocialCreditCode?: string | null;
+  industry?: string | null;
+  contactName?: string | null;
+  contactPhone?: string | null;
+  customerNature?: string | null;
+  creditLimit?: string | number | null;
   creditStatus?: string | null;
   currentStatus?: string | null;
   remark?: string | null;
@@ -3017,6 +3025,318 @@ type ExcelImportPayload = {
   risks: ImportedRiskSeed[];
   ledgerProfiles?: ImportedLedgerProfileSeed[];
 };
+
+type CustomerMasterImportPayload = {
+  sourceFileName?: string;
+  customers: ImportedCustomerSeed[];
+};
+
+type CustomerMasterImportSummary = {
+  totalCount: number;
+  successCount: number;
+  addedCount: number;
+  updatedCount: number;
+  skippedCount: number;
+  failedCount: number;
+  errors: Array<{
+    rowRef?: string | null;
+    message: string;
+    rawPayload?: unknown;
+  }>;
+};
+
+function toNullableImportNumber(value: string | number | null | undefined) {
+  if (value === null || value === undefined || value === "") {
+    return null;
+  }
+  const numeric = Number(value);
+  return Number.isFinite(numeric) ? numeric : null;
+}
+
+function mergeImportedCustomerSeed(
+  current: ImportedCustomerSeed | undefined,
+  next: ImportedCustomerSeed,
+): ImportedCustomerSeed {
+  if (!current) {
+    return { ...next };
+  }
+
+  return {
+    ...current,
+    customerName: next.customerName || current.customerName,
+    customerCode: next.customerCode || current.customerCode || null,
+    salesOwnerName: next.salesOwnerName || current.salesOwnerName || null,
+    unifiedSocialCreditCode: next.unifiedSocialCreditCode || current.unifiedSocialCreditCode || null,
+    industry: next.industry || current.industry || null,
+    contactName: next.contactName || current.contactName || null,
+    contactPhone: next.contactPhone || current.contactPhone || null,
+    customerNature: next.customerNature || current.customerNature || null,
+    creditLimit: next.creditLimit ?? current.creditLimit ?? null,
+    creditStatus: next.creditStatus || current.creditStatus || null,
+    currentStatus: next.currentStatus || current.currentStatus || null,
+    remark: next.remark || current.remark || null,
+  };
+}
+
+function normalizeImportedCustomerSeeds(seeds: ImportedCustomerSeed[]) {
+  const seedMap = new Map<string, ImportedCustomerSeed>();
+
+  for (const seed of seeds) {
+    const normalizedName = normalizeImportedCustomerName(seed.customerName);
+    if (!normalizedName || isNoiseCustomerName(normalizedName)) {
+      continue;
+    }
+
+    const normalizedCode = normalizeCustomerCode(seed.customerCode) ?? null;
+    const normalizedUnifiedCode = fitDbText(seed.unifiedSocialCreditCode, 32);
+    const identity = normalizedUnifiedCode || normalizedName;
+
+    seedMap.set(
+      identity,
+      mergeImportedCustomerSeed(seedMap.get(identity), {
+        ...seed,
+        customerName: normalizedName,
+        customerCode: normalizedCode,
+        unifiedSocialCreditCode: normalizedUnifiedCode,
+        salesOwnerName: fitDbText(seed.salesOwnerName, 100),
+        industry: fitDbText(seed.industry, 100),
+        contactName: fitDbText(seed.contactName, 100),
+        contactPhone: fitDbText(seed.contactPhone, 30),
+        creditStatus: fitDbText(seed.creditStatus, 100),
+        currentStatus: fitDbText(seed.currentStatus, 200),
+        customerNature: fitDbText(seed.customerNature, 100),
+        remark: seed.remark || null,
+        creditLimit: toNullableImportNumber(seed.creditLimit),
+      }),
+    );
+  }
+
+  return Array.from(seedMap.values());
+}
+
+export async function importCustomerMasterData(
+  payload: CustomerMasterImportPayload,
+): Promise<CustomerMasterImportSummary> {
+  const effectiveCustomers = normalizeImportedCustomerSeeds(payload.customers);
+  const errors: CustomerMasterImportSummary["errors"] = [];
+
+  if (process.env.DATABASE_URL) {
+    let addedCount = 0;
+    let updatedCount = 0;
+    let skippedCount = 0;
+
+    const existingCodes = (await prisma.customer.findMany({ select: { customerCode: true } })).map(
+      (item) => item.customerCode,
+    );
+    let generatedCodes = [...existingCodes];
+
+    for (const seed of effectiveCustomers) {
+      try {
+        const normalizedName = normalizeImportedCustomerName(seed.customerName);
+        if (!normalizedName) {
+          errors.push({ message: "客户名称缺失，无法导入", rawPayload: seed });
+          continue;
+        }
+
+        const existingByUnifiedCode = seed.unifiedSocialCreditCode
+          ? await prisma.customer.findUnique({
+              where: { unifiedSocialCreditCode: seed.unifiedSocialCreditCode },
+            })
+          : null;
+
+        const existing =
+          existingByUnifiedCode ??
+          (await prisma.customer.findUnique({
+            where: { name: normalizedName },
+          }));
+
+        const nextCustomerCode =
+          normalizeCustomerCode(seed.customerCode) ??
+          existing?.customerCode ??
+          generateNextCustomerCode(generatedCodes);
+
+        if (!existing?.customerCode && nextCustomerCode) {
+          generatedCodes = [...generatedCodes, nextCustomerCode];
+        }
+
+        const data = {
+          customerId: existing?.customerId ?? buildImportCustomerId(normalizedName),
+          customerCode: nextCustomerCode,
+          name: normalizedName,
+          normalizedName: fitDbText(normalizedName, 200),
+          sourceCustomerName: fitDbText(seed.customerName, 200),
+          creditStatus: seed.creditStatus || null,
+          currentStatus: seed.currentStatus || null,
+          customerNature: seed.customerNature || null,
+          creditStanding: seed.creditStatus || null,
+          unifiedSocialCreditCode: seed.unifiedSocialCreditCode || null,
+          industry: seed.industry || null,
+          salesOwnerName: seed.salesOwnerName || null,
+          contactName: seed.contactName || null,
+          contactPhone: seed.contactPhone || null,
+          creditLimit: seed.creditLimit === null || seed.creditLimit === undefined ? null : Number(seed.creditLimit),
+          remark: seed.remark || null,
+        };
+
+        if (!existing) {
+          await prisma.customer.create({ data });
+          addedCount += 1;
+          continue;
+        }
+
+        const changed =
+          existing.name !== data.name ||
+          (existing.customerCode ?? null) !== (data.customerCode ?? null) ||
+          (existing.creditStatus ?? null) !== data.creditStatus ||
+          (existing.currentStatus ?? null) !== data.currentStatus ||
+          (existing.customerNature ?? null) !== data.customerNature ||
+          (existing.creditStanding ?? null) !== data.creditStanding ||
+          (existing.unifiedSocialCreditCode ?? null) !== data.unifiedSocialCreditCode ||
+          (existing.industry ?? null) !== data.industry ||
+          (existing.salesOwnerName ?? null) !== data.salesOwnerName ||
+          (existing.contactName ?? null) !== data.contactName ||
+          (existing.contactPhone ?? null) !== data.contactPhone ||
+          Number(existing.creditLimit ?? 0) !== Number(data.creditLimit ?? 0) ||
+          (existing.remark ?? null) !== data.remark;
+
+        if (!changed) {
+          skippedCount += 1;
+          continue;
+        }
+
+        await prisma.customer.update({
+          where: { id: existing.id },
+          data,
+        });
+        updatedCount += 1;
+      } catch (error) {
+        errors.push({
+          message: error instanceof Error ? error.message : "客户导入失败",
+          rawPayload: seed,
+        });
+      }
+    }
+
+    return {
+      totalCount: effectiveCustomers.length,
+      successCount: addedCount + updatedCount,
+      addedCount,
+      updatedCount,
+      skippedCount,
+      failedCount: errors.length,
+      errors,
+    };
+  }
+
+  const customerMap = new Map(memoryStore.customers.map((item) => [item.id, item]));
+  const byName = new Map(memoryStore.customers.map((item) => [normalizeImportedCustomerName(item.name) ?? item.name, item]));
+  const byUnifiedCode = new Map(
+    memoryStore.customers
+      .filter((item) => item.unifiedSocialCreditCode)
+      .map((item) => [item.unifiedSocialCreditCode, item] as const),
+  );
+  let addedCount = 0;
+  let updatedCount = 0;
+  let skippedCount = 0;
+
+  for (const seed of effectiveCustomers) {
+    try {
+      const normalizedName = normalizeImportedCustomerName(seed.customerName);
+      if (!normalizedName) {
+        errors.push({ message: "客户名称缺失，无法导入", rawPayload: seed });
+        continue;
+      }
+
+      const existing =
+        (seed.unifiedSocialCreditCode ? byUnifiedCode.get(seed.unifiedSocialCreditCode) : null) ??
+        byName.get(normalizedName) ??
+        null;
+
+      const payloadRecord: CustomerPayload = {
+        customerId: existing?.customerId ?? buildImportCustomerId(normalizedName),
+        customerCode:
+          normalizeCustomerCode(seed.customerCode) ??
+          existing?.customerCode ??
+          generateNextCustomerCode(memoryStore.customers.map((item) => item.customerCode)),
+        name: normalizedName,
+        normalizedName: normalizedName,
+        sourceCustomerName: seed.customerName,
+        isMerged: existing?.isMerged ?? false,
+        mergedIntoCustomerId: existing?.mergedIntoCustomerId ?? null,
+        creditStatus: seed.creditStatus ?? existing?.creditStatus ?? "",
+        currentStatus: seed.currentStatus ?? existing?.currentStatus ?? "",
+        customerNature: seed.customerNature ?? existing?.customerNature ?? "",
+        hasGuarantee: existing?.hasGuarantee ?? false,
+        creditStanding: seed.creditStatus ?? existing?.creditStanding ?? "",
+        dueDiligenceCompleted: existing?.dueDiligenceCompleted ?? false,
+        unifiedSocialCreditCode: seed.unifiedSocialCreditCode ?? existing?.unifiedSocialCreditCode ?? "",
+        industry: seed.industry ?? existing?.industry ?? "",
+        contactName: seed.contactName ?? existing?.contactName ?? "",
+        contactPhone: seed.contactPhone ?? existing?.contactPhone ?? "",
+        salesOwnerName: seed.salesOwnerName ?? existing?.salesOwnerName ?? "",
+        currentCreditLevel: existing?.currentCreditLevel ?? "",
+        creditScore: existing?.creditScore ?? null,
+        creditLevel: existing?.creditLevel ?? "",
+        riskAction: existing?.riskAction ?? "常规跟进",
+        riskStatus: existing?.riskStatus ?? "正常",
+        scoreDelta: existing?.scoreDelta ?? null,
+        creditLimit:
+          seed.creditLimit === null || seed.creditLimit === undefined
+            ? (existing?.creditLimit ?? null)
+            : Number(seed.creditLimit),
+        stopSupply: existing?.stopSupply ?? false,
+        remark: seed.remark ?? existing?.remark ?? "",
+        riskRemark: existing?.riskRemark ?? "",
+        receivableBalance: existing?.receivableBalance ?? 0,
+        creditUtilizationRate: existing?.creditUtilizationRate ?? null,
+        creditUtilizationStatus: existing?.creditUtilizationStatus ?? "未启用",
+        highRiskCustomer: existing?.highRiskCustomer ?? false,
+        keyAttentionCustomer: existing?.keyAttentionCustomer ?? false,
+        ruleFlags: existing?.ruleFlags ?? [],
+      };
+
+      const record = normalizeCustomer(buildCustomerRecord(payloadRecord, existing ?? undefined));
+      const changed = !existing || JSON.stringify(record) !== JSON.stringify(existing);
+      if (!existing) {
+        memoryStore.customers.unshift(record);
+        addedCount += 1;
+      } else if (changed) {
+        customerMap.set(existing.id, record);
+        updatedCount += 1;
+      } else {
+        skippedCount += 1;
+      }
+
+      byName.set(normalizedName, record);
+      if (record.unifiedSocialCreditCode) {
+        byUnifiedCode.set(record.unifiedSocialCreditCode, record);
+      }
+    } catch (error) {
+      errors.push({
+        message: error instanceof Error ? error.message : "客户导入失败",
+        rawPayload: seed,
+      });
+    }
+  }
+
+  if (customerMap.size > 0) {
+    memoryStore.customers = attachCustomerCodes(
+      Array.from(new Map([...memoryStore.customers.map((item) => [item.id, item] as const), ...customerMap]).values()),
+    ).map(normalizeCustomer);
+  } else {
+    memoryStore.customers = attachCustomerCodes(memoryStore.customers).map(normalizeCustomer);
+  }
+
+  return {
+    totalCount: effectiveCustomers.length,
+    successCount: addedCount + updatedCount,
+    addedCount,
+    updatedCount,
+    skippedCount,
+    failedCount: errors.length,
+    errors,
+  };
+}
 
 function buildImportCustomerId(customerName: string) {
   return `IMP-${createHash("sha1").update(customerName).digest("hex").slice(0, 12).toUpperCase()}`;

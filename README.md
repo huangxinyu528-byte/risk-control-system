@@ -136,10 +136,30 @@ npm run prisma:generate
 
 为了避免多个 `Next.js` 进程并存、旧端口缓存漂移、Prisma / PostgreSQL 连接被打满，后续请统一按下面这套方式启动。
 
-稳定演示模式：
+本地开发推荐模式：
 
 ```bash
-npm run local:stable
+npm run local:dev
+```
+
+固定入口：
+
+- 登录页：`http://localhost:3006/login`
+- 客户管理页：`http://localhost:3006/customers`
+- 风控总览页：`http://localhost:3006/risk`
+
+说明：
+
+- 会先自动停止本地旧的 `3000-3007` 端口服务
+- 会自动清理本地开发与历史 Next 构建目录，避免旧 chunk 和缓存残留
+- 会把开发模式产物单独放到 `.next-dev`
+- 用开发模式稳定启动到 `3006`
+- 这是当前阶段**唯一推荐**的本地开发入口
+
+本地预览模式（仅在需要验证 production build 时使用）：
+
+```bash
+npm run local:preview
 ```
 
 固定入口：
@@ -150,27 +170,9 @@ npm run local:stable
 说明：
 
 - 会先自动停止本地旧的 `3000-3007` 端口服务
-- 会先清理本地 `.next` 构建目录，避免旧缓存和 `.next/export` 残留导致构建失败
-- 再执行生产构建并用稳定端口 `3006` 启动
-- 适合验收、演示、联调
-
-开发调试模式：
-
-```bash
-npm run local:dev
-```
-
-固定入口：
-
-- 登录页：`http://localhost:3007/login`
-- 客户管理页：`http://localhost:3007/customers`
-
-说明：
-
-- 会先自动停止本地旧的 `3000-3007` 端口服务
-- 会先清理本地 `.next` 构建目录，避免旧缓存干扰
-- 再用开发模式启动到 `3007`
-- 只在需要热更新调试时使用
+- 会把 production 产物单独放到 `.next-prod`
+- 再执行生产构建并用 `next start` 启动
+- 只在需要验证生产构建链路时使用，不作为日常开发入口
 
 如果你只想手动清理旧端口：
 
@@ -192,7 +194,7 @@ npm run dev
 说明：
 
 - 这个旧命令仍然能用，但以后不建议作为日常入口
-- 推荐统一使用 `local:stable` 或 `local:dev`
+- 推荐统一使用 `local:dev`
 
 ---
 

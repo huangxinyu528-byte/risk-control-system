@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { useEffect, useId, useMemo, useState, type FormEvent } from "react";
 import { PageHeader } from "@/components/shared/page-header";
 import {
   displayBaseValue,
@@ -61,6 +61,7 @@ function formatReceivableStatus(value: string) {
 const paymentTermOptions = ["次月10号", "次月20号", "次月月底", "30天", "60天", "90天"];
 
 export function ReceivableManagement() {
+  const formId = useId();
   const [receivables, setReceivables] = useState<ReceivableRecord[]>([]);
   const [customers, setCustomers] = useState<CustomerRecord[]>([]);
   const [keyword, setKeyword] = useState("");
@@ -71,6 +72,7 @@ export function ReceivableManagement() {
   const [showIncompleteOnly, setShowIncompleteOnly] = useState(false);
   const [form, setForm] = useState<ReceivablePayload>(emptyForm);
   const [editingId, setEditingId] = useState<string | null>(null);
+  const [formOpen, setFormOpen] = useState(false);
   const [importFile, setImportFile] = useState<File | null>(null);
   const [importMessage, setImportMessage] = useState("");
 
@@ -146,7 +148,22 @@ export function ReceivableManagement() {
 
     setEditingId(null);
     setForm(emptyForm);
+    setFormOpen(false);
     await loadReceivables();
+  }
+
+  function openCreateForm() {
+    setEditingId(null);
+    setForm(emptyForm);
+    setFormOpen(true);
+  }
+
+  function closeForm() {
+    setEditingId(null);
+    setForm(emptyForm);
+    setFormOpen(false);
+    setImportFile(null);
+    setImportMessage("");
   }
 
   return (
@@ -202,42 +219,6 @@ export function ReceivableManagement() {
             {showIncompleteOnly ? "查看全部账款" : "仅看待补账款"}
           </button>
         </div>
-        <div className="toolbar-row toolbar-grid" style={{ marginTop: 12 }}>
-          <input
-            className="search-input"
-            type="file"
-            accept=".xlsx,.xls"
-            onChange={(event) => setImportFile(event.target.files?.[0] ?? null)}
-          />
-          <button
-            className="button button-primary"
-            type="button"
-            onClick={async () => {
-              if (!importFile) {
-                setImportMessage("请先选择 Excel 文件");
-                return;
-              }
-
-              const body = new FormData();
-              body.append("file", importFile);
-              const response = await fetch("/api/import/excel", { method: "POST", body });
-              const result = await response.json();
-
-              if (!response.ok || !result.success) {
-                setImportMessage(result.message ?? "Excel 导入失败");
-                return;
-              }
-
-              setImportMessage(
-                `导入完成：客户 ${result.data.summary.customers} 条，项目 ${result.data.summary.projects} 条，应收 ${result.data.summary.receivables} 条，风险 ${result.data.summary.risks} 条。`,
-              );
-              await Promise.all([loadCustomers(), loadReceivables()]);
-            }}
-          >
-            导入 Excel
-          </button>
-          <span className="muted">{importMessage || "支持上传应收账款情况汇总表，自动解析并写入当前系统数据层。"}</span>
-        </div>
       </section>
 
       <section className="quality-grid">
@@ -263,261 +244,321 @@ export function ReceivableManagement() {
         </article>
       </section>
 
-      <section className="management-layout">
-        <section className="table-card">
-          <div className="table-header">
-            <h3>应收账款列表</h3>
-            <span className="muted">当前显示 {filteredReceivables.length} / 共 {receivables.length} 条</span>
-            <button
-              className="button button-primary"
-              type="button"
-              onClick={() => {
-                setEditingId(null);
-                setForm(emptyForm);
-              }}
-            >
-              新增账款
-            </button>
-          </div>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>客户名称</th>
-                <th>项目名称</th>
-                <th>业务类型</th>
-                <th>期间</th>
-                <th>应收金额</th>
-                <th>已收金额</th>
-                <th>未收金额</th>
-                <th>累计应收</th>
-                <th>本月回款</th>
-                <th>回款率</th>
-                <th>付款周期</th>
-                <th>到期日</th>
-                <th>逾期天数</th>
-                <th>账龄阶段</th>
-                <th>是否结清</th>
-                <th>账款标签</th>
-                <th>回款状态</th>
-                <th>逾期规则</th>
-                <th>备注</th>
-                <th>待补字段</th>
-                <th>操作</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredReceivables.map((item) => {
-                const missingFields = getMissingFields(item);
-                return <tr key={item.id}>
-                  <td>{item.customerCode ? `${item.customerCode} / ${item.customerName}` : item.customerName}</td>
-                  <td>{item.projectName}</td>
-                  <td>{displayBaseValue(item.businessType)}</td>
-                  <td>{displayBaseValue(item.period)}</td>
-                  <td>{formatCurrency(item.amount)}</td>
-                  <td>{formatCurrency(item.receivedAmount)}</td>
-                  <td>{formatCurrency(item.unpaidAmount)}</td>
-                  <td>{formatCurrency(item.cumulativeReceivable)}</td>
-                  <td>{formatCurrency(item.monthlyReceivedAmount)}</td>
-                  <td>{formatPercent(item.paymentRate)}</td>
-                  <td>{formatOptionalText(item.paymentTerm, "待补数据")}</td>
-                  <td>{formatOptionalText(item.dueDate, "待补数据")}</td>
-                  <td>{displayComputedValue(item.overdueDays)}</td>
-                  <td>{displayComputedValue(item.agingBucket)}</td>
-                  <td>{item.isSettled ? "是" : "否"}</td>
-                  <td>{displayBaseValue(item.riskStatus)}</td>
-                  <td>{formatReceivableStatus(item.receivableStatus)}</td>
-                  <td>
-                    {item.overdueRuleStatus === "未启用"
-                      ? "未启用"
-                      : `${item.overdueRuleStatus}${item.manualStatusMaintained ? " / 人工维护" : ""}`}
-                  </td>
-                  <td>{displayBaseValue(item.remark)}</td>
-                  <td>{missingFields.length ? missingFields.join("、") : "已完善"}</td>
-                  <td>
+      <section className="table-card">
+        <div className="table-header">
+          <h3>应收账款列表</h3>
+          <span className="muted">当前显示 {filteredReceivables.length} / 共 {receivables.length} 条</span>
+          <button className="button button-primary" type="button" onClick={openCreateForm}>
+            新增账款
+          </button>
+        </div>
+        <table className="data-table">
+          <thead>
+            <tr>
+              <th>客户名称</th>
+              <th>项目名称</th>
+              <th>业务类型</th>
+              <th>期间</th>
+              <th>应收金额</th>
+              <th>已收金额</th>
+              <th>未收金额</th>
+              <th>累计应收</th>
+              <th>本月回款</th>
+              <th>回款率</th>
+              <th>付款周期</th>
+              <th>到期日</th>
+              <th>逾期天数</th>
+              <th>账龄阶段</th>
+              <th>是否结清</th>
+              <th>账款标签</th>
+              <th>回款状态</th>
+              <th>逾期规则</th>
+              <th>备注</th>
+              <th>待补字段</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredReceivables.map((item) => {
+              const missingFields = getMissingFields(item);
+              return <tr key={item.id}>
+                <td>{item.customerCode ? `${item.customerCode} / ${item.customerName}` : item.customerName}</td>
+                <td>{item.projectName}</td>
+                <td>{displayBaseValue(item.businessType)}</td>
+                <td>{displayBaseValue(item.period)}</td>
+                <td>{formatCurrency(item.amount)}</td>
+                <td>{formatCurrency(item.receivedAmount)}</td>
+                <td>{formatCurrency(item.unpaidAmount)}</td>
+                <td>{formatCurrency(item.cumulativeReceivable)}</td>
+                <td>{formatCurrency(item.monthlyReceivedAmount)}</td>
+                <td>{formatPercent(item.paymentRate)}</td>
+                <td>{formatOptionalText(item.paymentTerm, "待补数据")}</td>
+                <td>{formatOptionalText(item.dueDate, "待补数据")}</td>
+                <td>{displayComputedValue(item.overdueDays)}</td>
+                <td>{displayComputedValue(item.agingBucket)}</td>
+                <td>{item.isSettled ? "是" : "否"}</td>
+                <td>{displayBaseValue(item.riskStatus)}</td>
+                <td>{formatReceivableStatus(item.receivableStatus)}</td>
+                <td>
+                  {item.overdueRuleStatus === "未启用"
+                    ? "未启用"
+                    : `${item.overdueRuleStatus}${item.manualStatusMaintained ? " / 人工维护" : ""}`}
+                </td>
+                <td>{displayBaseValue(item.remark)}</td>
+                <td>{missingFields.length ? missingFields.join("、") : "已完善"}</td>
+                <td>
+                  <button
+                    className="button button-secondary"
+                    type="button"
+                    onClick={() => {
+                      setEditingId(item.id);
+                      setForm({
+                        customerId: item.customerId,
+                        projectName: item.projectName,
+                        contractReceivable: item.contractReceivable,
+                        cumulativeReceivable: item.cumulativeReceivable,
+                        statementDate: item.statementDate,
+                        businessType: item.businessType,
+                        timeNode: item.timeNode,
+                        remark: item.remark,
+                        period: item.period,
+                        paymentTerm: item.paymentTerm,
+                        baseDate: item.baseDate,
+                        amount: item.amount,
+                        receivedAmount: item.receivedAmount,
+                        monthlyReceivedAmount: item.monthlyReceivedAmount,
+                        salesOwnerName: item.salesOwnerName,
+                        billingPeriodDays: item.billingPeriodDays,
+                        dueDate: item.dueDate,
+                        receivedDate: item.receivedDate,
+                        overdueDays: item.overdueDays,
+                        agingBucket: item.agingBucket,
+                        riskStatus: item.riskStatus,
+                        receivableStatus: formatReceivableStatus(item.receivableStatus),
+                      });
+                      setFormOpen(true);
+                    }}
+                  >
+                    {missingFields.length ? "补录" : "编辑"}
+                  </button>
+                </td>
+              </tr>;
+            })}
+          </tbody>
+        </table>
+      </section>
+
+      {formOpen ? (
+        <div className="modal-overlay" onClick={closeForm}>
+          <section className="modal-card modal-card-form" onClick={(event) => event.stopPropagation()}>
+            <div className="table-header">
+              <h3>{editingId ? "编辑账款" : "新增账款"}</h3>
+              <div className="table-actions">
+                <button className="button button-ghost" type="button" onClick={closeForm}>
+                  关闭
+                </button>
+              </div>
+            </div>
+            <div className="modal-body">
+              <div className="modal-intro-stack">
+                <section className="modal-import-card">
+                  <div className="modal-import-header">
+                    <div>
+                      <strong>Excel 导入</strong>
+                      <p className="muted">支持上传应收账款情况汇总表，自动解析并写入当前系统数据层。</p>
+                    </div>
+                    <span className="status-tag success">已接通导入接口</span>
+                  </div>
+                  <div className="modal-import-actions">
+                    <input
+                      className="search-input"
+                      type="file"
+                      accept=".xlsx,.xls"
+                      onChange={(event) => setImportFile(event.target.files?.[0] ?? null)}
+                    />
                     <button
                       className="button button-secondary"
                       type="button"
-                      onClick={() => {
-                        setEditingId(item.id);
-                        setForm({
-                          customerId: item.customerId,
-                          projectName: item.projectName,
-                          contractReceivable: item.contractReceivable,
-                          cumulativeReceivable: item.cumulativeReceivable,
-                          statementDate: item.statementDate,
-                          businessType: item.businessType,
-                          timeNode: item.timeNode,
-                          remark: item.remark,
-                          period: item.period,
-                          paymentTerm: item.paymentTerm,
-                          baseDate: item.baseDate,
-                          amount: item.amount,
-                          receivedAmount: item.receivedAmount,
-                          monthlyReceivedAmount: item.monthlyReceivedAmount,
-                          salesOwnerName: item.salesOwnerName,
-                          billingPeriodDays: item.billingPeriodDays,
-                          dueDate: item.dueDate,
-                          receivedDate: item.receivedDate,
-                          overdueDays: item.overdueDays,
-                          agingBucket: item.agingBucket,
-                          riskStatus: item.riskStatus,
-                          receivableStatus: formatReceivableStatus(item.receivableStatus),
-                        });
+                      onClick={async () => {
+                        if (!importFile) {
+                          setImportMessage("请先选择 Excel 文件");
+                          return;
+                        }
+
+                        const body = new FormData();
+                        body.append("file", importFile);
+                        const response = await fetch("/api/import/excel", { method: "POST", body });
+                        const result = await response.json();
+
+                        if (!response.ok || !result.success) {
+                          setImportMessage(result.message ?? "Excel 导入失败");
+                          return;
+                        }
+
+                        setImportMessage(
+                          `导入完成：客户 ${result.data.summary.customers} 条，项目 ${result.data.summary.projects} 条，应收 ${result.data.summary.receivables} 条，风险 ${result.data.summary.risks} 条。`,
+                        );
+                        setImportFile(null);
+                        await Promise.all([loadCustomers(), loadReceivables()]);
                       }}
                     >
-                      {missingFields.length ? "补录" : "编辑"}
+                      导入账款 Excel
                     </button>
-                  </td>
-                </tr>;
-              })}
-            </tbody>
-          </table>
-        </section>
-
-        <section className="form-card">
-          <h3 style={{ marginTop: 0 }}>{editingId ? "编辑账款" : "新增账款"}</h3>
-          <form className="form-layout" onSubmit={handleSubmit}>
-            <label className="form-row">
-              <span>客户</span>
-              <select
-                className="search-input"
-                value={form.customerId}
-                onChange={(event) => setForm((current) => ({ ...current, customerId: event.target.value }))}
-              >
-                <option value="">请选择客户</option>
-                {customers.map((customer) => (
-                  <option key={customer.id} value={customer.customerId}>
-                    {customer.customerCode} / {customer.name}
-                  </option>
-                ))}
-              </select>
-            </label>
-            {[
-              ["projectName", "项目名称"],
-              ["businessType", "业务类型"],
-              ["timeNode", "时间节点"],
-              ["period", "期间"],
-              ["salesOwnerName", "责任人"],
-              ["receivableStatus", "回款状态"],
-              ["riskStatus", "账款标签"],
-            ].map(([field, label]) => (
-              <label className="form-row" key={field}>
-                <span>{label}</span>
-                <input
-                  value={String(form[field as keyof ReceivablePayload] ?? "")}
-                  onChange={(event) =>
-                    setForm((current) => ({ ...current, [field]: event.target.value }))
-                  }
-                />
-              </label>
-            ))}
-            <label className="form-row">
-              <span>对账日期</span>
-              <input
-                type="date"
-                value={form.statementDate ?? ""}
-                onChange={(event) =>
-                  setForm((current) => ({ ...current, statementDate: event.target.value || null }))
-                }
-              />
-            </label>
-            <label className="form-row">
-              <span>付款周期</span>
-              <select
-                className="search-input"
-                value={form.paymentTerm ?? ""}
-                onChange={(event) =>
-                  setForm((current) => ({
-                    ...current,
-                    paymentTerm: event.target.value || null,
-                    billingPeriodDays: event.target.value.endsWith("天")
-                      ? Number(event.target.value.replace("天", ""))
-                      : null,
-                  }))
-                }
-              >
-                <option value="">请选择付款周期</option>
-                {paymentTermOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label className="form-row">
-              <span>起算日期</span>
-              <input
-                type="date"
-                value={form.baseDate ?? ""}
-                onChange={(event) =>
-                  setForm((current) => ({
-                    ...current,
-                    baseDate: event.target.value || null,
-                  }))
-                }
-              />
-            </label>
-            {[
-              ["contractReceivable", "合同应收"],
-              ["cumulativeReceivable", "累计应收"],
-              ["amount", "应收金额"],
-              ["receivedAmount", "已收金额"],
-              ["monthlyReceivedAmount", "本月回款"],
-            ].map(([field, label]) => (
-              <label className="form-row" key={field}>
-                <span>{label}</span>
-                <input
-                  type="number"
-                  value={Number(form[field as keyof ReceivablePayload] ?? 0)}
-                  onChange={(event) =>
-                    setForm((current) => ({
-                      ...current,
-                      [field]: Number(event.target.value) || 0,
-                    }))
-                  }
-                />
-              </label>
-            ))}
-            <label className="form-row">
-              <span>实际回款日期</span>
-              <input
-                type="date"
-                value={form.receivedDate ?? ""}
-                onChange={(event) =>
-                  setForm((current) => ({
-                    ...current,
-                    receivedDate: event.target.value || null,
-                  }))
-                }
-              />
-            </label>
-            <label className="form-row">
-              <span>备注</span>
-              <textarea
-                className="form-textarea"
-                value={form.remark}
-                onChange={(event) => setForm((current) => ({ ...current, remark: event.target.value }))}
-              />
-            </label>
-
-            <div className="calc-card">
-              <div>未收金额：{formatCurrency(Math.max(form.amount - form.receivedAmount, 0))}</div>
-              <div>回款率：{formatPercent(form.amount > 0 ? form.receivedAmount / form.amount : 0)}</div>
-              <div>是否结清：{form.receivedAmount >= form.amount && form.amount > 0 ? "是" : "否"}</div>
-              <div>
-                到期日：
-                {form.paymentTerm && form.baseDate ? "将根据付款周期自动计算" : "待补数据"}
+                  </div>
+                  <span className="muted">
+                    {importMessage || "可先走批量导入，再继续手动补录个别字段。"}
+                  </span>
+                </section>
               </div>
-              <div>逾期判断：{form.paymentTerm && form.baseDate ? "已启用" : "未启用（待补数据）"}</div>
-              <div>责任人：{displayOwnerValue(form.salesOwnerName)}</div>
-            </div>
+              <form id={formId} className="form-layout modal-form-layout" onSubmit={handleSubmit}>
+                <div className="form-section-title">手动新增 / 编辑</div>
+                <label className="form-row">
+                  <span>客户</span>
+                  <select
+                    className="search-input"
+                    value={form.customerId}
+                    onChange={(event) => setForm((current) => ({ ...current, customerId: event.target.value }))}
+                  >
+                    <option value="">请选择客户</option>
+                    {customers.map((customer) => (
+                      <option key={customer.id} value={customer.customerId}>
+                        {customer.customerCode} / {customer.name}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                {[
+                  ["projectName", "项目名称"],
+                  ["businessType", "业务类型"],
+                  ["timeNode", "时间节点"],
+                  ["period", "期间"],
+                  ["salesOwnerName", "责任人"],
+                  ["receivableStatus", "回款状态"],
+                  ["riskStatus", "账款标签"],
+                ].map(([field, label]) => (
+                  <label className="form-row" key={field}>
+                    <span>{label}</span>
+                    <input
+                      value={String(form[field as keyof ReceivablePayload] ?? "")}
+                      onChange={(event) =>
+                        setForm((current) => ({ ...current, [field]: event.target.value }))
+                      }
+                    />
+                  </label>
+                ))}
+                <label className="form-row">
+                  <span>对账日期</span>
+                  <input
+                    type="date"
+                    value={form.statementDate ?? ""}
+                    onChange={(event) =>
+                      setForm((current) => ({ ...current, statementDate: event.target.value || null }))
+                    }
+                  />
+                </label>
+                <label className="form-row">
+                  <span>付款周期</span>
+                  <select
+                    className="search-input"
+                    value={form.paymentTerm ?? ""}
+                    onChange={(event) =>
+                      setForm((current) => ({
+                        ...current,
+                        paymentTerm: event.target.value || null,
+                        billingPeriodDays: event.target.value.endsWith("天")
+                          ? Number(event.target.value.replace("天", ""))
+                          : null,
+                      }))
+                    }
+                  >
+                    <option value="">请选择付款周期</option>
+                    {paymentTermOptions.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <label className="form-row">
+                  <span>起算日期</span>
+                  <input
+                    type="date"
+                    value={form.baseDate ?? ""}
+                    onChange={(event) =>
+                      setForm((current) => ({
+                        ...current,
+                        baseDate: event.target.value || null,
+                      }))
+                    }
+                  />
+                </label>
+                {[
+                  ["contractReceivable", "合同应收"],
+                  ["cumulativeReceivable", "累计应收"],
+                  ["amount", "应收金额"],
+                  ["receivedAmount", "已收金额"],
+                  ["monthlyReceivedAmount", "本月回款"],
+                ].map(([field, label]) => (
+                  <label className="form-row" key={field}>
+                    <span>{label}</span>
+                    <input
+                      type="number"
+                      value={Number(form[field as keyof ReceivablePayload] ?? 0)}
+                      onChange={(event) =>
+                        setForm((current) => ({
+                          ...current,
+                          [field]: Number(event.target.value) || 0,
+                        }))
+                      }
+                    />
+                  </label>
+                ))}
+                <label className="form-row">
+                  <span>实际回款日期</span>
+                  <input
+                    type="date"
+                    value={form.receivedDate ?? ""}
+                    onChange={(event) =>
+                      setForm((current) => ({
+                        ...current,
+                        receivedDate: event.target.value || null,
+                      }))
+                    }
+                  />
+                </label>
+                <label className="form-row">
+                  <span>备注</span>
+                  <textarea
+                    className="form-textarea"
+                    value={form.remark}
+                    onChange={(event) => setForm((current) => ({ ...current, remark: event.target.value }))}
+                  />
+                </label>
 
-            <button className="button button-primary" type="submit">
-              {editingId ? "保存修改" : "创建账款"}
-            </button>
-          </form>
-        </section>
-      </section>
+                <div className="calc-card">
+                  <div>未收金额：{formatCurrency(Math.max(form.amount - form.receivedAmount, 0))}</div>
+                  <div>回款率：{formatPercent(form.amount > 0 ? form.receivedAmount / form.amount : 0)}</div>
+                  <div>是否结清：{form.receivedAmount >= form.amount && form.amount > 0 ? "是" : "否"}</div>
+                  <div>
+                    到期日：
+                    {form.paymentTerm && form.baseDate ? "将根据付款周期自动计算" : "待补数据"}
+                  </div>
+                  <div>逾期判断：{form.paymentTerm && form.baseDate ? "已启用" : "未启用（待补数据）"}</div>
+                  <div>责任人：{displayOwnerValue(form.salesOwnerName)}</div>
+                </div>
+              </form>
+            </div>
+            <div className="modal-footer">
+              <button className="button button-ghost" type="button" onClick={closeForm}>
+                取消
+              </button>
+              <button className="button button-primary" type="submit" form={formId}>
+                {editingId ? "保存修改" : "创建账款"}
+              </button>
+            </div>
+          </section>
+        </div>
+      ) : null}
     </>
   );
 }

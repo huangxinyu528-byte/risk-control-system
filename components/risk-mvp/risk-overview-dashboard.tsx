@@ -48,6 +48,55 @@ export function RiskOverviewDashboard() {
   }, []);
 
   const topRiskReasons = useMemo(() => data?.distributions.riskReason ?? [], [data]);
+  const headlineAlert = useMemo(() => {
+    if (!data) return null;
+    if ((data.metrics.extremeRiskProjectCount ?? 0) > 0) {
+      return {
+        title: "极高风险项目需要优先处理",
+        detail: `当前有 ${data.metrics.extremeRiskProjectCount} 个极高风险项目，建议先进入风险项目页核查金额大、规则命中多的项目。`,
+        href: "/risk/projects",
+        action: "查看高风险项目",
+        tone: "danger",
+      };
+    }
+    if ((data.metrics.highRiskCustomerCount ?? 0) > 0) {
+      return {
+        title: "高风险客户需要集中排查",
+        detail: `当前有 ${data.metrics.highRiskCustomerCount} 个高风险客户，建议优先检查重点客户和未闭环客户。`,
+        href: "/risk/customers",
+        action: "查看风险客户",
+        tone: "warning",
+      };
+    }
+    return {
+      title: "当前风险总体可控",
+      detail: "可继续通过风险客户页和风险项目页做常规排查与跟进。",
+      href: "/risk/customers",
+      action: "进入风险客户页",
+      tone: "normal",
+    };
+  }, [data]);
+  const totalExposure = data?.metrics.totalUnpaidAmount ?? 0;
+  const prioritySnapshot = [
+    {
+      label: "高风险客户",
+      value: data?.metrics.highRiskCustomerCount ?? 0,
+      helper: "优先核查重点客户与客户级原因",
+      href: "/risk/customers",
+    },
+    {
+      label: "高风险项目",
+      value: data?.metrics.highRiskProjectCount ?? 0,
+      helper: "优先核查金额大、命中规则多的项目",
+      href: "/risk/projects",
+    },
+    {
+      label: "重点关注项",
+      value: (data?.metrics.extremeRiskProjectCount ?? 0) + (data?.metrics.litigationProjectCount ?? 0),
+      helper: "极高风险项目 + 诉讼类项目",
+      href: "/risk/projects",
+    },
+  ];
 
   return (
     <>
@@ -78,22 +127,54 @@ export function RiskOverviewDashboard() {
         </section>
       ) : (
         <>
-          <section className="risk-metric-grid">
-            <article className="card risk-metric-card">
+          <section className="risk-workbench-hero">
+            <article className="card risk-workbench-main-card">
+              <div className="risk-workbench-eyebrow">风险总览摘要</div>
+              <div className="risk-workbench-main-head">
+                <div>
+                  <h3>当前总应收风险暴露</h3>
+                  <strong>{formatCurrency(totalExposure)}</strong>
+                  <p className="muted">以当前未收金额口径展示，适合先判断风险规模和优先处理方向。</p>
+                </div>
+                <div className="risk-workbench-badge-stack">
+                  <span className="status-badge status-danger">高风险客户 {data?.metrics.highRiskCustomerCount ?? 0}</span>
+                  <span className="status-badge status-warning">高风险项目 {data?.metrics.highRiskProjectCount ?? 0}</span>
+                  <span className="status-badge status-info">新增预警 {data?.metrics.newAlertCount ?? 0}</span>
+                </div>
+              </div>
+              <div className="risk-priority-grid">
+                {prioritySnapshot.map((item) => (
+                  <Link className="risk-priority-card" href={item.href} key={item.label}>
+                    <span>{item.label}</span>
+                    <strong>{item.value}</strong>
+                    <em>{item.helper}</em>
+                  </Link>
+                ))}
+              </div>
+            </article>
+
+            <article className={`card risk-workbench-alert risk-workbench-alert-${headlineAlert?.tone ?? "normal"}`}>
+              <div className="risk-workbench-eyebrow">重点提醒</div>
+              <h3>{headlineAlert?.title}</h3>
+              <p>{headlineAlert?.detail}</p>
+              <Link className="button button-primary" href={headlineAlert?.href ?? "/risk/customers"}>
+                {headlineAlert?.action ?? "查看详情"}
+              </Link>
+            </article>
+          </section>
+
+          <section className="risk-metric-grid risk-metric-grid-compact">
+            <article className="card risk-metric-card risk-metric-card-highlight">
               <span>高风险客户数</span>
               <strong>{data?.metrics.highRiskCustomerCount ?? 0}</strong>
             </article>
-            <article className="card risk-metric-card">
+            <article className="card risk-metric-card risk-metric-card-highlight">
               <span>高风险项目数</span>
               <strong>{data?.metrics.highRiskProjectCount ?? 0}</strong>
             </article>
             <article className="card risk-metric-card">
               <span>极高风险项目数</span>
               <strong>{data?.metrics.extremeRiskProjectCount ?? 0}</strong>
-            </article>
-            <article className="card risk-metric-card">
-              <span>总未收金额</span>
-              <strong>{formatCurrency(data?.metrics.totalUnpaidAmount ?? 0)}</strong>
             </article>
             <article className="card risk-metric-card">
               <span>大额未收项目数</span>
@@ -106,6 +187,27 @@ export function RiskOverviewDashboard() {
             <article className="card risk-metric-card">
               <span>未闭环项目数</span>
               <strong>{data?.metrics.unclosedProjectCount ?? 0}</strong>
+            </article>
+          </section>
+
+          <section className="risk-action-grid">
+            <article className="card risk-action-card">
+              <div>
+                <strong>高风险客户入口</strong>
+                <p className="muted">优先看客户级风险原因、重点客户和未闭环客户。</p>
+              </div>
+              <Link className="button button-secondary" href="/risk/customers">
+                查看高风险客户
+              </Link>
+            </article>
+            <article className="card risk-action-card">
+              <div>
+                <strong>高风险项目入口</strong>
+                <p className="muted">优先看金额大、规则命中多、档案异常的项目。</p>
+              </div>
+              <Link className="button button-secondary" href="/risk/projects">
+                查看高风险项目
+              </Link>
             </article>
           </section>
 
@@ -186,6 +288,12 @@ export function RiskOverviewDashboard() {
                   查看全部客户风险
                 </Link>
               </div>
+              <div className="risk-section-note">
+                优先查看未收高、项目风险多、当前需要管理层关注的客户。
+              </div>
+              <div className="risk-table-note">
+                点击客户名称或右侧“查看详情”，可直接进入客户详情页继续核查主体档案与项目情况。
+              </div>
               <div className="table-wrapper">
                 <table className="data-table">
                   <thead>
@@ -195,6 +303,7 @@ export function RiskOverviewDashboard() {
                       <th>未收金额</th>
                       <th>高风险项目数</th>
                       <th>风险原因</th>
+                      <th>操作</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -209,6 +318,16 @@ export function RiskOverviewDashboard() {
                         <td>{formatCurrency(item.totalUnpaidAmount)}</td>
                         <td>{item.highRiskProjectCount}</td>
                         <td>{summarizeRiskText(item.riskReasons, "暂无风险原因", 2)}</td>
+                        <td>
+                          <div className="risk-inline-actions">
+                            <Link
+                              className="button button-secondary button-small"
+                              href={`/customers/${encodeURIComponent(item.customerId)}?from=risk-overview`}
+                            >
+                              查看详情
+                            </Link>
+                          </div>
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -223,6 +342,12 @@ export function RiskOverviewDashboard() {
                   查看全部项目风险
                 </Link>
               </div>
+              <div className="risk-section-note">
+                优先查看金额大、命中规则多、档案状态异常的项目。
+              </div>
+              <div className="risk-table-note">
+                点击项目名称可带项目上下文进入客户详情页，点击“查看项目上下文”可直接继续处理对应项目。
+              </div>
               <div className="table-wrapper">
                 <table className="data-table">
                   <thead>
@@ -232,16 +357,24 @@ export function RiskOverviewDashboard() {
                       <th>风险等级</th>
                       <th>未收金额</th>
                       <th>命中规则</th>
+                      <th>操作</th>
                     </tr>
                   </thead>
                   <tbody>
                     {data?.topProjects.map((item) => (
                       <tr key={item.projectId}>
-                        <td>{item.customerName}</td>
                         <td>
                           <Link
                             className="table-link"
-                            href={`/customers/${encodeURIComponent(item.customerId)}?projectId=${encodeURIComponent(item.projectId)}`}
+                            href={`/customers/${encodeURIComponent(item.customerId)}?from=risk-overview`}
+                          >
+                            {item.customerName}
+                          </Link>
+                        </td>
+                        <td>
+                          <Link
+                            className="table-link"
+                            href={`/customers/${encodeURIComponent(item.customerId)}?projectId=${encodeURIComponent(item.projectId)}&projectName=${encodeURIComponent(item.projectName)}&from=risk-overview`}
                           >
                             {item.projectName}
                           </Link>
@@ -249,6 +382,16 @@ export function RiskOverviewDashboard() {
                         <td><span className={riskBadgeClass(item.riskLevel)}>{item.riskLevel}</span></td>
                         <td>{formatCurrency(item.unpaidAmount)}</td>
                         <td>{item.triggeredRules.join("、") || "未命中规则编码"}</td>
+                        <td>
+                          <div className="risk-inline-actions">
+                            <Link
+                              className="button button-secondary button-small"
+                              href={`/customers/${encodeURIComponent(item.customerId)}?projectId=${encodeURIComponent(item.projectId)}&projectName=${encodeURIComponent(item.projectName)}&from=risk-overview`}
+                            >
+                              查看项目上下文
+                            </Link>
+                          </div>
+                        </td>
                       </tr>
                     ))}
                   </tbody>
