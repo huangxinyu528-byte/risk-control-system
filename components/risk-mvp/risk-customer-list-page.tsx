@@ -106,8 +106,8 @@ export function RiskCustomerListPage() {
   return (
     <>
       <PageHeader
-        title="风险客户列表"
-        description="按客户主体查看风险等级、风险原因和建议动作，先定位重点客户，再进入客户详情继续核查。"
+        title="风险客户"
+        description="按风险等级和未收金额定位重点客户。"
       />
 
       <RiskModuleNav />
@@ -230,17 +230,6 @@ export function RiskCustomerListPage() {
         </article>
       </section>
 
-      <section className="risk-page-guide-grid">
-        <article className="card risk-page-guide-card">
-          <strong>先看谁</strong>
-          <p className="muted">优先看高风险/极高风险客户、重点客户、未闭环客户，以及总未收金额高的客户。</p>
-        </article>
-        <article className="card risk-page-guide-card">
-          <strong>重点字段</strong>
-          <p className="muted">客户名称、风险等级、总未收金额、高风险项目数量、主要风险原因是当前页最关键字段。</p>
-        </article>
-      </section>
-
       {loading ? (
         <section className="card empty-card">正在加载风险客户列表…</section>
       ) : error ? (
@@ -251,30 +240,21 @@ export function RiskCustomerListPage() {
       ) : (
         <section className="table-card">
           <div className="table-header">
-            <h3>风险客户列表</h3>
-            <span className="muted">
-              当前共 {summary?.customerCount ?? 0} 个客户，页面直接展示后端已计算好的风险等级、原因和建议动作。
-            </span>
-          </div>
-          <div className="risk-table-note">
-            点击客户名称或右侧“查看详情”，可继续进入客户详情页核查风险来源、项目情况和完整账款档案。
+            <h3>客户清单</h3>
+            <span className="muted">共 {summary?.customerCount ?? 0} 个</span>
           </div>
 
-          <HorizontalScrollArea hint="可在表格区域内按住鼠标左右拖动，或使用顶部滚动条查看完整客户风险列">
+          <HorizontalScrollArea hint="">
             <table className="data-table risk-customer-table">
               <thead>
                 <tr>
                   <th>客户名称</th>
-                  <th>客户类型</th>
                   <th>风险等级</th>
                   <th>风险原因</th>
-                  <th>建议动作</th>
-                  <th>总应收金额</th>
-                  <th>总未收金额</th>
+                  <th>未收金额</th>
                   <th>项目数量</th>
-                  <th>高风险项目数量</th>
-                  <th>是否重点客户</th>
-                  <th>是否未闭环</th>
+                  <th>高危项目</th>
+                  <th>状态</th>
                   <th>操作</th>
                 </tr>
               </thead>
@@ -283,7 +263,7 @@ export function RiskCustomerListPage() {
                   data.customers.map((customer) => <RiskCustomerRowView key={customer.customerId} customer={customer} />)
                 ) : (
                   <tr>
-                    <td className="empty-cell" colSpan={12}>
+                    <td className="empty-cell" colSpan={7}>
                       当前筛选条件下没有风险客户
                     </td>
                   </tr>
@@ -299,9 +279,7 @@ export function RiskCustomerListPage() {
 
 function RiskCustomerRowView({ customer }: { customer: RiskCustomerRow }) {
   const reasonText = summarizeRiskText(customer.riskReasons, "暂无风险原因", 3);
-  const actionText = summarizeRiskText(customer.riskActions, "暂无建议动作", 2);
   const currentStatusText = displayMetaText(customer.currentStatusSummary);
-  const creditStatusText = displayMetaText(customer.creditStatusSummary);
   const urgencyLabel =
     customer.riskLevel === "极高风险"
       ? "立即关注"
@@ -316,11 +294,9 @@ function RiskCustomerRowView({ customer }: { customer: RiskCustomerRow }) {
       <td>
         <Link className="table-link-block risk-name-block" href={`/customers/${encodeURIComponent(customer.customerId)}`}>
           <span className="table-link risk-primary-name">{customer.customerName}</span>
-          <span className="table-link-helper">{customer.triggeredRules.join("、") || "未命中规则编码"}</span>
           <span className="risk-row-helper">{urgencyLabel}</span>
         </Link>
       </td>
-      <td>{customer.customerType}</td>
       <td>
         <div className="risk-badge-stack">
           <span className={riskBadgeClass(customer.riskLevel)}>{customer.riskLevel}</span>
@@ -334,13 +310,6 @@ function RiskCustomerRowView({ customer }: { customer: RiskCustomerRow }) {
         </div>
       </td>
       <td>
-        <div className="risk-text-stack">
-          <span>{actionText}</span>
-          {creditStatusText !== "暂无补充说明" ? <span className="muted">资信：{creditStatusText}</span> : null}
-        </div>
-      </td>
-      <td>{formatCurrency(customer.totalReceivableAmount)}</td>
-      <td>
         <div className="risk-amount-emphasis">
           <strong>{formatCurrency(customer.totalUnpaidAmount)}</strong>
         </div>
@@ -349,7 +318,6 @@ function RiskCustomerRowView({ customer }: { customer: RiskCustomerRow }) {
       <td>
         <span className="risk-count-chip">{customer.highRiskProjectCount}</span>
       </td>
-      <td>{customer.isImportantCustomer ? <span className="status-badge status-info">重点客户</span> : <span className="muted">否</span>}</td>
       <td>
         {customer.hasUnclosedProjects ? (
           <span className="status-badge status-warning">未闭环</span>

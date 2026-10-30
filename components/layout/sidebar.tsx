@@ -21,24 +21,19 @@ export function Sidebar({ items }: SidebarProps) {
   return (
     <aside className="sidebar">
       <div className="sidebar-brand">
-        <strong>众程建材客户风险管理系统</strong>
-        <span>客户 / 合同 / 应收 / 风险 / 催收</span>
+        <strong>众程风控</strong>
+        <span>客户风险管理</span>
       </div>
 
-      <section className="sidebar-user-card">
-        <div className="sidebar-user-avatar">
-          {user?.fullName.slice(0, 1) ?? "访"}
-        </div>
+      <section className="sidebar-user-card sidebar-user-card-compact">
+        <div className="sidebar-user-avatar">{user?.fullName.slice(0, 1) ?? "访"}</div>
         <div>
-          <strong className="sidebar-user-name">{user?.fullName ?? "未登录用户"}</strong>
-          <div className="sidebar-user-role">
-            {user ? roleLabels[user.role] : "开发访客"}
-          </div>
+          <strong className="sidebar-user-name">{user?.fullName ?? "未登录"}</strong>
+          <div className="sidebar-user-role">{user ? roleLabels[user.role] : "访客"}</div>
         </div>
       </section>
 
       <div>
-        <div className="sidebar-section-label">功能菜单</div>
         <nav className="sidebar-nav" aria-label="侧边菜单">
           {visibleItems.map((item) => {
             const isActive = pathname === item.href;

@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { RiskAssistantPanel } from "@/components/ai/risk-assistant-panel";
 import { CustomerLedgerSpreadsheet } from "@/components/customers/customer-ledger-spreadsheet";
-import { HorizontalScrollArea } from "@/components/shared/horizontal-scroll-area";
 import { PageHeader } from "@/components/shared/page-header";
 import { displayBaseValue, displayOptionalNote } from "@/lib/display";
 import { formatCurrency } from "@/lib/format";
@@ -16,6 +16,14 @@ type Props = {
   preferredSheetName?: string;
 };
 
+type RiskActionSuggestion = {
+  id: string;
+  action: string;
+  level: "高" | "中" | "低";
+  reason: string;
+  evidence: string;
+};
+
 export function CustomerFullProfilePage({
   customerId,
   preferredProjectId,
@@ -26,6 +34,7 @@ export function CustomerFullProfilePage({
   const [ledgerData, setLedgerData] = useState<CustomerLedgerArchiveRecord | null>(null);
   const [loading, setLoading] = useState(true);
   const [ledgerMessage, setLedgerMessage] = useState("");
+  const [confirmedActions, setConfirmedActions] = useState<Record<string, "confirmed" | "rejected">>({});
   const classifiedArchives = (ledgerData?.archives ?? []).filter((archive) => archive.projectId);
   const unclassifiedArchives = (ledgerData?.archives ?? []).filter((archive) => !archive.projectId);
   const hasGeneratedLedgerArchive = classifiedArchives.some((archive) =>
@@ -51,50 +60,117 @@ export function CustomerFullProfilePage({
     }
   }
 
-  useEffect(() => {
-    let active = true;
+  const loadCustomerData = useCallback(async () => {
+    setLoading(true);
+    try {
+      const [profileResponse, ledgerResponse] = await Promise.all([
+        fetch(`/api/customers/${customerId}/full-profile`),
+        fetch(`/api/customers/${customerId}/account-ledger-profile`),
+      ]);
+      const [profileResult, ledgerResult] = await Promise.all([
+        readJsonSafely<{ success?: boolean; data?: CustomerFullProfileRecord | null }>(profileResponse),
+        readJsonSafely<{ success?: boolean; data?: CustomerLedgerArchiveRecord | null; message?: string }>(ledgerResponse),
+      ]);
+      setData((profileResult?.data as CustomerFullProfileRecord) ?? null);
+      setLedgerData((ledgerResult?.data as CustomerLedgerArchiveRecord) ?? null);
+      setLedgerMessage(
+        ledgerResult?.message ??
+          (!ledgerResponse.ok
+            ? "原始账款档案暂时不可用"
+            : !(ledgerResult?.data?.archives?.length)
+              ? "暂无原始sheet数据"
+              : ""),
+      );
+    } finally {
+      setLoading(false);
+    }
+  }, [customerId]);
 
-    async function load() {
-      setLoading(true);
-      try {
-        const [profileResponse, ledgerResponse] = await Promise.all([
-          fetch(`/api/customers/${customerId}/full-profile`),
-          fetch(`/api/customers/${customerId}/account-ledger-profile`),
-        ]);
-        const [profileResult, ledgerResult] = await Promise.all([
-          readJsonSafely<{ success?: boolean; data?: CustomerFullProfileRecord | null }>(profileResponse),
-          readJsonSafely<{ success?: boolean; data?: CustomerLedgerArchiveRecord | null; message?: string }>(ledgerResponse),
-        ]);
-        if (!active) return;
-        setData((profileResult?.data as CustomerFullProfileRecord) ?? null);
-        setLedgerData((ledgerResult?.data as CustomerLedgerArchiveRecord) ?? null);
-        setLedgerMessage(
-          ledgerResult?.message ??
-            (!ledgerResponse.ok
-              ? "原始账款档案暂时不可用"
-              : !(ledgerResult?.data?.archives?.length)
-                ? "暂无原始sheet数据"
-                : ""),
-        );
-      } finally {
-        if (active) {
-          setLoading(false);
-        }
-      }
+  useEffect(() => {
+    void loadCustomerData();
+  }, [loadCustomerData]);
+
+  const actionSuggestions: RiskActionSuggestion[] = (() => {
+    const unpaid = data?.summary.totalUnpaid ?? 0;
+    const riskConclusion = data?.risk.conclusion ?? "低风险";
+    const riskReasons = data?.risk.reasons.length ? data.risk.reasons.join("；") : "当前未发现明显异常";
+    const baseEvidence = `未收金额 ${formatCurrency(unpaid)}，风险结论 ${riskConclusion}`;
+
+    if (riskConclusion.includes("高") || unpaid >= 10_000_000) {
+      return [
+        {
+          id: "legal-review",
+          action: "法务介入",
+          level: "高",
+          reason: "风险等级高或未收金额较大，需要提前核查诉讼、函件和保全条件。",
+          evidence: `${baseEvidence}；风险原因：${riskReasons}`,
+        },
+        {
+          id: "stop-supply",
+          action: "停供建议",
+          level: "高",
+          reason: "继续供货可能扩大风险暴露，需管理层确认是否暂停新增供货。",
+          evidence: baseEvidence,
+        },
+        {
+          id: "guarantee",
+          action: "要求补担保",
+          level: "中",
+          reason: "在继续合作前补充担保或付款承诺，可降低后续回款不确定性。",
+          evidence: riskReasons,
+        },
+        {
+          id: "finance-reconcile",
+          action: "财务对账",
+          level: "中",
+          reason: "先确认合同应收、实际收款、开票和未收口径，避免处置依据不一致。",
+          evidence: baseEvidence,
+        },
+      ];
     }
 
-    void load();
+    if (riskConclusion.includes("中") || unpaid > 0) {
+      return [
+        {
+          id: "sales-collection",
+          action: "业务负责人催收",
+          level: "中",
+          reason: "当前仍有未收金额，需要业务负责人确认回款节点和责任人。",
+          evidence: baseEvidence,
+        },
+        {
+          id: "finance-reconcile",
+          action: "财务对账",
+          level: "中",
+          reason: "先核对账款和票据状态，再决定是否升级处置。",
+          evidence: riskReasons,
+        },
+        {
+          id: "limit-reduction",
+          action: "降额建议",
+          level: "中",
+          reason: "在回款稳定前降低授信或供货额度，控制新增风险暴露。",
+          evidence: baseEvidence,
+        },
+      ];
+    }
 
-    return () => {
-      active = false;
-    };
-  }, [customerId]);
+    return [
+      {
+        id: "observe",
+        action: "继续观察",
+        level: "低",
+        reason: "当前未发现明显异常，按常规频率跟进即可。",
+        evidence: baseEvidence,
+      },
+    ];
+  })();
 
   return (
     <>
       <PageHeader
-        title="客户账款档案"
-        description="查看客户概览、项目明细、风险摘要与完整账款档案，作为业务管理与档案核查的统一入口。"
+        title="客户详情"
+        description="关键金额、风险摘要和原始账款档案。"
       />
 
       <section className="card customer-hero-card">
@@ -159,7 +235,7 @@ export function CustomerFullProfilePage({
           <div className="table-header customer-section-header">
             <div>
               <h3>完整账款档案</h3>
-              <span className="muted">集中查看客户原始账款档案、完整 sheet 布局和项目档案切换。</span>
+              <span className="muted">可直接查看和编辑原始 Excel 档案。</span>
             </div>
           </div>
           {hasGeneratedLedgerArchive ? (
@@ -225,77 +301,66 @@ export function CustomerFullProfilePage({
               <div><strong>档案状态：</strong>{loading ? "正在核对..." : classifiedArchives.length > 0 ? "可查看" : "待补充"}</div>
             </div>
           </section>
+
+          <section className="card customer-section-card">
+            <div className="table-header customer-section-header">
+              <h3>顾问式风险动作建议</h3>
+            </div>
+            <div className="detail-note-list">
+              {actionSuggestions.map((item) => (
+                <article className="risk-action-suggestion" key={item.id}>
+                  <div className="toolbar-row">
+                    <div>
+                      <strong>{item.action}</strong>
+                      <span className={item.level === "高" ? "status-badge status-danger" : item.level === "中" ? "status-badge status-warning" : "status-badge status-normal"}>
+                        {item.level}优先级
+                      </span>
+                    </div>
+                    <span className="muted">
+                      {confirmedActions[item.id] === "confirmed"
+                        ? "已确认"
+                        : confirmedActions[item.id] === "rejected"
+                          ? "已驳回"
+                          : "待人工确认"}
+                    </span>
+                  </div>
+                  <div><strong>原因：</strong>{item.reason}</div>
+                  <div><strong>证据：</strong>{item.evidence}</div>
+                  <div className="toolbar-row risk-action-buttons">
+                    <button
+                      className="button button-primary button-small"
+                      type="button"
+                      onClick={() => setConfirmedActions((current) => ({ ...current, [item.id]: "confirmed" }))}
+                    >
+                      人工确认
+                    </button>
+                    <button
+                      className="button button-secondary button-small"
+                      type="button"
+                      onClick={() => setConfirmedActions((current) => ({ ...current, [item.id]: "rejected" }))}
+                    >
+                      驳回
+                    </button>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
         </aside>
       </section>
 
-      <section className="card customer-section-card customer-project-section">
-        <div className="table-header customer-section-header">
-          <h3>项目明细</h3>
-          <span className="muted">{loading ? "加载中..." : `共 ${data?.projects.length ?? 0} 个项目`}</span>
-        </div>
-        <HorizontalScrollArea hint="可在表格区域内按住鼠标左右拖动，或使用顶部滚动条查看完整项目列">
-          <table className="data-table detail-project-table">
-            <thead>
-              <tr>
-                <th>项目名称</th>
-                <th>项目别名</th>
-                <th>应收</th>
-                <th>已收</th>
-                <th>未收</th>
-                <th>业务类型</th>
-                <th>时间节点</th>
-              </tr>
-            </thead>
-            <tbody>
-              {(data?.projects ?? []).length === 0 ? (
-                <tr>
-                  <td colSpan={7} className="empty-cell">暂无项目数据</td>
-                </tr>
-              ) : (
-                (data?.projects ?? []).map((project) => (
-                  <tr key={project.id}>
-                    <td>{project.projectName}</td>
-                    <td>{displayBaseValue(project.projectAlias)}</td>
-                    <td>{formatCurrency(project.receivableAmount)}</td>
-                    <td>{formatCurrency(project.receivedAmount)}</td>
-                    <td>{formatCurrency(project.unpaidAmount)}</td>
-                    <td>{displayBaseValue(project.businessType)}</td>
-                    <td>{displayBaseValue(project.timeNode)}</td>
-                  </tr>
-                ))
-              )}
-            </tbody>
-          </table>
-        </HorizontalScrollArea>
-      </section>
-
-      <section className="card">
-        <div className="table-header">
-          <div>
-            <h3 style={{ margin: 0 }}>未归类档案</h3>
-            <span className="muted">
-              {loading ? "正在核对..." : `共 ${unclassifiedArchives.length} 份，当前仍挂在主体客户下，待后续补充项目归类`}
-            </span>
-          </div>
-        </div>
-
-        {unclassifiedArchives.length === 0 ? (
-          <div className="empty-cell" style={{ padding: 24 }}>当前没有未归类档案</div>
-        ) : (
-          <div className="detail-note-list">
-            {unclassifiedArchives.map((archive) => (
-              <article className="card" key={archive.id} style={{ padding: 16 }}>
-                <div style={{ display: "grid", gap: 8 }}>
-                  <div><strong>sheetName：</strong>{archive.sheetName}</div>
-                  <div><strong>原始来源名称：</strong>{displayBaseValue(archive.workbookSource)}</div>
-                  <div><strong>projectName：</strong>{displayBaseValue(archive.projectName)}</div>
-                  <div><strong>settlementClause：</strong>{displayBaseValue(archive.settlementClause)}</div>
-                </div>
-              </article>
-            ))}
-          </div>
-        )}
-      </section>
+      <RiskAssistantPanel
+        contextLabel="当前客户档案"
+        customerId={customerId}
+        customerName={data?.customer.name}
+        onCustomerDataChanged={loadCustomerData}
+        contextSummary={[
+          `风险结论：${data?.risk.conclusion ?? "低风险"}`,
+          `未收金额：${formatCurrency(data?.summary.totalUnpaid ?? 0)}`,
+          `项目数量：${data?.summary.projectCount ?? 0}`,
+          `风险原因：${data?.risk.reasons.length ? data.risk.reasons.join("；") : "当前未发现明显异常"}`,
+        ]}
+      />
     </>
   );
 }

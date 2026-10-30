@@ -1,5 +1,6 @@
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
 }
 
 datasource db {
@@ -288,6 +289,8 @@ model CustomerLedgerProfile {
   customer            Customer            @relation(fields: [customerId], references: [id], onDelete: Cascade)
   project             Project?            @relation(fields: [projectId], references: [id], onDelete: SetNull)
   rows                CustomerLedgerRow[]
+  documentSources     DocumentSource[]
+  documentChunks      DocumentChunk[]
 
   @@unique([customerId, sheetName])
   @@index([customerId])
@@ -314,10 +317,65 @@ model CustomerLedgerRow {
   createdAt           DateTime              @default(now()) @map("created_at")
   updatedAt           DateTime              @updatedAt @map("updated_at")
   profile             CustomerLedgerProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  documentChunks      DocumentChunk[]
 
   @@index([profileId])
   @@index([rowOrder])
   @@map("customer_ledger_rows")
+}
+
+model DocumentSource {
+  id              String          @id @default(cuid())
+  sourceType      String          @map("source_type") @db.VarChar(50)
+  sourceKey       String          @unique @map("source_key") @db.VarChar(120)
+  customerId      String?         @map("customer_id")
+  projectId       String?         @map("project_id")
+  profileId       String?         @map("profile_id")
+  title           String          @db.VarChar(255)
+  fileName        String?         @map("file_name") @db.VarChar(255)
+  sheetName       String?         @map("sheet_name") @db.VarChar(120)
+  metadata        Json?
+  indexedAt       DateTime        @default(now()) @map("indexed_at")
+  createdAt       DateTime        @default(now()) @map("created_at")
+  updatedAt       DateTime        @updatedAt @map("updated_at")
+  profile         CustomerLedgerProfile? @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  chunks          DocumentChunk[]
+
+  @@index([sourceType])
+  @@index([customerId])
+  @@index([projectId])
+  @@index([profileId])
+  @@index([indexedAt])
+  @@map("document_sources")
+}
+
+model DocumentChunk {
+  id              String          @id @default(cuid())
+  sourceId        String          @map("source_id")
+  customerId      String?         @map("customer_id")
+  projectId       String?         @map("project_id")
+  profileId       String?         @map("profile_id")
+  rowId           String?         @map("row_id")
+  chunkType       String          @map("chunk_type") @db.VarChar(50)
+  chunkText       String          @map("chunk_text")
+  sourceText      String          @map("source_text")
+  normalizedText  String          @map("normalized_text")
+  sheetName       String?         @map("sheet_name") @db.VarChar(120)
+  rowOrder        Int?            @map("row_order")
+  metadata        Json?
+  createdAt       DateTime        @default(now()) @map("created_at")
+  source          DocumentSource  @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  profile         CustomerLedgerProfile? @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  row             CustomerLedgerRow? @relation(fields: [rowId], references: [id], onDelete: Cascade)
+
+  @@index([sourceId])
+  @@index([customerId])
+  @@index([projectId])
+  @@index([profileId])
+  @@index([rowId])
+  @@index([chunkType])
+  @@index([rowOrder])
+  @@map("document_chunks")
 }
 
 model RiskRecord {

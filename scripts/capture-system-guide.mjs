@@ -2,7 +2,7 @@ import { chromium } from 'playwright';
 import path from 'node:path';
 
 const base = 'http://localhost:3006';
-const outDir = '/Users/jamiekeke/Documents/New project/reports/assets/system-guide';
+const outDir = path.join(process.cwd(), 'reports/assets/system-guide');
 const password = process.env.SITE_ACCESS_PASSWORD || 'zc-test-2026';
 
 async function capture(page, url, filename) {

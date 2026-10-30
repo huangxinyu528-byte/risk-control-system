@@ -5,7 +5,12 @@ import path from "node:path";
 import { promisify } from "node:util";
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
-import { createImportLog, enrichImportedProjectContext, importExcelData } from "@/lib/server/data-access";
+import {
+  createImportLog,
+  enrichImportedProjectContext,
+  importExcelData,
+  invalidateDataAccessReadCaches,
+} from "@/lib/server/data-access";
 
 const execFileAsync = promisify(execFile);
 
@@ -255,6 +260,7 @@ export async function POST(request: Request) {
     });
     await enrichImportedProjectContext(parsed.projects as never);
     await persistExcelRisks(effectiveRisks);
+    invalidateDataAccessReadCaches();
 
     logPayload = {
       fileName: originalFileName,

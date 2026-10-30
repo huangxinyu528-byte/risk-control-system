@@ -21,7 +21,13 @@ export function CreditScoreManagement() {
   }
 
   useEffect(() => {
-    void loadScores();
+    async function loadInitialData() {
+      const response = await fetch("/api/scores");
+      const result = await response.json();
+      setScores(result.data as CreditScoreRecord[]);
+    }
+
+    void loadInitialData();
   }, []);
 
   const monthOptions = useMemo(

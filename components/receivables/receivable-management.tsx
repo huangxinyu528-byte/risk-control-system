@@ -96,7 +96,20 @@ export function ReceivableManagement() {
   }
 
   useEffect(() => {
-    void Promise.all([loadCustomers(), loadReceivables()]);
+    async function loadInitialData() {
+      const [customerResponse, receivableResponse] = await Promise.all([
+        fetch("/api/customers"),
+        fetch("/api/receivables"),
+      ]);
+      const [customerResult, receivableResult] = await Promise.all([
+        customerResponse.json(),
+        receivableResponse.json(),
+      ]);
+      setCustomers(customerResult.data as CustomerRecord[]);
+      setReceivables(receivableResult.data as ReceivableRecord[]);
+    }
+
+    void loadInitialData();
   }, []);
 
   const salesOptions = useMemo(

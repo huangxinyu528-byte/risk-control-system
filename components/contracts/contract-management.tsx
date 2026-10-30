@@ -54,7 +54,20 @@ export function ContractManagement() {
   }
 
   useEffect(() => {
-    void Promise.all([loadCustomers(), loadContracts()]);
+    async function loadInitialData() {
+      const [customerResponse, contractResponse] = await Promise.all([
+        fetch("/api/customers"),
+        fetch("/api/contracts"),
+      ]);
+      const [customerResult, contractResult] = await Promise.all([
+        customerResponse.json(),
+        contractResponse.json(),
+      ]);
+      setCustomers(customerResult.data as CustomerRecord[]);
+      setContracts(contractResult.data as ContractRecord[]);
+    }
+
+    void loadInitialData();
   }, []);
 
   const getMissingFields = useMemo(

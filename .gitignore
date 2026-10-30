@@ -10,3 +10,12 @@ logs
 .vercel
 .DS_Store
 *.tsbuildinfo
+
+# Local Netlify folder
+.netlify
+
+# Local credentials, agent state, and database backups
+.env.*
+!.env.example
+.openclaw/
+backups/

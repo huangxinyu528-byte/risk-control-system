@@ -79,6 +79,36 @@ const memoryStore = {
   collections: [...(importedDataset?.collections ?? collectionReports)],
 };
 
+const RISK_OVERVIEW_CACHE_TTL_MS = 60_000;
+const PAGE_READ_CACHE_TTL_MS = 60_000;
+let riskOverviewCache: { expiresAt: number; data: RiskOverviewData } | null = null;
+let riskOverviewInFlight: Promise<RiskOverviewData> | null = null;
+const customerLedgerCache = new Map<string, { expiresAt: number; data: CustomerLedgerResponse }>();
+const customerLedgerInFlight = new Map<string, Promise<CustomerLedgerResponse>>();
+const riskCustomerListCache = new Map<string, { expiresAt: number; data: RiskCustomerResponse }>();
+const riskCustomerListInFlight = new Map<string, Promise<RiskCustomerResponse>>();
+const riskProjectListCache = new Map<string, { expiresAt: number; data: RiskProjectResponse }>();
+const riskProjectListInFlight = new Map<string, Promise<RiskProjectResponse>>();
+const customerFullProfileCache = new Map<string, { expiresAt: number; data: CustomerFullProfileRecord | null }>();
+const customerFullProfileInFlight = new Map<string, Promise<CustomerFullProfileRecord | null>>();
+const customerLedgerArchiveCache = new Map<string, { expiresAt: number; data: CustomerLedgerArchiveRecord | null }>();
+const customerLedgerArchiveInFlight = new Map<string, Promise<CustomerLedgerArchiveRecord | null>>();
+
+export function invalidateDataAccessReadCaches() {
+  riskOverviewCache = null;
+  riskOverviewInFlight = null;
+  customerLedgerCache.clear();
+  customerLedgerInFlight.clear();
+  riskCustomerListCache.clear();
+  riskCustomerListInFlight.clear();
+  riskProjectListCache.clear();
+  riskProjectListInFlight.clear();
+  customerFullProfileCache.clear();
+  customerFullProfileInFlight.clear();
+  customerLedgerArchiveCache.clear();
+  customerLedgerArchiveInFlight.clear();
+}
+
 function isoDateFromOffset(daysOffset: number) {
   const date = new Date(Date.UTC(2024, 0, 1));
   date.setUTCDate(date.getUTCDate() + daysOffset);
@@ -1193,7 +1223,7 @@ export async function listCustomers(filters: CustomerFilters = {}) {
   }
 }
 
-export async function listCustomerLedger(filters: CustomerLedgerFilters = {}): Promise<CustomerLedgerResponse> {
+async function computeCustomerLedger(filters: CustomerLedgerFilters = {}): Promise<CustomerLedgerResponse> {
   const sortBy = filters.sortBy ?? "unpaidAmount";
   const sortOrder = filters.sortOrder ?? "desc";
   const page = Math.max(1, Number(filters.page ?? 1) || 1);
@@ -1588,6 +1618,44 @@ export async function listCustomerLedger(filters: CustomerLedgerFilters = {}): P
   }
 }
 
+export async function listCustomerLedger(filters: CustomerLedgerFilters = {}): Promise<CustomerLedgerResponse> {
+  const cacheKey = JSON.stringify({
+    keyword: filters.keyword ?? "",
+    customerType: filters.customerType ?? "",
+    riskLevel: filters.riskLevel ?? "",
+    hasUnclassifiedArchives: filters.hasUnclassifiedArchives ?? null,
+    sortBy: filters.sortBy ?? "unpaidAmount",
+    sortOrder: filters.sortOrder ?? "desc",
+    page: Math.max(1, Number(filters.page ?? 1) || 1),
+    pageSize: Math.min(200, Math.max(1, Number(filters.pageSize ?? 100) || 100)),
+  });
+  const now = Date.now();
+  const cached = customerLedgerCache.get(cacheKey);
+  if (cached && cached.expiresAt > now) {
+    return cached.data;
+  }
+
+  const inFlight = customerLedgerInFlight.get(cacheKey);
+  if (inFlight) {
+    return inFlight;
+  }
+
+  const promise = computeCustomerLedger(filters)
+    .then((data) => {
+      customerLedgerCache.set(cacheKey, {
+        data,
+        expiresAt: Date.now() + PAGE_READ_CACHE_TTL_MS,
+      });
+      return data;
+    })
+    .finally(() => {
+      customerLedgerInFlight.delete(cacheKey);
+    });
+
+  customerLedgerInFlight.set(cacheKey, promise);
+  return promise;
+}
+
 function buildImportanceMap(customers: CustomerRecord[]) {
   const map = new Map<string, { isImportantCustomer: boolean; updatedAt?: string }>();
   for (const customer of customers) {
@@ -1670,7 +1738,7 @@ function mapLedgerProjectToRiskProject(
   };
 }
 
-export async function getRiskOverview(): Promise<RiskOverviewData> {
+async function computeRiskOverview(): Promise<RiskOverviewData> {
   const recentAlertSince = new Date();
   recentAlertSince.setDate(recentAlertSince.getDate() - 7);
 
@@ -1770,7 +1838,32 @@ export async function getRiskOverview(): Promise<RiskOverviewData> {
   };
 }
 
-export async function listRiskCustomers(filters: RiskCustomerFilters = {}): Promise<RiskCustomerResponse> {
+export async function getRiskOverview(options: { forceRefresh?: boolean } = {}): Promise<RiskOverviewData> {
+  const now = Date.now();
+  if (!options.forceRefresh && riskOverviewCache && riskOverviewCache.expiresAt > now) {
+    return riskOverviewCache.data;
+  }
+
+  if (!options.forceRefresh && riskOverviewInFlight) {
+    return riskOverviewInFlight;
+  }
+
+  riskOverviewInFlight = computeRiskOverview()
+    .then((data) => {
+      riskOverviewCache = {
+        data,
+        expiresAt: Date.now() + RISK_OVERVIEW_CACHE_TTL_MS,
+      };
+      return data;
+    })
+    .finally(() => {
+      riskOverviewInFlight = null;
+    });
+
+  return riskOverviewInFlight;
+}
+
+async function computeRiskCustomers(filters: RiskCustomerFilters = {}): Promise<RiskCustomerResponse> {
   const page = Math.max(1, Number(filters.page ?? 1) || 1);
   const pageSize = Math.min(200, Math.max(1, Number(filters.pageSize ?? 100) || 100));
   const sortBy = filters.sortBy ?? "unpaidAmount";
@@ -1830,7 +1923,46 @@ export async function listRiskCustomers(filters: RiskCustomerFilters = {}): Prom
   };
 }
 
-export async function listRiskProjects(filters: RiskProjectFilters = {}): Promise<RiskProjectResponse> {
+export async function listRiskCustomers(filters: RiskCustomerFilters = {}): Promise<RiskCustomerResponse> {
+  const cacheKey = JSON.stringify({
+    keyword: filters.keyword ?? "",
+    riskLevel: filters.riskLevel ?? "",
+    customerType: filters.customerType ?? "",
+    isImportantCustomer: filters.isImportantCustomer ?? null,
+    hasUnclosedProjects: filters.hasUnclosedProjects ?? null,
+    sortBy: filters.sortBy ?? "unpaidAmount",
+    sortOrder: filters.sortOrder ?? "desc",
+    page: Math.max(1, Number(filters.page ?? 1) || 1),
+    pageSize: Math.min(200, Math.max(1, Number(filters.pageSize ?? 100) || 100)),
+  });
+  const now = Date.now();
+  const cached = riskCustomerListCache.get(cacheKey);
+  if (cached && cached.expiresAt > now) {
+    return cached.data;
+  }
+
+  const inFlight = riskCustomerListInFlight.get(cacheKey);
+  if (inFlight) {
+    return inFlight;
+  }
+
+  const promise = computeRiskCustomers(filters)
+    .then((data) => {
+      riskCustomerListCache.set(cacheKey, {
+        data,
+        expiresAt: Date.now() + PAGE_READ_CACHE_TTL_MS,
+      });
+      return data;
+    })
+    .finally(() => {
+      riskCustomerListInFlight.delete(cacheKey);
+    });
+
+  riskCustomerListInFlight.set(cacheKey, promise);
+  return promise;
+}
+
+async function computeRiskProjects(filters: RiskProjectFilters = {}): Promise<RiskProjectResponse> {
   const page = Math.max(1, Number(filters.page ?? 1) || 1);
   const pageSize = Math.min(500, Math.max(1, Number(filters.pageSize ?? 100) || 100));
   const sortBy = filters.sortBy ?? "unpaidAmount";
@@ -1888,6 +2020,46 @@ export async function listRiskProjects(filters: RiskProjectFilters = {}): Promis
     },
     projects: sorted.slice((page - 1) * pageSize, page * pageSize),
   };
+}
+
+export async function listRiskProjects(filters: RiskProjectFilters = {}): Promise<RiskProjectResponse> {
+  const cacheKey = JSON.stringify({
+    keyword: filters.keyword ?? "",
+    riskLevel: filters.riskLevel ?? "",
+    projectBelongingCategory: filters.projectBelongingCategory ?? "",
+    businessType: filters.businessType ?? "",
+    hasLedgerArchive: filters.hasLedgerArchive ?? null,
+    isUnclosed: filters.isUnclosed ?? null,
+    sortBy: filters.sortBy ?? "unpaidAmount",
+    sortOrder: filters.sortOrder ?? "desc",
+    page: Math.max(1, Number(filters.page ?? 1) || 1),
+    pageSize: Math.min(500, Math.max(1, Number(filters.pageSize ?? 100) || 100)),
+  });
+  const now = Date.now();
+  const cached = riskProjectListCache.get(cacheKey);
+  if (cached && cached.expiresAt > now) {
+    return cached.data;
+  }
+
+  const inFlight = riskProjectListInFlight.get(cacheKey);
+  if (inFlight) {
+    return inFlight;
+  }
+
+  const promise = computeRiskProjects(filters)
+    .then((data) => {
+      riskProjectListCache.set(cacheKey, {
+        data,
+        expiresAt: Date.now() + PAGE_READ_CACHE_TTL_MS,
+      });
+      return data;
+    })
+    .finally(() => {
+      riskProjectListInFlight.delete(cacheKey);
+    });
+
+  riskProjectListInFlight.set(cacheKey, promise);
+  return promise;
 }
 
 export async function getCustomerById(id: string) {
@@ -2632,7 +2804,7 @@ export async function getCustomerSummary(customerId: string): Promise<CustomerSu
   };
 }
 
-export async function getCustomerFullProfile(customerId: string): Promise<CustomerFullProfileRecord | null> {
+async function computeCustomerFullProfile(customerId: string): Promise<CustomerFullProfileRecord | null> {
   const customer = await getCustomerById(customerId);
   if (!customer) {
     return null;
@@ -2810,7 +2982,36 @@ export async function getCustomerFullProfile(customerId: string): Promise<Custom
   };
 }
 
-export async function getCustomerLedgerArchive(customerId: string): Promise<CustomerLedgerArchiveRecord | null> {
+export async function getCustomerFullProfile(customerId: string): Promise<CustomerFullProfileRecord | null> {
+  const cacheKey = customerId;
+  const now = Date.now();
+  const cached = customerFullProfileCache.get(cacheKey);
+  if (cached && cached.expiresAt > now) {
+    return cached.data;
+  }
+
+  const inFlight = customerFullProfileInFlight.get(cacheKey);
+  if (inFlight) {
+    return inFlight;
+  }
+
+  const promise = computeCustomerFullProfile(customerId)
+    .then((data) => {
+      customerFullProfileCache.set(cacheKey, {
+        data,
+        expiresAt: Date.now() + PAGE_READ_CACHE_TTL_MS,
+      });
+      return data;
+    })
+    .finally(() => {
+      customerFullProfileInFlight.delete(cacheKey);
+    });
+
+  customerFullProfileInFlight.set(cacheKey, promise);
+  return promise;
+}
+
+async function computeCustomerLedgerArchive(customerId: string): Promise<CustomerLedgerArchiveRecord | null> {
   const customer = await getCustomerById(customerId);
   if (!customer) {
     return null;
@@ -2895,6 +3096,35 @@ export async function getCustomerLedgerArchive(customerId: string): Promise<Cust
   );
 }
 
+export async function getCustomerLedgerArchive(customerId: string): Promise<CustomerLedgerArchiveRecord | null> {
+  const cacheKey = customerId;
+  const now = Date.now();
+  const cached = customerLedgerArchiveCache.get(cacheKey);
+  if (cached && cached.expiresAt > now) {
+    return cached.data;
+  }
+
+  const inFlight = customerLedgerArchiveInFlight.get(cacheKey);
+  if (inFlight) {
+    return inFlight;
+  }
+
+  const promise = computeCustomerLedgerArchive(customerId)
+    .then((data) => {
+      customerLedgerArchiveCache.set(cacheKey, {
+        data,
+        expiresAt: Date.now() + PAGE_READ_CACHE_TTL_MS,
+      });
+      return data;
+    })
+    .finally(() => {
+      customerLedgerArchiveInFlight.delete(cacheKey);
+    });
+
+  customerLedgerArchiveInFlight.set(cacheKey, promise);
+  return promise;
+}
+
 export async function updateCustomerLedgerArchive(
   customerId: string,
   payload: {
@@ -2929,6 +3159,7 @@ export async function updateCustomerLedgerArchive(
     updated += 1;
   }
 
+  invalidateDataAccessReadCaches();
   return { updated };
 }
 

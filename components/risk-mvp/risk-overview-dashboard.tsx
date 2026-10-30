@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { RiskAssistantPanel } from "@/components/ai/risk-assistant-panel";
 import { PageHeader } from "@/components/shared/page-header";
 import { RiskModuleNav } from "@/components/risk-mvp/risk-module-nav";
 import { summarizeRiskText } from "@/components/risk-mvp/risk-display";
@@ -21,16 +22,44 @@ function riskBadgeClass(level: string) {
   return "status-badge status-normal";
 }
 
+const scoringStandards = [
+  {
+    title: "极高风险",
+    detail: "回款比例极低、存在待起诉/已诉、项目未闭环且金额暴露大时优先进入极高风险。",
+  },
+  {
+    title: "高风险",
+    detail: "未收金额较大、回款比例低、命中多条规则或客户下存在多个高风险项目。",
+  },
+  {
+    title: "中风险",
+    detail: "存在回款偏慢、档案字段不完整、跟进信息不足等需要业务继续核查的信号。",
+  },
+  {
+    title: "低风险",
+    detail: "当前未发现明显异常，按常规回款和档案维护节奏继续跟进。",
+  },
+];
+
+const ruleWeights = [
+  "未收金额和应收规模决定风险暴露优先级",
+  "回款比例越低，风险等级越高",
+  "诉讼、待起诉、未闭环项目直接提高处置优先级",
+  "合同、对账、开票、档案缺口会作为风险原因展示",
+];
+
 export function RiskOverviewDashboard() {
   const [data, setData] = useState<RiskOverviewData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string>("");
 
-  async function loadOverview() {
+  async function loadOverview(options: { forceRefresh?: boolean } = {}) {
     try {
       setLoading(true);
       setError("");
-      const response = await fetch("/api/risk/overview", { cache: "no-store" });
+      const response = await fetch(options.forceRefresh ? "/api/risk/overview?refresh=1" : "/api/risk/overview", {
+        cache: "no-store",
+      });
       const result = await response.json();
       if (!response.ok || !result.success) {
         throw new Error(result?.error ?? "风控总览加载失败");
@@ -102,18 +131,16 @@ export function RiskOverviewDashboard() {
     <>
       <PageHeader
         title="风控总览"
-        description="先看风险规模、重点对象和主要原因，再进入客户页和项目页继续排查。"
+        description="先看高风险对象，再进入客户详情核查。"
       />
 
       <RiskModuleNav />
 
-      <section className="management-toolbar card">
+      <section className="management-toolbar card quiet-toolbar">
         <div className="toolbar-row">
-          <span className="muted">
-            当前页面基于后端风控聚合接口展示，规则由服务端统一计算，页面不再自行拼规则。
-          </span>
-          <button className="button button-secondary" type="button" onClick={() => void loadOverview()}>
-            刷新总览
+          <span className="muted">数据已缓存，点击后重新计算最新风险。</span>
+          <button className="button button-secondary" type="button" onClick={() => void loadOverview({ forceRefresh: true })}>
+            重新计算
           </button>
         </div>
       </section>
@@ -127,14 +154,24 @@ export function RiskOverviewDashboard() {
         </section>
       ) : (
         <>
+          <RiskAssistantPanel
+            contextLabel="当前风控总览"
+            contextSummary={[
+              `总未收风险暴露：${formatCurrency(data?.metrics.totalUnpaidAmount ?? 0)}`,
+              `高风险客户：${data?.metrics.highRiskCustomerCount ?? 0}`,
+              `高风险项目：${data?.metrics.highRiskProjectCount ?? 0}`,
+              `极高风险项目：${data?.metrics.extremeRiskProjectCount ?? 0}`,
+              `主要风险原因：${topRiskReasons.slice(0, 3).map((item) => item.label).join("、") || "暂无"}`,
+            ]}
+          />
+
           <section className="risk-workbench-hero">
             <article className="card risk-workbench-main-card">
-              <div className="risk-workbench-eyebrow">风险总览摘要</div>
+              <div className="risk-workbench-eyebrow">总览</div>
               <div className="risk-workbench-main-head">
                 <div>
-                  <h3>当前总应收风险暴露</h3>
+                  <h3>未收风险暴露</h3>
                   <strong>{formatCurrency(totalExposure)}</strong>
-                  <p className="muted">以当前未收金额口径展示，适合先判断风险规模和优先处理方向。</p>
                 </div>
                 <div className="risk-workbench-badge-stack">
                   <span className="status-badge status-danger">高风险客户 {data?.metrics.highRiskCustomerCount ?? 0}</span>
@@ -190,26 +227,29 @@ export function RiskOverviewDashboard() {
             </article>
           </section>
 
-          <section className="risk-action-grid">
-            <article className="card risk-action-card">
-              <div>
-                <strong>高风险客户入口</strong>
-                <p className="muted">优先看客户级风险原因、重点客户和未闭环客户。</p>
+          <details className="card risk-collapsible-section">
+            <summary>风险评分标准</summary>
+            <div className="risk-collapsible-grid">
+              <div className="risk-summary-list">
+                {scoringStandards.map((item) => (
+                  <div className="risk-summary-item" key={item.title}>
+                    <span>
+                      <strong>{item.title}</strong>
+                      <br />
+                      <span className="muted">{item.detail}</span>
+                    </span>
+                  </div>
+                ))}
               </div>
-              <Link className="button button-secondary" href="/risk/customers">
-                查看高风险客户
-              </Link>
-            </article>
-            <article className="card risk-action-card">
-              <div>
-                <strong>高风险项目入口</strong>
-                <p className="muted">优先看金额大、规则命中多、档案异常的项目。</p>
+              <div className="risk-summary-list">
+                {ruleWeights.map((item) => (
+                  <div className="risk-summary-item" key={item}>
+                    <span>{item}</span>
+                  </div>
+                ))}
               </div>
-              <Link className="button button-secondary" href="/risk/projects">
-                查看高风险项目
-              </Link>
-            </article>
-          </section>
+            </div>
+          </details>
 
           <section className="risk-distribution-grid">
             <article className="card risk-distribution-card">
@@ -288,12 +328,6 @@ export function RiskOverviewDashboard() {
                   查看全部客户风险
                 </Link>
               </div>
-              <div className="risk-section-note">
-                优先查看未收高、项目风险多、当前需要管理层关注的客户。
-              </div>
-              <div className="risk-table-note">
-                点击客户名称或右侧“查看详情”，可直接进入客户详情页继续核查主体档案与项目情况。
-              </div>
               <div className="table-wrapper">
                 <table className="data-table">
                   <thead>
@@ -301,8 +335,8 @@ export function RiskOverviewDashboard() {
                       <th>客户名称</th>
                       <th>风险等级</th>
                       <th>未收金额</th>
-                      <th>高风险项目数</th>
-                      <th>风险原因</th>
+                        <th>高危项目</th>
+                      <th>主要风险原因</th>
                       <th>操作</th>
                     </tr>
                   </thead>
@@ -337,16 +371,10 @@ export function RiskOverviewDashboard() {
 
             <article className="table-card">
               <div className="table-header">
-                <h3>高风险项目 Top 列表</h3>
+                <h3>高风险项目 Top</h3>
                 <Link className="table-link" href="/risk/projects">
                   查看全部项目风险
                 </Link>
-              </div>
-              <div className="risk-section-note">
-                优先查看金额大、命中规则多、档案状态异常的项目。
-              </div>
-              <div className="risk-table-note">
-                点击项目名称可带项目上下文进入客户详情页，点击“查看项目上下文”可直接继续处理对应项目。
               </div>
               <div className="table-wrapper">
                 <table className="data-table">
@@ -356,7 +384,7 @@ export function RiskOverviewDashboard() {
                       <th>项目名称</th>
                       <th>风险等级</th>
                       <th>未收金额</th>
-                      <th>命中规则</th>
+                      <th>主要风险原因</th>
                       <th>操作</th>
                     </tr>
                   </thead>
@@ -381,14 +409,14 @@ export function RiskOverviewDashboard() {
                         </td>
                         <td><span className={riskBadgeClass(item.riskLevel)}>{item.riskLevel}</span></td>
                         <td>{formatCurrency(item.unpaidAmount)}</td>
-                        <td>{item.triggeredRules.join("、") || "未命中规则编码"}</td>
+                        <td>{summarizeRiskText(item.riskReasons, "暂无风险原因", 2)}</td>
                         <td>
                           <div className="risk-inline-actions">
                             <Link
                               className="button button-secondary button-small"
                               href={`/customers/${encodeURIComponent(item.customerId)}?projectId=${encodeURIComponent(item.projectId)}&projectName=${encodeURIComponent(item.projectName)}&from=risk-overview`}
                             >
-                              查看项目上下文
+                              查看详情
                             </Link>
                           </div>
                         </td>

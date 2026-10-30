@@ -71,7 +71,20 @@ export function RiskManagement() {
   }
 
   useEffect(() => {
-    void Promise.all([loadCustomers(), loadRisks()]);
+    async function loadInitialData() {
+      const [customerResponse, riskResponse] = await Promise.all([
+        fetch("/api/customers"),
+        fetch("/api/risks"),
+      ]);
+      const [customerResult, riskResult] = await Promise.all([
+        customerResponse.json(),
+        riskResponse.json(),
+      ]);
+      setCustomers(customerResult.data as CustomerRecord[]);
+      setRisks(riskResult.data as RiskRecordItem[]);
+    }
+
+    void loadInitialData();
   }, []);
 
   const startEditRisk = (item: RiskRecordItem) => {

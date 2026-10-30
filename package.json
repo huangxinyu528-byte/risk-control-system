@@ -20,6 +20,7 @@
     "prisma:migrate:deploy": "prisma migrate deploy",
     "import:zhongcheng": "node scripts/import-zhongcheng-data.mjs",
     "import:zhongcheng:dry": "node scripts/import-zhongcheng-data.mjs --dry-run",
+    "documents:rebuild-index": "node scripts/rebuild-document-index.mjs",
     "backfill:customer-codes": "node scripts/backfill-customer-codes.mjs",
     "report:customer-merge-map": "node scripts/generate-customer-merge-map.mjs",
     "migrate:customer-subjects": "node scripts/execute-customer-subject-merge.mjs"
@@ -27,9 +28,11 @@
   "dependencies": {
     "@prisma/client": "^5.20.0",
     "next": "14.2.14",
+    "openai": "^6.41.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "x-data-spreadsheet": "^1.1.9"
+    "x-data-spreadsheet": "^1.1.9",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^22.7.4",
