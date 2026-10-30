@@ -1,5 +1,8 @@
 # 众程建材客户风险管理系统
 
+> 接手开发请先阅读 [AI 交接文档](AI_HANDOFF.md)：项目目标、当前功能、资料目录、实际缺口与验证顺序。
+
+
 基于 `Next.js + React + TypeScript + Prisma + PostgreSQL` 的企业风控管理后台第一版开发版本。
 
 当前版本重点是：

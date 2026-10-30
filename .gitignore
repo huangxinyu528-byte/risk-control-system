@@ -1,21 +1,16 @@
-.next
 .next*
-node_modules
-.env
-.env.local
-dist
-coverage
-*.log
-logs
-.vercel
+node_modules/
+dist/
+coverage/
 .DS_Store
 *.tsbuildinfo
 
-# Local Netlify folder
-.netlify
+# Generated hosting output; project linkage is tracked separately.
+.netlify/*
+!.netlify/state.json
+!.netlify/netlify.toml
 
-# Local credentials, agent state, and database backups
-.env.*
-!.env.example
-.openclaw/
-backups/
+# API credentials must be provided locally, never committed.
+.env.api*
+*.key
+*.pem

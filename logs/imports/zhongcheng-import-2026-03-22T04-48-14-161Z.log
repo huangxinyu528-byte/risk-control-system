@@ -1,0 +1,306 @@
+[2026-03-22T04:48:14.393Z] [INFO] 结构化提取完成 {"payloadPath":"/Users/jamiekeke/Documents/New project/logs/imports/zhongcheng-import-payload-2026-03-22T04-48-14-161Z.json","summary":{"mainRowsScanned":102,"subtotalRowsSkipped":13,"templateCustomers":0,"templateContracts":0,"templateRisks":0,"templateScores":0,"litigationRows":15,"customersPrepared":59,"contractsPrepared":89,"receivablesPrepared":89,"risksPrepared":9,"scoresPrepared":59},"dryRun":false}
+[2026-03-22T04:48:14.530Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-FE5BEB9CCCBC","name":"重庆二建","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.531Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-4814F1B90C83","name":"四川合立智慧城市建设发展有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.532Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-125D74A7CC27","name":"眉山市志同道合建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.532Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-76E766EA3319","name":"四川鼎宸固基建设有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.533Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-91101440D99F","name":"成眉S5号线","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.533Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-98320814F770","name":"成都永安建设集团有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.534Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-16519BB29762","name":"四川湖屿川建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.534Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-879335AC2DDD","name":"核工业西南勘察设计研究院有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.536Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-86D21AA7F105","name":"四川润辉鑫成电力工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.536Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-AAA2C105A360","name":"深圳市赛能达实业发展有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.537Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-AC76A200DE95","name":"四川省欧荣岩土工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.537Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-5A3568C64C3F","name":"四川昌奕建设工程集团有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.537Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-8AF57151D041","name":"四川省慧博智城建设工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.538Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-DFD0713C9FC6","name":"四川卓昕置业有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.538Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-F137B380B997","name":"四川中福盛源供应链管理有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.538Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-41AFE8614963","name":"四川大鑫供应链管理有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.538Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-62D3FE4DED58","name":"四川鼎立鸿大建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.539Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-4713300420E5","name":"四川正矿建设有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.539Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-441E341B550A","name":"中国电建市政建设集团","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.539Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-6448711E2C90","name":"四川筑亿商贸有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.540Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-A38531531C50","name":"眉山诚宇商贸有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.540Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-92204DD781A1","name":"昊熠建设集团有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.540Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-BBFFFF25623A","name":"四川金苇园林绿化工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.540Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-42C2034F8F35","name":"四川省通力建设工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.541Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-7ED416D5C2E1","name":"中交二航局成都城市建设工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.541Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-AB162306F1CC","name":"成都建工第四建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.541Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-EEEA0EFAB6C0","name":"四川超前盈欣建设工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.541Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-C07A92CE996B","name":"四川锦天下园林工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.541Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-2D222097CB32","name":"四川正龙烨建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.542Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-3EC939FFA62E","name":"四川中地恒高景观工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.542Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-5AE3C6C98C04","name":"四川启明电力工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.542Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-D956716513FF","name":"四川谦禾建设工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.542Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-D8EFE15E68AD","name":"四川陆通建设有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.542Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-9E09ADEEFE05","name":"四川省益正地基基础工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.543Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-92A59B812C4A","name":"四川煌峰建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.543Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-05AD7160ADF7","name":"四川良盟建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.543Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-F41ED76BB612","name":"四川合富建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.543Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-997F1C5DA4B8","name":"四川天润装配式钢结构工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.544Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-F4CFE6C99820","name":"中电建路桥集团西部投资发展有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.544Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-1DA1AA355EFC","name":"四川烁全建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.544Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-31153F1434E2","name":"四川傲营建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.544Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-F5330A24B071","name":"成都天府新区鑫磊隆贸易有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.544Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-17E58C8F0761","name":"四川达虹宇建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.545Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-8C6E9669BAA2","name":"重庆利融建设有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.545Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-971DFFE8BB7A","name":"峨眉山产投供应链管理集团有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.545Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-3CC2D0ADB48B","name":"西充聚号宇商贸有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.545Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-E59D4C19F07B","name":"四川一库建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.545Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-5BD4CA0F0757","name":"四川华西数产科技集团有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.546Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-CD7D54BA9E0E","name":"中町建设有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.546Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-FDB0224A3CC6","name":"四川辉航建筑工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.546Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-6D234F735633","name":"江西建工第三建筑有限责任公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.546Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-7A144D04F055","name":"四川省祥福建设工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.546Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-9AA1CBBC8407","name":"浙江恒宸建设集团有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.546Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-394496D225DA","name":"四川兴南建设有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.547Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-3AA8369FBE11","name":"四川景秀河山景观工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.547Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-4412058481D3","name":"中铁五局集团建筑工程有限责任公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.547Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-09791F0AEC0C","name":"重庆兆旋建设有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.547Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-5AC4B0EA52CE","name":"陕西丰锐达建设工程有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.547Z] [ERROR] 客户导入失败 {"customerId":"ZC-KH-2430037E74C7","name":"成都美家绿城园林有限公司","error":"\nInvalid `prisma.customer.findUnique()` invocation:\n\n\nerror: Environment variable not found: DATABASE_URL.\n  -->  schema.prisma:7\n   | \n 6 |   provider = \"postgresql\"\n 7 |   url      = env(\"DATABASE_URL\")\n   | \n\nValidation Error Count: 1"}
+[2026-03-22T04:48:14.547Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-DDA737918DE4","customerRef":"ZC-KH-FE5BEB9CCCBC"}
+[2026-03-22T04:48:14.547Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-FEE2A6AAF6FC","customerRef":"ZC-KH-FE5BEB9CCCBC"}
+[2026-03-22T04:48:14.547Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-EBB6266E8329","customerRef":"ZC-KH-FE5BEB9CCCBC"}
+[2026-03-22T04:48:14.547Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-6215506AE9F1","customerRef":"ZC-KH-4814F1B90C83"}
+[2026-03-22T04:48:14.547Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-A5D10475B3EB","customerRef":"ZC-KH-4814F1B90C83"}
+[2026-03-22T04:48:14.547Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-96F789DCDF4F","customerRef":"ZC-KH-125D74A7CC27"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-3158157FCAE6","customerRef":"ZC-KH-76E766EA3319"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-4F67201947C2","customerRef":"ZC-KH-91101440D99F"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-D5995825BDEF","customerRef":"ZC-KH-91101440D99F"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-7453B3F960A5","customerRef":"ZC-KH-98320814F770"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-E6211442156E","customerRef":"ZC-KH-98320814F770"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-F9D375AE444B","customerRef":"ZC-KH-16519BB29762"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-DAD97E1CE4E7","customerRef":"ZC-KH-879335AC2DDD"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-6441D85E4CDE","customerRef":"ZC-KH-86D21AA7F105"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-64A92594965D","customerRef":"ZC-KH-AAA2C105A360"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-B1650ED39EB1","customerRef":"ZC-KH-AC76A200DE95"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-5FD150E9DF2F","customerRef":"ZC-KH-5A3568C64C3F"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-4954FBF64886","customerRef":"ZC-KH-5A3568C64C3F"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-CF9C06472F80","customerRef":"ZC-KH-5A3568C64C3F"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-E88DECA7AEFC","customerRef":"ZC-KH-5A3568C64C3F"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-BB0EC077660F","customerRef":"ZC-KH-5A3568C64C3F"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-27D52E642DD4","customerRef":"ZC-KH-8AF57151D041"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-7F98107168F4","customerRef":"ZC-KH-DFD0713C9FC6"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-3461016F7F44","customerRef":"ZC-KH-F137B380B997"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-5A0E70605387","customerRef":"ZC-KH-F137B380B997"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-7A163372FE03","customerRef":"ZC-KH-41AFE8614963"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-FF978BCD12E2","customerRef":"ZC-KH-62D3FE4DED58"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-DB7EC1570A8B","customerRef":"ZC-KH-4713300420E5"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-6FE19DA513ED","customerRef":"ZC-KH-441E341B550A"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-49DF68DA478A","customerRef":"ZC-KH-6448711E2C90"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-3F0C4DBDEFC3","customerRef":"ZC-KH-A38531531C50"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-1C0B2F54F78E","customerRef":"ZC-KH-92204DD781A1"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-BE2F6216C6DE","customerRef":"ZC-KH-BBFFFF25623A"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-BC7F4362DA89","customerRef":"ZC-KH-42C2034F8F35"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-EF776B98ADED","customerRef":"ZC-KH-7ED416D5C2E1"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-BCE20A975642","customerRef":"ZC-KH-AB162306F1CC"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-740B5329E670","customerRef":"ZC-KH-EEEA0EFAB6C0"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-C30DCC5E9C43","customerRef":"ZC-KH-EEEA0EFAB6C0"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-8354ABCA7B3A","customerRef":"ZC-KH-EEEA0EFAB6C0"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-8F5366527F51","customerRef":"ZC-KH-EEEA0EFAB6C0"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-BA6FF585F1B2","customerRef":"ZC-KH-C07A92CE996B"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-58D99D407D58","customerRef":"ZC-KH-C07A92CE996B"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-2DC960FE467A","customerRef":"ZC-KH-2D222097CB32"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-24F9103189A8","customerRef":"ZC-KH-3EC939FFA62E"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-49A707E651F1","customerRef":"ZC-KH-5AE3C6C98C04"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-A7ABE570BAF3","customerRef":"ZC-KH-D956716513FF"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-F71E3EC09A46","customerRef":"ZC-KH-D8EFE15E68AD"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-5033553A8E06","customerRef":"ZC-KH-9E09ADEEFE05"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-C05787FA49D9","customerRef":"ZC-KH-9E09ADEEFE05"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-628D88A9D21E","customerRef":"ZC-KH-92A59B812C4A"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-068CB0FC50E3","customerRef":"ZC-KH-92A59B812C4A"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-58AC0A99AD01","customerRef":"ZC-KH-05AD7160ADF7"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-B0B7C5F43B18","customerRef":"ZC-KH-05AD7160ADF7"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-544E52E06A4C","customerRef":"ZC-KH-F41ED76BB612"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-4730F858D124","customerRef":"ZC-KH-997F1C5DA4B8"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-3023DE662CEC","customerRef":"ZC-KH-F4CFE6C99820"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-F3BB3851E236","customerRef":"ZC-KH-1DA1AA355EFC"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-10EB692BF76E","customerRef":"ZC-KH-31153F1434E2"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-819D9D2F882B","customerRef":"ZC-KH-F5330A24B071"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-D739A64D3FE6","customerRef":"ZC-KH-17E58C8F0761"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-BF5B7B80643D","customerRef":"ZC-KH-8C6E9669BAA2"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-7565B867BA30","customerRef":"ZC-KH-971DFFE8BB7A"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-7B3555751E13","customerRef":"ZC-KH-3CC2D0ADB48B"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-31BA2AE3914D","customerRef":"ZC-KH-E59D4C19F07B"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-A20F1F2AD084","customerRef":"ZC-KH-5BD4CA0F0757"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-595AAFB0D281","customerRef":"ZC-KH-CD7D54BA9E0E"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-C9B815078914","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-8C55A36BE00A","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-CB2879F1B279","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-F80E1F49C613","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-FB0C8868CC7E","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-FCC042714FFF","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-D4792F672768","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-13B98AD68AEE","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-07D7B7451AE0","customerRef":"ZC-KH-6D234F735633"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-9751E447F1E5","customerRef":"ZC-KH-6D234F735633"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-F81CB2FCF578","customerRef":"ZC-KH-6D234F735633"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-26546334261B","customerRef":"ZC-KH-6D234F735633"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-4172CADAB31A","customerRef":"ZC-KH-6D234F735633"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-8226AC8C0C93","customerRef":"ZC-KH-7A144D04F055"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-FEFA713DE594","customerRef":"ZC-KH-7A144D04F055"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-B0EA9A012611","customerRef":"ZC-KH-9AA1CBBC8407"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-604D844D41FA","customerRef":"ZC-KH-9AA1CBBC8407"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-76E16C05967E","customerRef":"ZC-KH-394496D225DA"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-A6E562B1308E","customerRef":"ZC-KH-3AA8369FBE11"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-2CDC8D7817F8","customerRef":"ZC-KH-4412058481D3"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-C058996C69D1","customerRef":"ZC-KH-09791F0AEC0C"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-D2D6D7ECB3D4","customerRef":"ZC-KH-5AC4B0EA52CE"}
+[2026-03-22T04:48:14.548Z] [WARN] 合同因客户缺失被跳过 {"contractNo":"AUTO-CT-6729DBE8CE7C","customerRef":"ZC-KH-2430037E74C7"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-3AEEC1A13ED9","customerRef":"ZC-KH-FE5BEB9CCCBC"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-18EBECA8F249","customerRef":"ZC-KH-FE5BEB9CCCBC"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-D7299BA9ADEF","customerRef":"ZC-KH-FE5BEB9CCCBC"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-DF11F926E024","customerRef":"ZC-KH-4814F1B90C83"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-38B775F4D5FF","customerRef":"ZC-KH-4814F1B90C83"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-4DA296C9ADB2","customerRef":"ZC-KH-125D74A7CC27"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-34121DD7D949","customerRef":"ZC-KH-76E766EA3319"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-E66705A440F5","customerRef":"ZC-KH-91101440D99F"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-732C75DDA331","customerRef":"ZC-KH-91101440D99F"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-BCAAB530A818","customerRef":"ZC-KH-98320814F770"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-9531AF03E19B","customerRef":"ZC-KH-98320814F770"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-43F95A11E0F6","customerRef":"ZC-KH-16519BB29762"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-50D4B29FDE06","customerRef":"ZC-KH-879335AC2DDD"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-F7373BB33BC5","customerRef":"ZC-KH-86D21AA7F105"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-EE971E939842","customerRef":"ZC-KH-AAA2C105A360"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-EB7A882956ED","customerRef":"ZC-KH-AC76A200DE95"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-3CE6B58AEE33","customerRef":"ZC-KH-5A3568C64C3F"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-0A15A3D60134","customerRef":"ZC-KH-5A3568C64C3F"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-6A052F02F451","customerRef":"ZC-KH-5A3568C64C3F"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-8F9723964580","customerRef":"ZC-KH-5A3568C64C3F"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-EBF29F4CBAA5","customerRef":"ZC-KH-5A3568C64C3F"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-23CC07842806","customerRef":"ZC-KH-8AF57151D041"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-609C24777ABA","customerRef":"ZC-KH-DFD0713C9FC6"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-767D63C1609A","customerRef":"ZC-KH-F137B380B997"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-E988B97DD283","customerRef":"ZC-KH-F137B380B997"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-1B31829AEEBA","customerRef":"ZC-KH-41AFE8614963"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-7980B1D9730E","customerRef":"ZC-KH-62D3FE4DED58"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-1F96B275E881","customerRef":"ZC-KH-4713300420E5"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-55670F966562","customerRef":"ZC-KH-441E341B550A"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-90D1D8148441","customerRef":"ZC-KH-6448711E2C90"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-6BD02DF5CB8F","customerRef":"ZC-KH-A38531531C50"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-A0329CB0C559","customerRef":"ZC-KH-92204DD781A1"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-368CB98FA7ED","customerRef":"ZC-KH-BBFFFF25623A"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-6891B732103E","customerRef":"ZC-KH-42C2034F8F35"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-7BB88106A56D","customerRef":"ZC-KH-7ED416D5C2E1"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-6BE1FBBA93EA","customerRef":"ZC-KH-AB162306F1CC"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-E4B64379B440","customerRef":"ZC-KH-EEEA0EFAB6C0"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-D34433C71CAC","customerRef":"ZC-KH-EEEA0EFAB6C0"}
+[2026-03-22T04:48:14.548Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-7D722B253F8A","customerRef":"ZC-KH-EEEA0EFAB6C0"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-0A58274F358A","customerRef":"ZC-KH-EEEA0EFAB6C0"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-63D5A67FE6A2","customerRef":"ZC-KH-C07A92CE996B"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-A44C0634B5BB","customerRef":"ZC-KH-C07A92CE996B"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-6FE674DE3A3C","customerRef":"ZC-KH-2D222097CB32"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-6CBED00DD42A","customerRef":"ZC-KH-3EC939FFA62E"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-22CA0BFF5E24","customerRef":"ZC-KH-5AE3C6C98C04"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-E5E9D08377F1","customerRef":"ZC-KH-D956716513FF"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-FBB38FA87974","customerRef":"ZC-KH-D8EFE15E68AD"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-3113ADA260DF","customerRef":"ZC-KH-9E09ADEEFE05"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-E77F48F0687B","customerRef":"ZC-KH-9E09ADEEFE05"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-B8652CDCB7ED","customerRef":"ZC-KH-92A59B812C4A"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-30A5612B86E1","customerRef":"ZC-KH-92A59B812C4A"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-CC16759C9AC1","customerRef":"ZC-KH-05AD7160ADF7"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-F4449B3606B1","customerRef":"ZC-KH-05AD7160ADF7"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-F5C7A5CB894A","customerRef":"ZC-KH-F41ED76BB612"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-D5D7D3460153","customerRef":"ZC-KH-997F1C5DA4B8"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-C72B80E39BF7","customerRef":"ZC-KH-F4CFE6C99820"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-E495A408A968","customerRef":"ZC-KH-1DA1AA355EFC"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-D7098CF509A8","customerRef":"ZC-KH-31153F1434E2"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-1A398905C8A3","customerRef":"ZC-KH-F5330A24B071"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-C6B5EB1DA099","customerRef":"ZC-KH-17E58C8F0761"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-4BFE07A74B93","customerRef":"ZC-KH-8C6E9669BAA2"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-1A59AD343A20","customerRef":"ZC-KH-971DFFE8BB7A"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-8338208563E5","customerRef":"ZC-KH-3CC2D0ADB48B"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-1902CB2D899D","customerRef":"ZC-KH-E59D4C19F07B"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-7373ADFE2F6C","customerRef":"ZC-KH-5BD4CA0F0757"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-D0A11E5539E4","customerRef":"ZC-KH-CD7D54BA9E0E"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-1A8F227ED7B7","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-5FBDABD855A0","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-50D4CF6D87F9","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-1A7A6DBA4762","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-CA06BB8828A1","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-25E5CD7F9704","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-5C8AEB3C2904","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-2D59414665C0","customerRef":"ZC-KH-FDB0224A3CC6"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-B3F6CF491D74","customerRef":"ZC-KH-6D234F735633"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-A90414949C8E","customerRef":"ZC-KH-6D234F735633"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-1E4D1269A152","customerRef":"ZC-KH-6D234F735633"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-413020D7AAFA","customerRef":"ZC-KH-6D234F735633"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-EE313E0659BA","customerRef":"ZC-KH-6D234F735633"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-E92405AB8C3D","customerRef":"ZC-KH-7A144D04F055"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-ADD3471794B2","customerRef":"ZC-KH-7A144D04F055"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-F9CCC37EB330","customerRef":"ZC-KH-9AA1CBBC8407"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-03B460992411","customerRef":"ZC-KH-9AA1CBBC8407"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-CB41CF3C1C2A","customerRef":"ZC-KH-394496D225DA"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-2F1DBDFAB98C","customerRef":"ZC-KH-3AA8369FBE11"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-B55B963191FA","customerRef":"ZC-KH-4412058481D3"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-9930C1118AB4","customerRef":"ZC-KH-09791F0AEC0C"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-2DDCC153AAFA","customerRef":"ZC-KH-5AC4B0EA52CE"}
+[2026-03-22T04:48:14.549Z] [WARN] 应收记录因客户缺失被跳过 {"receivableNo":"AUTO-AR-EDEF10515F91","customerRef":"ZC-KH-2430037E74C7"}
+[2026-03-22T04:48:14.549Z] [WARN] 风险记录因客户缺失被跳过 {"riskCode":"AUTO-RISK-D1A32A4EFA87","customerRef":"ZC-KH-FE5BEB9CCCBC"}
+[2026-03-22T04:48:14.549Z] [WARN] 风险记录因客户缺失被跳过 {"riskCode":"AUTO-RISK-92820524E20D","customerRef":"ZC-KH-7A144D04F055"}
+[2026-03-22T04:48:14.549Z] [WARN] 风险记录因客户缺失被跳过 {"riskCode":"AUTO-RISK-B4FED5D808F2","customerRef":"ZC-KH-9AA1CBBC8407"}
+[2026-03-22T04:48:14.549Z] [WARN] 风险记录因客户缺失被跳过 {"riskCode":"AUTO-RISK-0F5749BB4891","customerRef":"ZC-KH-394496D225DA"}
+[2026-03-22T04:48:14.549Z] [WARN] 风险记录因客户缺失被跳过 {"riskCode":"AUTO-RISK-74275116BE03","customerRef":"ZC-KH-3AA8369FBE11"}
+[2026-03-22T04:48:14.549Z] [WARN] 风险记录因客户缺失被跳过 {"riskCode":"AUTO-RISK-D69085D8F848","customerRef":"ZC-KH-4412058481D3"}
+[2026-03-22T04:48:14.549Z] [WARN] 风险记录因客户缺失被跳过 {"riskCode":"AUTO-RISK-88118F1BA1C4","customerRef":"ZC-KH-09791F0AEC0C"}
+[2026-03-22T04:48:14.549Z] [WARN] 风险记录因客户缺失被跳过 {"riskCode":"AUTO-RISK-765AD738007D","customerRef":"ZC-KH-5AC4B0EA52CE"}
+[2026-03-22T04:48:14.549Z] [WARN] 风险记录因客户缺失被跳过 {"riskCode":"AUTO-RISK-527DE5AAD7E6","customerRef":"ZC-KH-2430037E74C7"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-FE5BEB9CCCBC","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-4814F1B90C83","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-125D74A7CC27","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-76E766EA3319","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-91101440D99F","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-98320814F770","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-16519BB29762","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-879335AC2DDD","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-86D21AA7F105","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-AAA2C105A360","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-AC76A200DE95","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-5A3568C64C3F","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-8AF57151D041","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-DFD0713C9FC6","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-F137B380B997","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-41AFE8614963","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-62D3FE4DED58","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-4713300420E5","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-441E341B550A","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-6448711E2C90","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-A38531531C50","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-92204DD781A1","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-BBFFFF25623A","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-42C2034F8F35","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-7ED416D5C2E1","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-AB162306F1CC","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-EEEA0EFAB6C0","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-C07A92CE996B","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-2D222097CB32","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-3EC939FFA62E","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-5AE3C6C98C04","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-D956716513FF","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-D8EFE15E68AD","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-9E09ADEEFE05","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-92A59B812C4A","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-05AD7160ADF7","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-F41ED76BB612","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-997F1C5DA4B8","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-F4CFE6C99820","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-1DA1AA355EFC","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-31153F1434E2","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-F5330A24B071","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-17E58C8F0761","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-8C6E9669BAA2","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-971DFFE8BB7A","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-3CC2D0ADB48B","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-E59D4C19F07B","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-5BD4CA0F0757","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-CD7D54BA9E0E","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-FDB0224A3CC6","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-6D234F735633","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-7A144D04F055","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-9AA1CBBC8407","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-394496D225DA","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-3AA8369FBE11","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-4412058481D3","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-09791F0AEC0C","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-5AC4B0EA52CE","scoreMonth":"2026-02"}
+[2026-03-22T04:48:14.549Z] [WARN] 信用评分因客户缺失被跳过 {"customerRef":"ZC-KH-2430037E74C7","scoreMonth":"2026-02"}

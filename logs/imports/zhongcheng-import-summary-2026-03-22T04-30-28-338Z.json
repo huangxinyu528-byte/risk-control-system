@@ -1,0 +1,70 @@
+{
+  "dryRun": true,
+  "extractedAt": "2026-03-22T04:30:28.598Z",
+  "extractorSummary": {
+    "mainRowsScanned": 102,
+    "subtotalRowsSkipped": 13,
+    "templateCustomers": 0,
+    "templateContracts": 0,
+    "templateRisks": 0,
+    "templateScores": 0,
+    "litigationRows": 15,
+    "customersPrepared": 59,
+    "contractsPrepared": 89,
+    "receivablesPrepared": 89,
+    "risksPrepared": 9,
+    "scoresPrepared": 59
+  },
+  "meta": {
+    "importMonth": "2026-02",
+    "sourceFiles": {
+      "template": "data/众程建材客户风险管理系统模板_最终版(2).xlsx",
+      "receivable": "data/众程建材应收账款分类表2026.2.28(2)(1).xls"
+    },
+    "assumptions": [
+      "第一版主应收数据使用 2.28汇总 工作表。",
+      "2.15 工作表仅用于补充本月回款字段。",
+      "账期、到期日为空时保留为空，不触发错误，也不参与自动预警。",
+      "缺失客户主数据时，按公司名称生成稳定 customerId。",
+      "缺失合同编号时，按客户名称 + 项目名称生成稳定 contractNo。",
+      "缺失评分明细时，基于应收和风险记录生成首版自动评分。"
+    ]
+  },
+  "stats": {
+    "customers": {
+      "created": 0,
+      "updated": 0,
+      "skipped": 0,
+      "failed": 0
+    },
+    "contracts": {
+      "created": 0,
+      "updated": 0,
+      "skipped": 0,
+      "failed": 0
+    },
+    "accountsReceivable": {
+      "created": 0,
+      "updated": 0,
+      "skipped": 0,
+      "failed": 0
+    },
+    "riskRecords": {
+      "created": 0,
+      "updated": 0,
+      "skipped": 0,
+      "failed": 0
+    },
+    "creditScores": {
+      "created": 0,
+      "updated": 0,
+      "skipped": 0,
+      "failed": 0
+    }
+  },
+  "artifacts": {
+    "payloadPath": "/Users/jamiekeke/Documents/New project/logs/imports/zhongcheng-import-payload-2026-03-22T04-30-28-338Z.json",
+    "summaryPath": "/Users/jamiekeke/Documents/New project/logs/imports/zhongcheng-import-summary-2026-03-22T04-30-28-338Z.json",
+    "logPath": "/Users/jamiekeke/Documents/New project/logs/imports/zhongcheng-import-2026-03-22T04-30-28-338Z.log"
+  }
+}
